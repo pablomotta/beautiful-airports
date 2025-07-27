@@ -25,7 +25,10 @@ export default function SignInPage() {
     };
 
     return (
-        <div className="max-w-md mx-auto mt-20 p-6 border rounded shadow">
+        <div className="max-w-md mx-auto mt-20 p-6 border rounded shadow bg-white">
+            <div className="w-full flex justify-center items-center mb-10">
+                <h1 className="text-3xl font-bold">Beautiful Airports</h1>
+            </div>
             <h1 className="text-2xl font-bold mb-4">Sign In</h1>
             {error && <p className="mb-2 text-red-500">{error}</p>}
             <form onSubmit={handleSubmit} className="space-y-4">

@@ -32,12 +32,12 @@ export default function HomePage() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-600 via-blue-200 via-blue-400 via-blue-100 via-blue-400 via-blue-200 to-blue-500">
+    <div className="min-h-screen ">
       <main className="max-w-7xl mx-auto h-screen">
         <div className="grid grid-cols-12 py-10 px-4 h-full">
           <div className="bg-white  col-span-12 md:col-start-5 md:col-span-4 px-4 md:p-8 py-8 space-y-6 border-2 border-gray-200 rounded-lg h-full shadow-sm">
             <div className="w-full flex justify-center items-center mb-10">
-              <h1 className="text-2xl font-bold">Beautiful Airports</h1>
+              <h1 className="text-3xl font-bold">Beautiful Airports</h1>
             </div>
             <div className=" flex items-start flex-col gap-4">
               <label>
