@@ -1,9 +1,9 @@
 "use client";
 
-import { useState } from "react";
-import useSWR from "swr";
-import { useSession, signIn } from "next-auth/react";
+import { signIn, useSession } from "next-auth/react";
 import Link from "next/link";
+import useSWR from "swr";
+import { Airport } from "../../generated/prisma";
 
 const fetcher = (url: string) => fetch(url).then((r) => r.json());
 
@@ -13,13 +13,16 @@ export default function VisitedPage() {
     data: visited = [],
     isLoading,
     mutate,
-  } = useSWR(() => (session ? "/api/airport/visited" : null), fetcher);
+  } = useSWR<Airport[]>(
+    () => (session ? "/api/airport/visited" : null),
+    fetcher
+  );
 
   const clearVisited = async () => {
     await fetch("/api/airport/clear", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ userId: (session?.user as any)?.id }),
+      body: JSON.stringify({ userId: session?.user.id }),
     });
     mutate();
   };
@@ -74,7 +77,7 @@ export default function VisitedPage() {
                 <p>Loading…</p>
               ) : visited.length > 0 ? (
                 <ul className="space-y-4 w-full">
-                  {visited.map((a: any) => (
+                  {visited.map((a: Airport) => (
                     <li
                       key={a.id}
                       className="border p-4 rounded flex flex-col space-y-1 bg-gray-100 shadow-lg"
@@ -100,7 +103,7 @@ export default function VisitedPage() {
                 </ul>
               ) : (
                 <p className="text-gray-500">
-                  You haven't marked any airports as visited yet.
+                  You haven&apos;t marked any airports as visited yet.
                 </p>
               )}
             </div>

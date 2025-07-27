@@ -1,11 +1,12 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import useSWR from "swr";
-import { useSession } from "next-auth/react";
-import { useRouter } from "next/navigation";
-import Link from "next/link";
 import Spinner from "@/components/Spinner";
+import { Airport } from "@/generated/prisma";
+import { useSession } from "next-auth/react";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
+import useSWR from "swr";
 
 const fetcher = (url: string) => fetch(url).then((r) => r.json());
 
@@ -14,9 +15,9 @@ export default function HomePage() {
   const { data: session, status } = useSession();
   const [size, setSize] = useState<"Small" | "Medium" | "Large">("Small");
 
-  const userId = (session?.user as any)?.id;
+  const userId = session?.user.id;
 
-  const { data: airport, mutate } = useSWR(
+  const { data: airport, mutate } = useSWR<Airport>(
     userId ? `/api/airport/random?size=${size}&userId=${userId}` : null,
     fetcher
   );
@@ -29,7 +30,7 @@ export default function HomePage() {
   }, [status, router]);
 
   // show a spinner or nothing while NextAuth is checking
-  if (status === "loading" || status === "unauthenticated") {
+  if (status !== "authenticated") {
     return (
       <div className="min-h-screen flex items-center justify-center">
         <Spinner />
@@ -40,6 +41,7 @@ export default function HomePage() {
   // at this point status === 'authenticated' and session is non-null
 
   const markVisited = async () => {
+    if (!airport) return;
     await fetch("/api/airport/visit", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -70,7 +72,9 @@ export default function HomePage() {
                 <span className="font-medium">Size:</span>
                 <select
                   value={size}
-                  onChange={(e) => setSize(e.target.value as any)}
+                  onChange={(e) =>
+                    setSize(e.target.value as "Small" | "Medium" | "Large")
+                  }
                   className="ml-2 p-1 border rounded"
                 >
                   <option>Small</option>
