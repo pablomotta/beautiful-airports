@@ -1,14 +1,14 @@
-'use client';
+// src/app/auth/signin/page.tsx
+"use client";
 
-import { useState } from 'react';
-import { signIn } from 'next-auth/react';
-import { useRouter } from 'next/navigation';
-import Link from 'next/link';
+import { useState } from "react";
+import { signIn } from "next-auth/react";
+import { useRouter } from "next/navigation";
 
 export default function SignInPage() {
     const router = useRouter();
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
+    const [identifier, setIdentifier] = useState("");
+    const [password, setPassword] = useState("");
     const [error, setError] = useState<string | null>(null);
     const [loading, setLoading] = useState(false);
 
@@ -17,9 +17,9 @@ export default function SignInPage() {
         setError(null);
         setLoading(true);
 
-        const res = await signIn('credentials', {
+        const res = await signIn("credentials", {
             redirect: false,
-            email,
+            identifier,
             password,
         });
 
@@ -27,62 +27,58 @@ export default function SignInPage() {
         if (res?.error) {
             setError(res.error);
         } else {
-            router.replace('/');
+            router.replace("/");
         }
     };
 
     return (
         <main className="max-w-7xl mx-auto">
             <div className="grid grid-cols-12 py-10 px-4 h-full">
-                <div className="bg-white col-span-12 md:col-start-5 md:col-span-4 px-4 md:p-8 py-8 space-y-6 border-2 border-gray-200 rounded-lg h-full shadow-sm">
+                <div className="bg-white col-span-12 md:col-start-5 md:col-span-4 
+                        px-4 md:p-8 py-8 space-y-6 border-2 border-gray-200 
+                        rounded-lg h-full shadow-sm">
                     <h1 className="text-3xl font-bold text-center mb-6">
                         Beautiful Airports
                     </h1>
-
                     {error && (
                         <div className="text-red-600 text-center">{error}</div>
                     )}
-
                     <form onSubmit={handleSubmit} className="space-y-4">
                         <div>
-                            <label className="block mb-1 font-medium">Email</label>
+                            <label className="block mb-1 font-medium">
+                                Email or Username
+                            </label>
                             <input
-                                type="email"
-                                value={email}
-                                onChange={e => setEmail(e.target.value)}
+                                type="text"
+                                value={identifier}
+                                onChange={(e) => setIdentifier(e.target.value)}
                                 required
                                 className="w-full p-2 border rounded"
                             />
                         </div>
-
                         <div>
                             <label className="block mb-1 font-medium">Password</label>
                             <input
                                 type="password"
                                 value={password}
-                                onChange={e => setPassword(e.target.value)}
+                                onChange={(e) => setPassword(e.target.value)}
                                 required
                                 className="w-full p-2 border rounded"
                             />
                         </div>
-
                         <button
                             type="submit"
                             disabled={loading}
                             className="w-full py-2 bg-blue-600 text-white rounded disabled:opacity-50"
                         >
-                            {loading ? 'Signing In…' : 'Sign In'}
+                            {loading ? "Signing In…" : "Sign In"}
                         </button>
                     </form>
-
-                    <p className="text-center text-sm mt-4">
-                        Don’t have an account?{' '}
-                        <Link
-                            href="/auth/signup"
-                            className="text-blue-600 hover:underline"
-                        >
+                    <p className="text-center mt-4">
+                        Don’t have an account?{" "}
+                        <a href="/auth/signup" className="text-blue-600 hover:underline">
                             Sign up!
-                        </Link>
+                        </a>
                     </p>
                 </div>
             </div>
