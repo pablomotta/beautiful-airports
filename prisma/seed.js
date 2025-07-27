@@ -1,10 +1,13 @@
 // prisma/seed.js
 const { PrismaClient } = require('../src/generated/prisma');
+const bcrypt = require('bcrypt');
 const airports = require('./airports.json');
+
 const prisma = new PrismaClient();
 
 async function main() {
-    // 1) Ensure a default test user exists
+    // 1) Hash and upsert a default test user
+    const hashedPassword = await bcrypt.hash('changeme', 10);
     await prisma.user.upsert({
         where: { email: 'test@example.com' },
         update: {},
@@ -12,13 +15,18 @@ async function main() {
             name: 'Test User',
             email: 'test@example.com',
             username: 'testuser',
-            password: 'changeme', // in real app, hash this!
+            password: hashedPassword,
         },
     });
 
     // 2) Filter and transform airport data
     const validData = airports
-        .filter(a => a.city && a.airportCode && a.airportName && a.size)
+        .filter(a =>
+            a.city &&
+            a.airportCode &&
+            a.airportName &&
+            a.size
+        )
         .map(a => ({
             country: a.country || 'Unknown',
             city: a.city,
@@ -31,12 +39,12 @@ async function main() {
         }));
 
     // 3) Bulk insert airports, skipping duplicates
-    await prisma.airport.createMany({
+    const result = await prisma.airport.createMany({
         data: validData,
         skipDuplicates: true,
     });
 
-    console.log(`🌍 Seeded ${validData.length} airports`);
+    console.log(`🌍 Seeded ${result.count} airports`);
 }
 
 main()
