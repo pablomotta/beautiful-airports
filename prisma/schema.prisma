@@ -22,6 +22,7 @@ model Airport {
   country            String
   city               String
   airportCode        String  @unique
+  icaoCode           String? @unique
   airportName        String
   runwayLengthMeters Int?
   size               String
