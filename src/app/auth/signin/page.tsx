@@ -40,6 +40,14 @@ export default function SignInPage() {
                     <h1 className="text-3xl font-bold text-center mb-6">
                         Beautiful Airports
                     </h1>
+                    <div className="text-center text-gray-600 mb-6 space-y-2">
+                        <p className="text-lg">
+                            Discover stunning airports in beautiful cities around the world for your next flight simulation adventure.
+                        </p>
+                        <p className="text-sm">
+                            Track visited airports, get personalized recommendations, and never run out of amazing destinations to explore in your favorite simulator.
+                        </p>
+                    </div>
                     {error && (
                         <div className="text-red-600 text-center">{error}</div>
                     )}

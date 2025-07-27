@@ -7,7 +7,7 @@ export default function Header() {
     const { data: session } = useSession();
 
     return (
-        <header className="bg-white p-4 flex justify-center space-x-8 shadow-md">
+        <header className="bg-white p-4 flex justify-center space-x-8 shadow-lg">
             <Link href="/" className="font-medium hover:underline">
                 Home
             </Link>

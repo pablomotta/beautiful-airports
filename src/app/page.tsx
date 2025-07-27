@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import useSWR from 'swr';
 import { useSession } from 'next-auth/react';
 import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 
 const fetcher = (url: string) => fetch(url).then(r => r.json());
 
@@ -77,16 +78,23 @@ export default function HomePage() {
               </label>
               <button
                 onClick={() => mutate()}
-                className="px-6 py-2 bg-blue-500 text-white rounded"
+                className="w-full px-6 py-2 bg-blue-500 text-white rounded"
               >
                 Get Random
               </button>
-              <button
-                onClick={clearVisits}
-                className="px-6 py-2 bg-red-500 text-white rounded"
-              >
-                Clear Visited
-              </button>
+              <div className="flex gap-2 w-full">
+                <Link href="/visited" className="w-1/2">
+                  <button className="w-full px-6 py-2 bg-purple-500 text-white rounded">
+                    See visited
+                  </button>
+                </Link>
+                <button
+                  onClick={clearVisits}
+                  className="w-1/2 px-6 py-2 bg-red-500 text-white rounded"
+                >
+                  Clear Visited
+                </button>
+              </div>
             </div>
 
             {airport ? (
