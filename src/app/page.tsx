@@ -1,13 +1,36 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import useSWR from 'swr';
+import { useSession } from 'next-auth/react';
+import { useRouter } from 'next/navigation';
 
-const fetcher = (url: string) => fetch(url).then(res => res.json());
+const fetcher = (url: string) => fetch(url).then(r => r.json());
 
 export default function HomePage() {
+  const router = useRouter();
+  const { data: session, status } = useSession();
   const [size, setSize] = useState<'Small' | 'Medium' | 'Large'>('Small');
-  const [userId] = useState(1); // replace with real auth later
+
+  // redirect if not signed in
+  useEffect(() => {
+    if (status === 'unauthenticated') {
+      router.replace('/auth/signin');
+    }
+  }, [status, router]);
+
+  // show a spinner or nothing while NextAuth is checking
+  if (status === 'loading' || status === 'unauthenticated') {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <p>Checking your session…</p>
+      </div>
+    );
+  }
+
+  // at this point status === 'authenticated' and session is non-null
+  const userId = (session?.user as any)?.id;
+
   const { data: airport, mutate } = useSWR(
     `/api/airport/random?size=${size}&userId=${userId}`,
     fetcher
@@ -32,14 +55,14 @@ export default function HomePage() {
   };
 
   return (
-    <div className="min-h-screen ">
+    <div className="min-h-screen">
       <main className="max-w-7xl mx-auto h-screen">
         <div className="grid grid-cols-12 py-10 px-4 h-full">
-          <div className="bg-white  col-span-12 md:col-start-5 md:col-span-4 px-4 md:p-8 py-8 space-y-6 border-2 border-gray-200 rounded-lg h-full shadow-sm">
+          <div className="bg-white col-span-12 md:col-start-5 md:col-span-4 px-4 md:p-8 py-8 space-y-6 border-2 border-gray-200 rounded-lg h-full shadow-sm">
             <div className="w-full flex justify-center items-center mb-10">
               <h1 className="text-3xl font-bold">Beautiful Airports</h1>
             </div>
-            <div className=" flex items-start flex-col gap-4">
+            <div className="flex items-start flex-col gap-4">
               <label>
                 <span className="font-medium">Size:</span>
                 <select
@@ -81,7 +104,7 @@ export default function HomePage() {
                 {airport.description && <p>{airport.description}</p>}
                 <button
                   onClick={markVisited}
-                  className="mt-2 px-6   py-2 bg-green-500 text-white rounded"
+                  className="mt-2 px-6 py-2 bg-green-500 text-white rounded"
                 >
                   Mark as Visited
                 </button>
