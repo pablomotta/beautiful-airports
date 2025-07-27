@@ -9,22 +9,19 @@ export async function POST(req: Request) {
     try {
         const { name, email, username, password } = await req.json();
 
-        // 1. Validate input
-        if (!name || !email || !username || !password) {
+        // 1. Only require email, username and password
+        if (!email || !username || !password) {
             return NextResponse.json(
-                { error: "name, email, username and password are all required" },
+                { error: "email, username and password are all required" },
                 { status: 400 }
             );
         }
 
-        // 2. Check for existing user
+        // 2. Check for existing user by email OR username
         const conflict = await prisma.user.findFirst({
             where: {
-                OR: [
-                    { email },
-                    { username }
-                ]
-            }
+                OR: [{ email }, { username }],
+            },
         });
         if (conflict) {
             return NextResponse.json(
@@ -36,17 +33,17 @@ export async function POST(req: Request) {
         // 3. Hash password
         const hashed = await bcrypt.hash(password, 10);
 
-        // 4. Create user
+        // 4. Create user, put name or empty string if missing
         const user = await prisma.user.create({
             data: {
-                name,
+                name: name ?? "",
                 email,
                 username,
-                password: hashed
-            }
+                password: hashed,
+            },
         });
 
-        // 5. Return success
+        // 5. Return created user ID
         return NextResponse.json(
             { success: true, userId: user.id },
             { status: 201 }
