@@ -13,6 +13,13 @@ export default function HomePage() {
   const { data: session, status } = useSession();
   const [size, setSize] = useState<'Small' | 'Medium' | 'Large'>('Small');
 
+  const userId = (session?.user as any)?.id;
+
+  const { data: airport, mutate } = useSWR(
+    userId ? `/api/airport/random?size=${size}&userId=${userId}` : null,
+    fetcher
+  );
+
   // redirect if not signed in
   useEffect(() => {
     if (status === 'unauthenticated') {
@@ -30,12 +37,6 @@ export default function HomePage() {
   }
 
   // at this point status === 'authenticated' and session is non-null
-  const userId = (session?.user as any)?.id;
-
-  const { data: airport, mutate } = useSWR(
-    `/api/airport/random?size=${size}&userId=${userId}`,
-    fetcher
-  );
 
   const markVisited = async () => {
     await fetch('/api/airport/visit', {
