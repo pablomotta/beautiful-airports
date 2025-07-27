@@ -15,10 +15,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: LUQB → LUKK",
-      "City: Chișinău → Chisinau"
-    ],
+    "corrections": ["ICAO: LUQB → LUKK", "City: Chișinău → Chisinau"],
     "originalData": {
       "airportCode": "KIV",
       "icaoCode": "LUQB",
@@ -102,9 +99,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: WMKP → WMKI"
-    ],
+    "corrections": ["ICAO: WMKP → WMKI"],
     "originalData": {
       "airportCode": "IPH",
       "icaoCode": "WMKP",
@@ -135,9 +130,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: SZB → JHB"
-    ],
+    "corrections": ["IATA: SZB → JHB"],
     "originalData": {
       "airportCode": "SZB",
       "icaoCode": "WMKJ",
@@ -202,9 +195,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: LPG → LGK"
-    ],
+    "corrections": ["IATA: LPG → LGK"],
     "originalData": {
       "airportCode": "LPG",
       "icaoCode": "WMKL",
@@ -305,10 +296,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: WBGG → WBKK",
-      "City: Sabah → Kota Kinabalu"
-    ],
+    "corrections": ["ICAO: WBGG → WBKK", "City: Sabah → Kota Kinabalu"],
     "originalData": {
       "airportCode": "BKI",
       "icaoCode": "WBGG",
@@ -339,9 +327,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "City: Sarawak → Kuching"
-    ],
+    "corrections": ["City: Sarawak → Kuching"],
     "originalData": {
       "airportCode": "KCH",
       "icaoCode": "WBGG",
@@ -390,9 +376,7 @@
     "icaoSource": "known_mapping",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "City: Algiers → Algier"
-    ],
+    "corrections": ["City: Algiers → Algier"],
     "originalData": {
       "airportCode": "ALG",
       "icaoCode": "DAAG",
@@ -527,9 +511,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: DAAG → DABC"
-    ],
+    "corrections": ["ICAO: DAAG → DABC"],
     "originalData": {
       "airportCode": "CZL",
       "icaoCode": "DAAG",
@@ -664,9 +646,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "City: Bled → Ljubljana"
-    ],
+    "corrections": ["City: Bled → Ljubljana"],
     "originalData": {
       "airportCode": "LJU",
       "icaoCode": "LJLJ",
@@ -889,9 +869,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: SGPG → SYCJ"
-    ],
+    "corrections": ["ICAO: SGPG → SYCJ"],
     "originalData": {
       "airportCode": "GEO",
       "icaoCode": "SGPG",
@@ -1147,9 +1125,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: LFMD → LFRS"
-    ],
+    "corrections": ["ICAO: LFMD → LFRS"],
     "originalData": {
       "airportCode": "NTE",
       "icaoCode": "LFMD",
@@ -1264,9 +1240,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: LFKS → LFST"
-    ],
+    "corrections": ["ICAO: LFKS → LFST"],
     "originalData": {
       "airportCode": "SXB",
       "icaoCode": "LFKS",
@@ -1297,9 +1271,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: EKYS → EKYT"
-    ],
+    "corrections": ["ICAO: EKYS → EKYT"],
     "originalData": {
       "airportCode": "AAL",
       "icaoCode": "EKYS",
@@ -1347,9 +1319,7 @@
     "icaoSource": "known_mapping",
     "correctionStatus": "corrected",
     "matchType": "partialName",
-    "corrections": [
-      "Name: Copenhagen Airport → Copenhagen Kastrup Airport"
-    ],
+    "corrections": ["Name: Copenhagen Airport → Copenhagen Kastrup Airport"],
     "originalData": {
       "airportCode": "CPH",
       "icaoCode": "EKCH",
@@ -1380,9 +1350,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: EKRH → EKEB"
-    ],
+    "corrections": ["ICAO: EKRH → EKEB"],
     "originalData": {
       "airportCode": "EBJ",
       "icaoCode": "EKRH",
@@ -1431,9 +1399,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: ODS → ODE"
-    ],
+    "corrections": ["IATA: ODS → ODE"],
     "originalData": {
       "airportCode": "ODS",
       "icaoCode": "EKOD",
@@ -1518,10 +1484,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: UAEL → UAAA",
-      "City: Almaty → Alma-ata"
-    ],
+    "corrections": ["ICAO: UAEL → UAAA", "City: Almaty → Alma-ata"],
     "originalData": {
       "airportCode": "ALA",
       "icaoCode": "UAEL",
@@ -1605,10 +1568,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: PLQ → PWQ",
-      "ICAO: UACC → UASP"
-    ],
+    "corrections": ["IATA: PLQ → PWQ", "ICAO: UACC → UASP"],
     "originalData": {
       "airportCode": "PLQ",
       "icaoCode": "UACC",
@@ -1744,9 +1704,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: UCCN → UARR"
-    ],
+    "corrections": ["ICAO: UCCN → UARR"],
     "originalData": {
       "airportCode": "URA",
       "icaoCode": "UCCN",
@@ -1777,10 +1735,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: NVAN → NVVV",
-      "City: Efate → Port-vila"
-    ],
+    "corrections": ["ICAO: NVAN → NVVV", "City: Efate → Port-vila"],
     "originalData": {
       "airportCode": "VLI",
       "icaoCode": "NVAN",
@@ -1847,10 +1802,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: NVAN → NVVV",
-      "City: Luganville → Port-vila"
-    ],
+    "corrections": ["ICAO: NVAN → NVVV", "City: Luganville → Port-vila"],
     "originalData": {
       "airportCode": "VLI",
       "icaoCode": "NVAN",
@@ -1881,10 +1833,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: NVLI → NVVV",
-      "City: Port Vila → Port-vila"
-    ],
+    "corrections": ["ICAO: NVLI → NVVV", "City: Port Vila → Port-vila"],
     "originalData": {
       "airportCode": "VLI",
       "icaoCode": "NVLI",
@@ -2039,9 +1988,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "City: Kharkiv → Kharkov"
-    ],
+    "corrections": ["City: Kharkiv → Kharkov"],
     "originalData": {
       "airportCode": "HRK",
       "icaoCode": "UKHH",
@@ -2174,10 +2121,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: ZTW → ZTR",
-      "ICAO: UKMO → UKKV"
-    ],
+    "corrections": ["IATA: ZTW → ZTR", "ICAO: UKMO → UKKV"],
     "originalData": {
       "airportCode": "ZTW",
       "icaoCode": "UKMO",
@@ -2278,9 +2222,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: LOWW → LOWG"
-    ],
+    "corrections": ["ICAO: LOWW → LOWG"],
     "originalData": {
       "airportCode": "GRZ",
       "icaoCode": "LOWW",
@@ -2346,9 +2288,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "partialName",
-    "corrections": [
-      "Name: Linz-Hornstein Airport → Linz Hörsching Airport"
-    ],
+    "corrections": ["Name: Linz-Hornstein Airport → Linz Hörsching Airport"],
     "originalData": {
       "airportCode": "LNZ",
       "icaoCode": "LOWL",
@@ -2379,9 +2319,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "partialName",
-    "corrections": [
-      "Name: Salzburg Airport W. A. Mozart → Salzburg Airport"
-    ],
+    "corrections": ["Name: Salzburg Airport W. A. Mozart → Salzburg Airport"],
     "originalData": {
       "airportCode": "SZG",
       "icaoCode": "LOWS",
@@ -2551,9 +2489,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "City: Al Farwaniyah → Kuwait"
-    ],
+    "corrections": ["City: Al Farwaniyah → Kuwait"],
     "originalData": {
       "airportCode": "KWI",
       "icaoCode": "OKBK",
@@ -2584,9 +2520,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "City: Al Sha'ab → Kuwait"
-    ],
+    "corrections": ["City: Al Sha'ab → Kuwait"],
     "originalData": {
       "airportCode": "KWI",
       "icaoCode": "OKBK",
@@ -2617,10 +2551,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: OKBV → OKBK",
-      "City: Farwaniya → Kuwait"
-    ],
+    "corrections": ["ICAO: OKBV → OKBK", "City: Farwaniya → Kuwait"],
     "originalData": {
       "airportCode": "KWI",
       "icaoCode": "OKBV",
@@ -2685,9 +2616,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "City: Kuwait City → Kuwait"
-    ],
+    "corrections": ["City: Kuwait City → Kuwait"],
     "originalData": {
       "airportCode": "KWI",
       "icaoCode": "OKBK",
@@ -2718,9 +2647,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "City: Mubarak al-Kabir → Kuwait"
-    ],
+    "corrections": ["City: Mubarak al-Kabir → Kuwait"],
     "originalData": {
       "airportCode": "KWI",
       "icaoCode": "OKBK",
@@ -2751,10 +2678,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: FBW → FRW",
-      "ICAO: FBWT → FBFT"
-    ],
+    "corrections": ["IATA: FBW → FRW", "ICAO: FBWT → FBFT"],
     "originalData": {
       "airportCode": "FBW",
       "icaoCode": "FBWT",
@@ -2785,10 +2709,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: FBOT → FBSK",
-      "City: Gaborone → Gaberone"
-    ],
+    "corrections": ["ICAO: FBOT → FBSK", "City: Gaborone → Gaberone"],
     "originalData": {
       "airportCode": "GBE",
       "icaoCode": "FBOT",
@@ -2819,10 +2740,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: UBW → MUB",
-      "ICAO: FBWU → FBMN"
-    ],
+    "corrections": ["IATA: UBW → MUB", "ICAO: FBWU → FBMN"],
     "originalData": {
       "airportCode": "UBW",
       "icaoCode": "FBWU",
@@ -2942,10 +2860,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: EFNS → EKVG",
-      "City: Sørvágur → Vagar"
-    ],
+    "corrections": ["ICAO: EFNS → EKVG", "City: Sørvágur → Vagar"],
     "originalData": {
       "airportCode": "FAE",
       "icaoCode": "EFNS",
@@ -3098,10 +3013,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: OMAN → OMFJ",
-      "City: Fujairah → Fujeirah"
-    ],
+    "corrections": ["ICAO: OMAN → OMFJ", "City: Fujairah → Fujeirah"],
     "originalData": {
       "airportCode": "FJR",
       "icaoCode": "OMAN",
@@ -3132,9 +3044,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: OMAM → OOMS"
-    ],
+    "corrections": ["ICAO: OMAM → OOMS"],
     "originalData": {
       "airportCode": "MCT",
       "icaoCode": "OMAM",
@@ -3305,9 +3215,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: FKKN → FKKD"
-    ],
+    "corrections": ["ICAO: FKKN → FKKD"],
     "originalData": {
       "airportCode": "DLA",
       "icaoCode": "FKKN",
@@ -3338,10 +3246,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: GFU → GOU",
-      "ICAO: FKKN → FKKR"
-    ],
+    "corrections": ["IATA: GFU → GOU", "ICAO: FKKN → FKKR"],
     "originalData": {
       "airportCode": "GFU",
       "icaoCode": "FKKN",
@@ -3478,10 +3383,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: FEYS → FKYS",
-      "City: Yaoundé → Yaounde"
-    ],
+    "corrections": ["ICAO: FEYS → FKYS", "City: Yaoundé → Yaounde"],
     "originalData": {
       "airportCode": "NSI",
       "icaoCode": "FEYS",
@@ -3512,9 +3414,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: UEEW → UWKD"
-    ],
+    "corrections": ["ICAO: UEEW → UWKD"],
     "originalData": {
       "airportCode": "KZN",
       "icaoCode": "UEEW",
@@ -3665,10 +3565,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "IATA: ZIA → KUF",
-      "ICAO: UWSS → UWWW"
-    ],
+    "corrections": ["IATA: ZIA → KUF", "ICAO: UWSS → UWWW"],
     "originalData": {
       "airportCode": "ZIA",
       "icaoCode": "UWSS",
@@ -3733,9 +3630,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: UHPP → UHWW"
-    ],
+    "corrections": ["ICAO: UHPP → UHWW"],
     "originalData": {
       "airportCode": "VVO",
       "icaoCode": "UHPP",
@@ -3766,9 +3661,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: UEEW → USSS"
-    ],
+    "corrections": ["ICAO: UEEW → USSS"],
     "originalData": {
       "airportCode": "SVX",
       "icaoCode": "UEEW",
@@ -3799,9 +3692,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: MKJS → MKJP"
-    ],
+    "corrections": ["ICAO: MKJS → MKJP"],
     "originalData": {
       "airportCode": "KIN",
       "icaoCode": "MKJS",
@@ -3953,9 +3844,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: HAAB → HCMI"
-    ],
+    "corrections": ["ICAO: HAAB → HCMI"],
     "originalData": {
       "airportCode": "BBO",
       "icaoCode": "HAAB",
@@ -4092,10 +3981,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: OBK → OBC",
-      "ICAO: HAOB → HDOB"
-    ],
+    "corrections": ["IATA: OBK → OBC", "ICAO: HAOB → HDOB"],
     "originalData": {
       "airportCode": "OBK",
       "icaoCode": "HAOB",
@@ -4126,10 +4012,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: ELDW → EDL",
-      "ICAO: HKBO → HKEL"
-    ],
+    "corrections": ["IATA: ELDW → EDL", "ICAO: HKBO → HKEL"],
     "originalData": {
       "airportCode": "ELDW",
       "icaoCode": "HKBO",
@@ -4646,9 +4529,7 @@
     "icaoSource": "not_found",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: null → NTAA"
-    ],
+    "corrections": ["ICAO: null → NTAA"],
     "originalData": {
       "airportCode": "PPT",
       "icaoCode": null,
@@ -4714,10 +4595,7 @@
     "icaoSource": "not_found",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: null → NTAA",
-      "City: Tahiti → Papeete"
-    ],
+    "corrections": ["ICAO: null → NTAA", "City: Tahiti → Papeete"],
     "originalData": {
       "airportCode": "PPT",
       "icaoCode": null,
@@ -4835,10 +4713,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "IATA: MWE → MNU",
-      "ICAO: VYMY → VYMM"
-    ],
+    "corrections": ["IATA: MWE → MNU", "ICAO: VYMY → VYMM"],
     "originalData": {
       "airportCode": "MWE",
       "icaoCode": "VYMY",
@@ -4904,9 +4779,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "IATA: PWE → PRU"
-    ],
+    "corrections": ["IATA: PWE → PRU"],
     "originalData": {
       "airportCode": "PWE",
       "icaoCode": "VYPY",
@@ -4972,9 +4845,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: EGTA → LXGB"
-    ],
+    "corrections": ["ICAO: EGTA → LXGB"],
     "originalData": {
       "airportCode": "GIB",
       "icaoCode": "EGTA",
@@ -5039,9 +4910,7 @@
     "icaoSource": "known_mapping",
     "correctionStatus": "corrected",
     "matchType": "partialName",
-    "corrections": [
-      "Name: Changi Airport → Singapore Changi Airport"
-    ],
+    "corrections": ["Name: Changi Airport → Singapore Changi Airport"],
     "originalData": {
       "airportCode": "SIN",
       "icaoCode": "WSSS",
@@ -5089,9 +4958,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: LOWW → LKTB"
-    ],
+    "corrections": ["ICAO: LOWW → LKTB"],
     "originalData": {
       "airportCode": "BRQ",
       "icaoCode": "LOWW",
@@ -5155,10 +5022,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "IATA: KOŠ → KSC",
-      "City: Košice → Kosice"
-    ],
+    "corrections": ["IATA: KOŠ → KSC", "City: Košice → Kosice"],
     "originalData": {
       "airportCode": "KOŠ",
       "icaoCode": "LZKZ",
@@ -5343,9 +5207,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "City: Reykjavik → Keflavik"
-    ],
+    "corrections": ["City: Reykjavik → Keflavik"],
     "originalData": {
       "airportCode": "KEF",
       "icaoCode": "BIKF",
@@ -5411,10 +5273,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: BDB → GLU",
-      "ICAO: VQBP → VQGP"
-    ],
+    "corrections": ["IATA: BDB → GLU", "ICAO: VQBP → VQGP"],
     "originalData": {
       "airportCode": "BDB",
       "icaoCode": "VQBP",
@@ -5463,9 +5322,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "City: Paro → Thimphu"
-    ],
+    "corrections": ["City: Paro → Thimphu"],
     "originalData": {
       "airportCode": "PBH",
       "icaoCode": "VQPR",
@@ -5860,10 +5717,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: TUPP → TUPJ",
-      "City: Road Town (Tortola) → Tortola"
-    ],
+    "corrections": ["ICAO: TUPP → TUPJ", "City: Road Town (Tortola) → Tortola"],
     "originalData": {
       "airportCode": "EIS",
       "icaoCode": "TUPP",
@@ -5894,10 +5748,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: TUPP → TUPJ",
-      "City: Road Town (Tortola) → Tortola"
-    ],
+    "corrections": ["ICAO: TUPP → TUPJ", "City: Road Town (Tortola) → Tortola"],
     "originalData": {
       "airportCode": "EIS",
       "icaoCode": "TUPP",
@@ -5928,10 +5779,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: TUTP → TIST",
-      "City: Charlotte Amalie → St. Thomas"
-    ],
+    "corrections": ["ICAO: TUTP → TIST", "City: Charlotte Amalie → St. Thomas"],
     "originalData": {
       "airportCode": "STT",
       "icaoCode": "TUTP",
@@ -6013,10 +5861,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: GNF → FAA",
-      "ICAO: GUNF → GUFH"
-    ],
+    "corrections": ["IATA: GNF → FAA", "ICAO: GUNF → GUFH"],
     "originalData": {
       "airportCode": "GNF",
       "icaoCode": "GUNF",
@@ -6171,10 +6016,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: GNZ → NZE",
-      "City: N'Zérékoré → Nzerekore"
-    ],
+    "corrections": ["IATA: GNZ → NZE", "City: N'Zérékoré → Nzerekore"],
     "originalData": {
       "airportCode": "GNZ",
       "icaoCode": "GUNZ",
@@ -6205,9 +6047,7 @@
     "icaoSource": "known_mapping",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "City: Aberdeen → Hong Kong"
-    ],
+    "corrections": ["City: Aberdeen → Hong Kong"],
     "originalData": {
       "airportCode": "HKG",
       "icaoCode": "VHHH",
@@ -6238,9 +6078,7 @@
     "icaoSource": "known_mapping",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "City: Central → Hong Kong"
-    ],
+    "corrections": ["City: Central → Hong Kong"],
     "originalData": {
       "airportCode": "HKG",
       "icaoCode": "VHHH",
@@ -6271,9 +6109,7 @@
     "icaoSource": "known_mapping",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "City: Kowloon → Hong Kong"
-    ],
+    "corrections": ["City: Kowloon → Hong Kong"],
     "originalData": {
       "airportCode": "HKG",
       "icaoCode": "VHHH",
@@ -6304,9 +6140,7 @@
     "icaoSource": "known_mapping",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "City: Sha Tin → Hong Kong"
-    ],
+    "corrections": ["City: Sha Tin → Hong Kong"],
     "originalData": {
       "airportCode": "HKG",
       "icaoCode": "VHHH",
@@ -6337,9 +6171,7 @@
     "icaoSource": "known_mapping",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "City: Tai Po → Hong Kong"
-    ],
+    "corrections": ["City: Tai Po → Hong Kong"],
     "originalData": {
       "airportCode": "HKG",
       "icaoCode": "VHHH",
@@ -6370,9 +6202,7 @@
     "icaoSource": "known_mapping",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "City: Tsim Sha Tsui → Hong Kong"
-    ],
+    "corrections": ["City: Tsim Sha Tsui → Hong Kong"],
     "originalData": {
       "airportCode": "HKG",
       "icaoCode": "VHHH",
@@ -6403,9 +6233,7 @@
     "icaoSource": "known_mapping",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "City: Wan Chai → Hong Kong"
-    ],
+    "corrections": ["City: Wan Chai → Hong Kong"],
     "originalData": {
       "airportCode": "HKG",
       "icaoCode": "VHHH",
@@ -6436,9 +6264,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "City: Luqa → Malta"
-    ],
+    "corrections": ["City: Luqa → Malta"],
     "originalData": {
       "airportCode": "MLA",
       "icaoCode": "LMML",
@@ -6469,9 +6295,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "City: Mellieha → Malta"
-    ],
+    "corrections": ["City: Mellieha → Malta"],
     "originalData": {
       "airportCode": "MLA",
       "icaoCode": "LMML",
@@ -6502,9 +6326,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "City: Sliema → Malta"
-    ],
+    "corrections": ["City: Sliema → Malta"],
     "originalData": {
       "airportCode": "MLA",
       "icaoCode": "LMML",
@@ -6535,9 +6357,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "City: St. Julian's → Malta"
-    ],
+    "corrections": ["City: St. Julian's → Malta"],
     "originalData": {
       "airportCode": "MLA",
       "icaoCode": "LMML",
@@ -6568,9 +6388,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "City: Valletta → Malta"
-    ],
+    "corrections": ["City: Valletta → Malta"],
     "originalData": {
       "airportCode": "MLA",
       "icaoCode": "LMML",
@@ -6601,9 +6419,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "City: Luqa → Malta"
-    ],
+    "corrections": ["City: Luqa → Malta"],
     "originalData": {
       "airportCode": "MLA",
       "icaoCode": "LMML",
@@ -6669,10 +6485,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "IATA: GHZ → GZI",
-      "ICAO: OAGH → OAGN"
-    ],
+    "corrections": ["IATA: GHZ → GZI", "ICAO: OAGH → OAGN"],
     "originalData": {
       "airportCode": "GHZ",
       "icaoCode": "OAGH",
@@ -6703,10 +6516,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "IATA: OAI → HEA",
-      "ICAO: OOAI → OAHR"
-    ],
+    "corrections": ["IATA: OAI → HEA", "ICAO: OOAI → OAHR"],
     "originalData": {
       "airportCode": "OAI",
       "icaoCode": "OOAI",
@@ -6737,10 +6547,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "IATA: JAL → JAA",
-      "ICAO: OAJA → OAJL"
-    ],
+    "corrections": ["IATA: JAL → JAA", "ICAO: OAJA → OAJL"],
     "originalData": {
       "airportCode": "JAL",
       "icaoCode": "OAJA",
@@ -6788,10 +6595,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "IATA: KAB → KDH",
-      "ICAO: OAKI → OAKN"
-    ],
+    "corrections": ["IATA: KAB → KDH", "ICAO: OAKI → OAKN"],
     "originalData": {
       "airportCode": "KAB",
       "icaoCode": "OAKI",
@@ -6978,9 +6782,7 @@
     "icaoSource": "not_found",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: null → KMSY"
-    ],
+    "corrections": ["ICAO: null → KMSY"],
     "originalData": {
       "airportCode": "MSY",
       "icaoCode": null,
@@ -7011,9 +6813,7 @@
     "icaoSource": "known_mapping",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "City: New York City → New York"
-    ],
+    "corrections": ["City: New York City → New York"],
     "originalData": {
       "airportCode": "JFK",
       "icaoCode": "KJFK",
@@ -7094,9 +6894,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "City: Washington D.C → Washington"
-    ],
+    "corrections": ["City: Washington D.C → Washington"],
     "originalData": {
       "airportCode": "IAD",
       "icaoCode": "KIAD",
@@ -7197,10 +6995,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: JSGV → SMJP",
-      "City: Paramaribo → Zandery"
-    ],
+    "corrections": ["ICAO: JSGV → SMJP", "City: Paramaribo → Zandery"],
     "originalData": {
       "airportCode": "PBM",
       "icaoCode": "JSGV",
@@ -7267,9 +7062,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "City: St. Peter Port → Guernsey"
-    ],
+    "corrections": ["City: St. Peter Port → Guernsey"],
     "originalData": {
       "airportCode": "GCI",
       "icaoCode": "EGJB",
@@ -7300,10 +7093,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: TNCM → TNCC",
-      "City: Otrabanda → Willemstad"
-    ],
+    "corrections": ["ICAO: TNCM → TNCC", "City: Otrabanda → Willemstad"],
     "originalData": {
       "airportCode": "CUR",
       "icaoCode": "TNCM",
@@ -7334,10 +7124,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: TNCM → TNCC",
-      "City: Punda → Willemstad"
-    ],
+    "corrections": ["ICAO: TNCM → TNCC", "City: Punda → Willemstad"],
     "originalData": {
       "airportCode": "CUR",
       "icaoCode": "TNCM",
@@ -7368,10 +7155,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: TNCM → TNCC",
-      "City: Sint WillibROR → Willemstad"
-    ],
+    "corrections": ["ICAO: TNCM → TNCC", "City: Sint WillibROR → Willemstad"],
     "originalData": {
       "airportCode": "CUR",
       "icaoCode": "TNCM",
@@ -7419,10 +7203,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "IATA: AOK → GKA",
-      "ICAO: AYPY → AYGA"
-    ],
+    "corrections": ["IATA: AOK → GKA", "ICAO: AYPY → AYGA"],
     "originalData": {
       "airportCode": "AOK",
       "icaoCode": "AYPY",
@@ -7453,9 +7234,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: AGHI → AGGH"
-    ],
+    "corrections": ["ICAO: AGHI → AGGH"],
     "originalData": {
       "airportCode": "HIR",
       "icaoCode": "AGHI",
@@ -7556,10 +7335,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "IATA: MAF → MAG",
-      "ICAO: AYPY → AYMD"
-    ],
+    "corrections": ["IATA: MAF → MAG", "ICAO: AYPY → AYMD"],
     "originalData": {
       "airportCode": "MAF",
       "icaoCode": "AYPY",
@@ -7658,10 +7434,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: NVAN → NVVV",
-      "City: Port Vila → Port-vila"
-    ],
+    "corrections": ["ICAO: NVAN → NVVV", "City: Port Vila → Port-vila"],
     "originalData": {
       "airportCode": "VLI",
       "icaoCode": "NVAN",
@@ -7830,10 +7603,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: MLW → MAI",
-      "ICAO: FWEM → FWMG"
-    ],
+    "corrections": ["IATA: MLW → MAI", "ICAO: FWEM → FWMG"],
     "originalData": {
       "airportCode": "MLW",
       "icaoCode": "FWEM",
@@ -7864,10 +7634,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: MYZ → ZZU",
-      "ICAO: FWEM → FWUU"
-    ],
+    "corrections": ["IATA: MYZ → ZZU", "ICAO: FWEM → FWUU"],
     "originalData": {
       "airportCode": "MYZ",
       "icaoCode": "FWEM",
@@ -8143,10 +7910,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: FBK → BBM",
-      "ICAO: VDBB → VDBG"
-    ],
+    "corrections": ["IATA: FBK → BBM", "ICAO: VDBB → VDBG"],
     "originalData": {
       "airportCode": "FBK",
       "icaoCode": "VDBB",
@@ -8195,10 +7959,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: VDDP → VDPP",
-      "City: Phnom Penh → Phnom-penh"
-    ],
+    "corrections": ["ICAO: VDDP → VDPP", "City: Phnom Penh → Phnom-penh"],
     "originalData": {
       "airportCode": "PNH",
       "icaoCode": "VDDP",
@@ -8229,9 +7990,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "City: Siem Reap → Siem-reap"
-    ],
+    "corrections": ["City: Siem Reap → Siem-reap"],
     "originalData": {
       "airportCode": "REP",
       "icaoCode": "VDSR",
@@ -8262,9 +8021,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: VOVK → VDSV"
-    ],
+    "corrections": ["ICAO: VOVK → VDSV"],
     "originalData": {
       "airportCode": "KOS",
       "icaoCode": "VOVK",
@@ -8295,10 +8052,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: REN → TNX",
-      "ICAO: VOST → VDST"
-    ],
+    "corrections": ["IATA: REN → TNX", "ICAO: VOST → VDST"],
     "originalData": {
       "airportCode": "REN",
       "icaoCode": "VOST",
@@ -8382,9 +8136,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: CUF → CUE"
-    ],
+    "corrections": ["IATA: CUF → CUE"],
     "originalData": {
       "airportCode": "CUF",
       "icaoCode": "SECU",
@@ -8484,9 +8236,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: SEQP → SEQM"
-    ],
+    "corrections": ["ICAO: SEQP → SEQM"],
     "originalData": {
       "airportCode": "UIO",
       "icaoCode": "SEQP",
@@ -8726,9 +8476,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: CYTZ → CYYT"
-    ],
+    "corrections": ["ICAO: CYTZ → CYYT"],
     "originalData": {
       "airportCode": "YYT",
       "icaoCode": "CYTZ",
@@ -8776,9 +8524,7 @@
     "icaoSource": "known_mapping",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "City: Victoria → Vancouver"
-    ],
+    "corrections": ["City: Victoria → Vancouver"],
     "originalData": {
       "airportCode": "YVR",
       "icaoCode": "CYVR",
@@ -8809,9 +8555,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: ENCB → ENBR"
-    ],
+    "corrections": ["ICAO: ENCB → ENBR"],
     "originalData": {
       "airportCode": "BGO",
       "icaoCode": "ENCB",
@@ -8981,9 +8725,7 @@
     "icaoSource": "known_mapping",
     "correctionStatus": "corrected",
     "matchType": "partialName",
-    "corrections": [
-      "Name: Oslo Airport, Gardermoen → Oslo Lufthavn"
-    ],
+    "corrections": ["Name: Oslo Airport, Gardermoen → Oslo Lufthavn"],
     "originalData": {
       "airportCode": "OSL",
       "icaoCode": "ENGM",
@@ -9014,9 +8756,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: ENCN → ENZV"
-    ],
+    "corrections": ["ICAO: ENCN → ENZV"],
     "originalData": {
       "airportCode": "SVG",
       "icaoCode": "ENCN",
@@ -9396,9 +9136,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "City: Cole Bay → Philipsburg"
-    ],
+    "corrections": ["City: Cole Bay → Philipsburg"],
     "originalData": {
       "airportCode": "SXM",
       "icaoCode": "TNCM",
@@ -9446,9 +9184,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "City: Simpson Bay → Philipsburg"
-    ],
+    "corrections": ["City: Simpson Bay → Philipsburg"],
     "originalData": {
       "airportCode": "SXM",
       "icaoCode": "TNCM",
@@ -9479,9 +9215,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "City: Maho Reef → Philipsburg"
-    ],
+    "corrections": ["City: Maho Reef → Philipsburg"],
     "originalData": {
       "airportCode": "SXM",
       "icaoCode": "TNCM",
@@ -9512,9 +9246,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "City: Marigot → Philipsburg"
-    ],
+    "corrections": ["City: Marigot → Philipsburg"],
     "originalData": {
       "airportCode": "SXM",
       "icaoCode": "TNCM",
@@ -9562,9 +9294,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "City: Simpson Bay → Philipsburg"
-    ],
+    "corrections": ["City: Simpson Bay → Philipsburg"],
     "originalData": {
       "airportCode": "SXM",
       "icaoCode": "TNCM",
@@ -9629,10 +9359,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: GOH → GAQ",
-      "ICAO: GOAO → GAGO"
-    ],
+    "corrections": ["IATA: GOH → GAQ", "ICAO: GOAO → GAGO"],
     "originalData": {
       "airportCode": "GOH",
       "icaoCode": "GOAO",
@@ -9663,10 +9390,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: BAH → MZI",
-      "ICAO: GOOM → GAMB"
-    ],
+    "corrections": ["IATA: BAH → MZI", "ICAO: GOOM → GAMB"],
     "originalData": {
       "airportCode": "BAH",
       "icaoCode": "GOOM",
@@ -9715,10 +9439,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: KSX → KSS",
-      "ICAO: GABX → GASK"
-    ],
+    "corrections": ["IATA: KSX → KSS", "ICAO: GABX → GASK"],
     "originalData": {
       "airportCode": "KSX",
       "icaoCode": "GABX",
@@ -9785,10 +9506,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: NSPI → NSFA",
-      "City: Apia → Faleolo"
-    ],
+    "corrections": ["ICAO: NSPI → NSFA", "City: Apia → Faleolo"],
     "originalData": {
       "airportCode": "APW",
       "icaoCode": "NSPI",
@@ -9889,9 +9607,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "City: Nadi → Nandi"
-    ],
+    "corrections": ["City: Nadi → Nandi"],
     "originalData": {
       "airportCode": "NAN",
       "icaoCode": "NFFN",
@@ -9957,9 +9673,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "City: Pacific Harbour → Nandi"
-    ],
+    "corrections": ["City: Pacific Harbour → Nandi"],
     "originalData": {
       "airportCode": "NAN",
       "icaoCode": "NFFN",
@@ -9990,10 +9704,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: SUV → SVU",
-      "ICAO: NFSU → NFNS"
-    ],
+    "corrections": ["IATA: SUV → SVU", "ICAO: NFSU → NFNS"],
     "originalData": {
       "airportCode": "SUV",
       "icaoCode": "NFSU",
@@ -10024,9 +9735,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "City: Suva → Nandi"
-    ],
+    "corrections": ["City: Suva → Nandi"],
     "originalData": {
       "airportCode": "NAN",
       "icaoCode": "NFFN",
@@ -10057,9 +9766,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: SKBO → SKBQ"
-    ],
+    "corrections": ["ICAO: SKBO → SKBQ"],
     "originalData": {
       "airportCode": "BAQ",
       "icaoCode": "SKBO",
@@ -10090,9 +9797,7 @@
     "icaoSource": "known_mapping",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "City: Bogotá → Bogota"
-    ],
+    "corrections": ["City: Bogotá → Bogota"],
     "originalData": {
       "airportCode": "BOG",
       "icaoCode": "SKBO",
@@ -10417,10 +10122,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: MUCY → MUCM",
-      "City: Camagüey → Camaguey"
-    ],
+    "corrections": ["ICAO: MUCY → MUCM", "City: Camagüey → Camaguey"],
     "originalData": {
       "airportCode": "CMW",
       "icaoCode": "MUCY",
@@ -10538,10 +10240,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: CUHA → MUHG",
-      "City: Holguín → Holguin"
-    ],
+    "corrections": ["ICAO: CUHA → MUHG", "City: Holguín → Holguin"],
     "originalData": {
       "airportCode": "HOG",
       "icaoCode": "CUHA",
@@ -10763,9 +10462,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: VTCN → VTCC"
-    ],
+    "corrections": ["ICAO: VTCN → VTCC"],
     "originalData": {
       "airportCode": "CNX",
       "icaoCode": "VTCN",
@@ -10796,10 +10493,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: VTSP → VTPH",
-      "City: Hua Hin → Prachuap Khiri Khan"
-    ],
+    "corrections": ["ICAO: VTSP → VTPH", "City: Hua Hin → Prachuap Khiri Khan"],
     "originalData": {
       "airportCode": "HHQ",
       "icaoCode": "VTSP",
@@ -10901,9 +10595,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: VTSP → VTSG"
-    ],
+    "corrections": ["ICAO: VTSP → VTSG"],
     "originalData": {
       "airportCode": "KBV",
       "icaoCode": "VTSP",
@@ -10934,9 +10626,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: VTSP → VTBU"
-    ],
+    "corrections": ["ICAO: VTSP → VTBU"],
     "originalData": {
       "airportCode": "UTP",
       "icaoCode": "VTSP",
@@ -10984,10 +10674,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: UTH → THS",
-      "ICAO: VTTS → VTPO"
-    ],
+    "corrections": ["IATA: UTH → THS", "ICAO: VTTS → VTPO"],
     "originalData": {
       "airportCode": "UTH",
       "icaoCode": "VTTS",
@@ -11018,10 +10705,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: ARV → AVK",
-      "ICAO: ZMVK → ZMAH"
-    ],
+    "corrections": ["IATA: ARV → AVK", "ICAO: ZMVK → ZMAH"],
     "originalData": {
       "airportCode": "ARV",
       "icaoCode": "ZMVK",
@@ -11124,10 +10808,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: ZMKK → ZMUB",
-      "City: Ulaanbaatar → Ulan Bator"
-    ],
+    "corrections": ["ICAO: ZMKK → ZMUB", "City: Ulaanbaatar → Ulan Bator"],
     "originalData": {
       "airportCode": "ULN",
       "icaoCode": "ZMKK",
@@ -11193,9 +10874,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "City: La Réunion → St.-denis"
-    ],
+    "corrections": ["City: La Réunion → St.-denis"],
     "originalData": {
       "airportCode": "RUN",
       "icaoCode": "FMEE",
@@ -11226,9 +10905,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "City: Le Port → St.-denis"
-    ],
+    "corrections": ["City: Le Port → St.-denis"],
     "originalData": {
       "airportCode": "RUN",
       "icaoCode": "FMEE",
@@ -11293,9 +10970,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "City: Saint-Denis → St.-denis"
-    ],
+    "corrections": ["City: Saint-Denis → St.-denis"],
     "originalData": {
       "airportCode": "RUN",
       "icaoCode": "FMEE",
@@ -11326,9 +11001,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "City: Saint-Paul → St.-denis"
-    ],
+    "corrections": ["City: Saint-Paul → St.-denis"],
     "originalData": {
       "airportCode": "RUN",
       "icaoCode": "FMEE",
@@ -11359,10 +11032,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "IATA: RUNP → RUN",
-      "City: Saint-Pierre → St.-denis"
-    ],
+    "corrections": ["IATA: RUNP → RUN", "City: Saint-Pierre → St.-denis"],
     "originalData": {
       "airportCode": "RUNP",
       "icaoCode": "FMEE",
@@ -11393,10 +11063,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: BFS → OXB",
-      "City: Bafata → Bissau"
-    ],
+    "corrections": ["IATA: BFS → OXB", "City: Bafata → Bissau"],
     "originalData": {
       "airportCode": "BFS",
       "icaoCode": "GGOV",
@@ -11427,10 +11094,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: OSG → OXB",
-      "ICAO: GOBB → GGOV"
-    ],
+    "corrections": ["IATA: OSG → OXB", "ICAO: GOBB → GGOV"],
     "originalData": {
       "airportCode": "OSG",
       "icaoCode": "GOBB",
@@ -11581,10 +11245,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "IATA: ARGI → IGR",
-      "City: Puerto Iguazu → Iguazu Falls"
-    ],
+    "corrections": ["IATA: ARGI → IGR", "City: Puerto Iguazu → Iguazu Falls"],
     "originalData": {
       "airportCode": "ARGI",
       "icaoCode": "SARI",
@@ -11752,10 +11413,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "IATA: EYC → USH",
-      "ICAO: FWEA → SAWH"
-    ],
+    "corrections": ["IATA: EYC → USH", "ICAO: FWEA → SAWH"],
     "originalData": {
       "airportCode": "EYC",
       "icaoCode": "FWEA",
@@ -11870,10 +11528,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: MMMN → MMSD",
-      "City: Los Cabos → San Jose Del Cabo"
-    ],
+    "corrections": ["ICAO: MMMN → MMSD", "City: Los Cabos → San Jose Del Cabo"],
     "originalData": {
       "airportCode": "SJD",
       "icaoCode": "MMMN",
@@ -12005,9 +11660,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: MMLP → MMPR"
-    ],
+    "corrections": ["ICAO: MMLP → MMPR"],
     "originalData": {
       "airportCode": "PVR",
       "icaoCode": "MMLP",
@@ -12177,10 +11830,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: MBY → MYP",
-      "ICAO: UMTN → UTAM"
-    ],
+    "corrections": ["IATA: MBY → MYP", "ICAO: UMTN → UTAM"],
     "originalData": {
       "airportCode": "MBY",
       "icaoCode": "UMTN",
@@ -12315,10 +11965,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "IATA: HDAS → AXU",
-      "ICAO: HAXU → HAAX"
-    ],
+    "corrections": ["IATA: HDAS → AXU", "ICAO: HAXU → HAAX"],
     "originalData": {
       "airportCode": "HDAS",
       "icaoCode": "HAXU",
@@ -12506,9 +12153,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "iata",
-    "corrections": [
-      "Name: Jimma Aba Jifar Airport → Jimma Airport"
-    ],
+    "corrections": ["Name: Jimma Aba Jifar Airport → Jimma Airport"],
     "originalData": {
       "airportCode": "JIM",
       "icaoCode": "HAJM",
@@ -12609,10 +12254,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "IATA: GAB → BMM",
-      "ICAO: FOOT → FOOB"
-    ],
+    "corrections": ["IATA: GAB → BMM", "ICAO: FOOT → FOOB"],
     "originalData": {
       "airportCode": "GAB",
       "icaoCode": "FOOT",
@@ -12679,10 +12321,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "IATA: MOU → MKU",
-      "ICAO: FOGG → FOOK"
-    ],
+    "corrections": ["IATA: MOU → MKU", "ICAO: FOGG → FOOK"],
     "originalData": {
       "airportCode": "MOU",
       "icaoCode": "FOGG",
@@ -12975,9 +12614,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "IATA: SUW → SWU"
-    ],
+    "corrections": ["IATA: SUW → SWU"],
     "originalData": {
       "airportCode": "SUW",
       "icaoCode": "RKSW",
@@ -13008,9 +12645,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: RKPC → RKPU"
-    ],
+    "corrections": ["ICAO: RKPC → RKPU"],
     "originalData": {
       "airportCode": "USN",
       "icaoCode": "RKPC",
@@ -13217,9 +12852,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: DGKK → DGSI"
-    ],
+    "corrections": ["ICAO: DGKK → DGSI"],
     "originalData": {
       "airportCode": "KMS",
       "icaoCode": "DGKK",
@@ -13250,9 +12883,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "City: Osu → Accra"
-    ],
+    "corrections": ["City: Osu → Accra"],
     "originalData": {
       "airportCode": "ACC",
       "icaoCode": "DGAA",
@@ -13283,10 +12914,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: SUN → NYI",
-      "ICAO: DGSS → DGSN"
-    ],
+    "corrections": ["IATA: SUN → NYI", "ICAO: DGSS → DGSN"],
     "originalData": {
       "airportCode": "SUN",
       "icaoCode": "DGSS",
@@ -13317,9 +12945,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: DGAA → DGTK"
-    ],
+    "corrections": ["ICAO: DGAA → DGTK"],
     "originalData": {
       "airportCode": "TKD",
       "icaoCode": "DGAA",
@@ -13350,9 +12976,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: DGTA → DGLE"
-    ],
+    "corrections": ["ICAO: DGTA → DGLE"],
     "originalData": {
       "airportCode": "TML",
       "icaoCode": "DGTA",
@@ -13524,9 +13148,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: FLLS → FLLI"
-    ],
+    "corrections": ["ICAO: FLLS → FLLI"],
     "originalData": {
       "airportCode": "LVI",
       "icaoCode": "FLLS",
@@ -13748,9 +13370,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: NZQL → NZDN"
-    ],
+    "corrections": ["ICAO: NZQL → NZDN"],
     "originalData": {
       "airportCode": "DUD",
       "icaoCode": "NZQL",
@@ -13868,9 +13488,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "City: Queenstown → Queenstown International"
-    ],
+    "corrections": ["City: Queenstown → Queenstown International"],
     "originalData": {
       "airportCode": "ZQN",
       "icaoCode": "NZQN",
@@ -13935,9 +13553,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: NZTN → NZAP"
-    ],
+    "corrections": ["ICAO: NZTN → NZAP"],
     "originalData": {
       "airportCode": "TUO",
       "icaoCode": "NZTN",
@@ -13999,10 +13615,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "IATA: LNX → LXG",
-      "ICAO: VLNX → VLLN"
-    ],
+    "corrections": ["IATA: LNX → LXG", "ICAO: VLNX → VLLN"],
     "originalData": {
       "airportCode": "LNX",
       "icaoCode": "VLNX",
@@ -14101,10 +13714,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "IATA: VKC → ZVK",
-      "ICAO: VTEQ → VLSK"
-    ],
+    "corrections": ["IATA: VKC → ZVK", "ICAO: VTEQ → VLSK"],
     "originalData": {
       "airportCode": "VKC",
       "icaoCode": "VTEQ",
@@ -14188,9 +13798,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: VTVN → VLVT"
-    ],
+    "corrections": ["ICAO: VTVN → VLVT"],
     "originalData": {
       "airportCode": "VTE",
       "icaoCode": "VTVN",
@@ -14291,10 +13899,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: BUG → GID",
-      "ICAO: UBUG → HBBE"
-    ],
+    "corrections": ["IATA: BUG → GID", "ICAO: UBUG → HBBE"],
     "originalData": {
       "airportCode": "BUG",
       "icaoCode": "UBUG",
@@ -14395,9 +14000,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "IATA: BPQ → BHV"
-    ],
+    "corrections": ["IATA: BPQ → BHV"],
     "originalData": {
       "airportCode": "BPQ",
       "icaoCode": "OPBW",
@@ -14617,9 +14220,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: OPBW → OPMT"
-    ],
+    "corrections": ["ICAO: OPBW → OPMT"],
     "originalData": {
       "airportCode": "MUX",
       "icaoCode": "OPBW",
@@ -14685,10 +14286,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "IATA: TUT → UET",
-      "ICAO: OPPQ → OPQT"
-    ],
+    "corrections": ["IATA: TUT → UET", "ICAO: OPPQ → OPQT"],
     "originalData": {
       "airportCode": "TUT",
       "icaoCode": "OPPQ",
@@ -14754,10 +14352,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: KYU → LWN",
-      "ICAO: ULGG → UDSG"
-    ],
+    "corrections": ["IATA: KYU → LWN", "ICAO: ULGG → UDSG"],
     "originalData": {
       "airportCode": "KYU",
       "icaoCode": "ULGG",
@@ -14823,9 +14418,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: UMMS → UDYZ"
-    ],
+    "corrections": ["ICAO: UMMS → UDYZ"],
     "originalData": {
       "airportCode": "EVN",
       "icaoCode": "UMMS",
@@ -14856,9 +14449,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: LOWW → LKTB"
-    ],
+    "corrections": ["ICAO: LOWW → LKTB"],
     "originalData": {
       "airportCode": "BRQ",
       "icaoCode": "LOWW",
@@ -14976,9 +14567,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: LOUP → LKPD"
-    ],
+    "corrections": ["ICAO: LOUP → LKPD"],
     "originalData": {
       "airportCode": "PED",
       "icaoCode": "LOUP",
@@ -15127,10 +14716,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: TMSP → FPST",
-      "City: São Tomé → Sao Tome"
-    ],
+    "corrections": ["ICAO: TMSP → FPST", "City: São Tomé → Sao Tome"],
     "originalData": {
       "airportCode": "TMS",
       "icaoCode": "TMSP",
@@ -15282,9 +14868,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "IATA: GBDA → FPO"
-    ],
+    "corrections": ["IATA: GBDA → FPO"],
     "originalData": {
       "airportCode": "GBDA",
       "icaoCode": "MYGF",
@@ -15403,10 +14987,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: KNJ → JOE",
-      "ICAO: EFJU → EFJO"
-    ],
+    "corrections": ["IATA: KNJ → JOE", "ICAO: EFJU → EFJO"],
     "originalData": {
       "airportCode": "KNJ",
       "icaoCode": "EFJU",
@@ -15508,9 +15089,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: EFRO → EFOU"
-    ],
+    "corrections": ["ICAO: EFRO → EFOU"],
     "originalData": {
       "airportCode": "OUL",
       "icaoCode": "EFRO",
@@ -15541,9 +15120,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: TRR → TMP"
-    ],
+    "corrections": ["IATA: TRR → TMP"],
     "originalData": {
       "airportCode": "TRR",
       "icaoCode": "EFTP",
@@ -15574,9 +15151,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: EFTP → EFTU"
-    ],
+    "corrections": ["ICAO: EFTP → EFTU"],
     "originalData": {
       "airportCode": "TKU",
       "icaoCode": "EFTP",
@@ -15624,9 +15199,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "City: Antigua → Guatemala City"
-    ],
+    "corrections": ["City: Antigua → Guatemala City"],
     "originalData": {
       "airportCode": "GUA",
       "icaoCode": "MGGT",
@@ -15657,9 +15230,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: MGFR → MGTK"
-    ],
+    "corrections": ["ICAO: MGFR → MGTK"],
     "originalData": {
       "airportCode": "FRS",
       "icaoCode": "MGFR",
@@ -15707,9 +15278,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "City: Mixco → Guatemala City"
-    ],
+    "corrections": ["City: Mixco → Guatemala City"],
     "originalData": {
       "airportCode": "GUA",
       "icaoCode": "MGGT",
@@ -15794,9 +15363,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: SGQ → GUA"
-    ],
+    "corrections": ["IATA: SGQ → GUA"],
     "originalData": {
       "airportCode": "SGQ",
       "icaoCode": "MGGT",
@@ -15863,9 +15430,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "City: Villa Hermosa → Guatemala City"
-    ],
+    "corrections": ["City: Villa Hermosa → Guatemala City"],
     "originalData": {
       "airportCode": "GUA",
       "icaoCode": "MGGT",
@@ -15931,9 +15496,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: FNAE → GFLL"
-    ],
+    "corrections": ["ICAO: FNAE → GFLL"],
     "originalData": {
       "airportCode": "FNA",
       "icaoCode": "FNAE",
@@ -16085,10 +15648,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: TFS → FUN",
-      "ICAO: TBTU → NGFU"
-    ],
+    "corrections": ["IATA: TFS → FUN", "ICAO: TBTU → NGFU"],
     "originalData": {
       "airportCode": "TFS",
       "icaoCode": "TBTU",
@@ -16207,9 +15767,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: HMCM → HHMS"
-    ],
+    "corrections": ["ICAO: HMCM → HHMS"],
     "originalData": {
       "airportCode": "MSW",
       "icaoCode": "HMCM",
@@ -16240,9 +15798,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "City: Grouville → Jersey"
-    ],
+    "corrections": ["City: Grouville → Jersey"],
     "originalData": {
       "airportCode": "JER",
       "icaoCode": "EGJJ",
@@ -16273,10 +15829,7 @@
     "icaoSource": "not_found",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: null → KEWR",
-      "City: Jersey City → Newark"
-    ],
+    "corrections": ["ICAO: null → KEWR", "City: Jersey City → Newark"],
     "originalData": {
       "airportCode": "EWR",
       "icaoCode": null,
@@ -16307,9 +15860,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "City: St. Helier → Jersey"
-    ],
+    "corrections": ["City: St. Helier → Jersey"],
     "originalData": {
       "airportCode": "JER",
       "icaoCode": "EGJJ",
@@ -16340,9 +15891,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "City: St. Ouen → Jersey"
-    ],
+    "corrections": ["City: St. Ouen → Jersey"],
     "originalData": {
       "airportCode": "JER",
       "icaoCode": "EGJJ",
@@ -16373,9 +15922,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "City: St. Saviour → Jersey"
-    ],
+    "corrections": ["City: St. Saviour → Jersey"],
     "originalData": {
       "airportCode": "JER",
       "icaoCode": "EGJJ",
@@ -16510,9 +16057,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: MHOG → MHLM"
-    ],
+    "corrections": ["ICAO: MHOG → MHLM"],
     "originalData": {
       "airportCode": "SAP",
       "icaoCode": "MHOG",
@@ -16611,10 +16156,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: UTA → UII",
-      "ICAO: MUGU → MHUT"
-    ],
+    "corrections": ["IATA: UTA → UII", "ICAO: MUGU → MHUT"],
     "originalData": {
       "airportCode": "UTA",
       "icaoCode": "MUGU",
@@ -16872,10 +16414,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "IATA: GFUL → JAV",
-      "ICAO: BGFF → BGJN"
-    ],
+    "corrections": ["IATA: GFUL → JAV", "ICAO: BGFF → BGJN"],
     "originalData": {
       "airportCode": "GFUL",
       "icaoCode": "BGFF",
@@ -16906,9 +16445,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "City: Kangerlussuaq → Sondrestrom"
-    ],
+    "corrections": ["City: Kangerlussuaq → Sondrestrom"],
     "originalData": {
       "airportCode": "SFJ",
       "icaoCode": "BGSF",
@@ -17635,9 +17172,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: VGBB → VGBR"
-    ],
+    "corrections": ["ICAO: VGBB → VGBR"],
     "originalData": {
       "airportCode": "BZL",
       "icaoCode": "VGBB",
@@ -17668,10 +17203,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "IATA: CGH → CGP",
-      "ICAO: VGCP → VGEG"
-    ],
+    "corrections": ["IATA: CGH → CGP", "ICAO: VGCP → VGEG"],
     "originalData": {
       "airportCode": "CGH",
       "icaoCode": "VGCP",
@@ -17947,9 +17479,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: UAXX → UAFM"
-    ],
+    "corrections": ["ICAO: UAXX → UAFM"],
     "originalData": {
       "airportCode": "FRU",
       "icaoCode": "UAXX",
@@ -17980,9 +17510,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: UAXX → UAFM"
-    ],
+    "corrections": ["ICAO: UAXX → UAFM"],
     "originalData": {
       "airportCode": "FRU",
       "icaoCode": "UAXX",
@@ -18048,9 +17576,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: UAXX → UAFM"
-    ],
+    "corrections": ["ICAO: UAXX → UAFM"],
     "originalData": {
       "airportCode": "FRU",
       "icaoCode": "UAXX",
@@ -18099,10 +17625,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "IATA: OSH → OSS",
-      "ICAO: UFOA → UAFO"
-    ],
+    "corrections": ["IATA: OSH → OSS", "ICAO: UFOA → UAFO"],
     "originalData": {
       "airportCode": "OSH",
       "icaoCode": "UFOA",
@@ -18133,9 +17656,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: UAXX → UAFM"
-    ],
+    "corrections": ["ICAO: UAXX → UAFM"],
     "originalData": {
       "airportCode": "FRU",
       "icaoCode": "UAXX",
@@ -18234,9 +17755,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: DNMM → DNAA"
-    ],
+    "corrections": ["ICAO: DNMM → DNAA"],
     "originalData": {
       "airportCode": "ABV",
       "icaoCode": "DNMM",
@@ -18302,10 +17821,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "IATA: CAL → CBQ",
-      "ICAO: DNMM → DNCA"
-    ],
+    "corrections": ["IATA: CAL → CBQ", "ICAO: DNMM → DNCA"],
     "originalData": {
       "airportCode": "CAL",
       "icaoCode": "DNMM",
@@ -18336,9 +17852,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "IATA: QUA → ENU"
-    ],
+    "corrections": ["IATA: QUA → ENU"],
     "originalData": {
       "airportCode": "QUA",
       "icaoCode": "DNEN",
@@ -18369,9 +17883,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: DNRR → DNIL"
-    ],
+    "corrections": ["ICAO: DNRR → DNIL"],
     "originalData": {
       "airportCode": "ILR",
       "icaoCode": "DNRR",
@@ -18465,9 +17977,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: DNLM → DNMM"
-    ],
+    "corrections": ["ICAO: DNLM → DNMM"],
     "originalData": {
       "airportCode": "LOS",
       "icaoCode": "DNLM",
@@ -18666,9 +18176,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "iata",
-    "corrections": [
-      "Name: Malaga Costa del Sol Airport → Málaga Airport"
-    ],
+    "corrections": ["Name: Malaga Costa del Sol Airport → Málaga Airport"],
     "originalData": {
       "airportCode": "AGP",
       "icaoCode": "LEMG",
@@ -18699,9 +18207,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "City: Seville → Sevilla"
-    ],
+    "corrections": ["City: Seville → Sevilla"],
     "originalData": {
       "airportCode": "SVQ",
       "icaoCode": "LEZL",
@@ -18783,10 +18289,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: TBPV → TUPJ",
-      "City: BVI → Tortola"
-    ],
+    "corrections": ["ICAO: TBPV → TUPJ", "City: BVI → Tortola"],
     "originalData": {
       "airportCode": "EIS",
       "icaoCode": "TBPV",
@@ -18817,10 +18320,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: TUTP → TIST",
-      "City: Charlotte Amalie → St. Thomas"
-    ],
+    "corrections": ["ICAO: TUTP → TIST", "City: Charlotte Amalie → St. Thomas"],
     "originalData": {
       "airportCode": "STT",
       "icaoCode": "TUTP",
@@ -18957,9 +18457,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "City: PR → San Juan"
-    ],
+    "corrections": ["City: PR → San Juan"],
     "originalData": {
       "airportCode": "SJU",
       "icaoCode": "TJSJ",
@@ -18990,10 +18488,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: TUPP → TUPJ",
-      "City: Road Town → Tortola"
-    ],
+    "corrections": ["ICAO: TUPP → TUPJ", "City: Road Town → Tortola"],
     "originalData": {
       "airportCode": "EIS",
       "icaoCode": "TUPP",
@@ -19024,9 +18519,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "City: STT → San Juan"
-    ],
+    "corrections": ["City: STT → San Juan"],
     "originalData": {
       "airportCode": "SJU",
       "icaoCode": "TJSJ",
@@ -19074,10 +18567,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: TUTP → TIST",
-      "City: Charlotte Amalie → St. Thomas"
-    ],
+    "corrections": ["ICAO: TUTP → TIST", "City: Charlotte Amalie → St. Thomas"],
     "originalData": {
       "airportCode": "STT",
       "icaoCode": "TUTP",
@@ -19228,9 +18718,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "City: Al Khor → Doha"
-    ],
+    "corrections": ["City: Al Khor → Doha"],
     "originalData": {
       "airportCode": "DOH",
       "icaoCode": "OTHH",
@@ -19261,9 +18749,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "City: Al Khuwayr → Doha"
-    ],
+    "corrections": ["City: Al Khuwayr → Doha"],
     "originalData": {
       "airportCode": "DOH",
       "icaoCode": "OTHH",
@@ -19294,9 +18780,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "City: Al Rayyan → Doha"
-    ],
+    "corrections": ["City: Al Rayyan → Doha"],
     "originalData": {
       "airportCode": "DOH",
       "icaoCode": "OTHH",
@@ -19379,9 +18863,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "City: Umm Salal → Doha"
-    ],
+    "corrections": ["City: Umm Salal → Doha"],
     "originalData": {
       "airportCode": "DOH",
       "icaoCode": "OTHH",
@@ -19640,9 +19122,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: SVZL → SVVA"
-    ],
+    "corrections": ["ICAO: SVZL → SVVA"],
     "originalData": {
       "airportCode": "VLN",
       "icaoCode": "SVZL",
@@ -20002,10 +19482,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: TNCM → TNCC",
-      "City: Curacao → Willemstad"
-    ],
+    "corrections": ["ICAO: TNCM → TNCC", "City: Curacao → Willemstad"],
     "originalData": {
       "airportCode": "CUR",
       "icaoCode": "TNCM",
@@ -20138,9 +19615,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "City: A-Ma Temple → Macau"
-    ],
+    "corrections": ["City: A-Ma Temple → Macau"],
     "originalData": {
       "airportCode": "MFM",
       "icaoCode": "VMMC",
@@ -20171,10 +19646,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "IATA: TMX → MFM",
-      "City: Cotai → Macau"
-    ],
+    "corrections": ["IATA: TMX → MFM", "City: Cotai → Macau"],
     "originalData": {
       "airportCode": "TMX",
       "icaoCode": "VMMC",
@@ -20222,9 +19694,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "City: Monte Fort → Macau"
-    ],
+    "corrections": ["City: Monte Fort → Macau"],
     "originalData": {
       "airportCode": "MFM",
       "icaoCode": "VMMC",
@@ -20255,10 +19725,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: VMGM → VMMC",
-      "City: Ruins of St. Paul's → Macau"
-    ],
+    "corrections": ["ICAO: VMGM → VMMC", "City: Ruins of St. Paul's → Macau"],
     "originalData": {
       "airportCode": "MFM",
       "icaoCode": "VMGM",
@@ -20360,9 +19827,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "City: Jurmala → Riga"
-    ],
+    "corrections": ["City: Jurmala → Riga"],
     "originalData": {
       "airportCode": "RIX",
       "icaoCode": "EVRA",
@@ -20446,10 +19911,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: VRP → VNT",
-      "ICAO: EVRS → EVVA"
-    ],
+    "corrections": ["IATA: VRP → VNT", "ICAO: EVRS → EVVA"],
     "originalData": {
       "airportCode": "VRP",
       "icaoCode": "EVRS",
@@ -20480,10 +19942,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: BHX → BHK",
-      "ICAO: ULBB → UTSB"
-    ],
+    "corrections": ["IATA: BHX → BHK", "ICAO: ULBB → UTSB"],
     "originalData": {
       "airportCode": "BHX",
       "icaoCode": "ULBB",
@@ -20514,10 +19973,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: FOV → FEG",
-      "ICAO: ULUG → UTKF"
-    ],
+    "corrections": ["IATA: FOV → FEG", "ICAO: ULUG → UTKF"],
     "originalData": {
       "airportCode": "FOV",
       "icaoCode": "ULUG",
@@ -20601,10 +20057,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: NAQ → NMA",
-      "ICAO: ULNN → UTKN"
-    ],
+    "corrections": ["IATA: NAQ → NMA", "ICAO: ULNN → UTKN"],
     "originalData": {
       "airportCode": "NAQ",
       "icaoCode": "ULNN",
@@ -20635,9 +20088,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: UCTU → UTNN"
-    ],
+    "corrections": ["ICAO: UCTU → UTNN"],
     "originalData": {
       "airportCode": "NCU",
       "icaoCode": "UCTU",
@@ -20702,9 +20153,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: ULTT → UTTT"
-    ],
+    "corrections": ["ICAO: ULTT → UTTT"],
     "originalData": {
       "airportCode": "TAS",
       "icaoCode": "ULTT",
@@ -20735,10 +20184,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: URT → UGC",
-      "ICAO: ULUR → UTNU"
-    ],
+    "corrections": ["IATA: URT → UGC", "ICAO: ULUR → UTNU"],
     "originalData": {
       "airportCode": "URT",
       "icaoCode": "ULUR",
@@ -20769,10 +20215,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "IATA: CGH → CNF",
-      "ICAO: SBHL → SBCF"
-    ],
+    "corrections": ["IATA: CGH → CNF", "ICAO: SBHL → SBCF"],
     "originalData": {
       "airportCode": "CGH",
       "icaoCode": "SBHL",
@@ -20803,10 +20246,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "IATA: CFV → CWB",
-      "ICAO: SWOW → SBCT"
-    ],
+    "corrections": ["IATA: CFV → CWB", "ICAO: SWOW → SBCT"],
     "originalData": {
       "airportCode": "CFV",
       "icaoCode": "SWOW",
@@ -20872,9 +20312,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: SBMW → SBEG"
-    ],
+    "corrections": ["ICAO: SBMW → SBEG"],
     "originalData": {
       "airportCode": "MAO",
       "icaoCode": "SBMW",
@@ -20905,9 +20343,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: SWOW → SBPA"
-    ],
+    "corrections": ["ICAO: SWOW → SBPA"],
     "originalData": {
       "airportCode": "POA",
       "icaoCode": "SWOW",
@@ -21073,10 +20509,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: CYLU → LCA",
-      "ICAO: LCNB → LCLK"
-    ],
+    "corrections": ["IATA: CYLU → LCA", "ICAO: LCNB → LCLK"],
     "originalData": {
       "airportCode": "CYLU",
       "icaoCode": "LCNB",
@@ -21159,9 +20592,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "City: Limassol → Larnaca"
-    ],
+    "corrections": ["City: Limassol → Larnaca"],
     "originalData": {
       "airportCode": "LCA",
       "icaoCode": "LCLK",
@@ -21192,9 +20623,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "City: Nicosia → Larnaca"
-    ],
+    "corrections": ["City: Nicosia → Larnaca"],
     "originalData": {
       "airportCode": "LCA",
       "icaoCode": "LCLK",
@@ -21329,9 +20758,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: LQBW → LQBK"
-    ],
+    "corrections": ["ICAO: LQBW → LQBK"],
     "originalData": {
       "airportCode": "BNX",
       "icaoCode": "LQBW",
@@ -21553,10 +20980,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "IATA: BTT → BTC",
-      "ICAO: VCCG → VCCB"
-    ],
+    "corrections": ["IATA: BTT → BTC", "ICAO: VCCG → VCCB"],
     "originalData": {
       "airportCode": "BTT",
       "icaoCode": "VCCG",
@@ -21880,9 +21304,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: FOBB → FCBB"
-    ],
+    "corrections": ["ICAO: FOBB → FCBB"],
     "originalData": {
       "airportCode": "BZV",
       "icaoCode": "FOBB",
@@ -21931,9 +21353,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: FOBB → FZAA"
-    ],
+    "corrections": ["ICAO: FOBB → FZAA"],
     "originalData": {
       "airportCode": "FIH",
       "icaoCode": "FOBB",
@@ -21982,10 +21402,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "IATA: FBKD → MDK",
-      "ICAO: FEZM → FZEA"
-    ],
+    "corrections": ["IATA: FBKD → MDK", "ICAO: FEZM → FZEA"],
     "originalData": {
       "airportCode": "FBKD",
       "icaoCode": "FEZM",
@@ -22173,9 +21590,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "City: Tel Aviv → Tel-aviv"
-    ],
+    "corrections": ["City: Tel Aviv → Tel-aviv"],
     "originalData": {
       "airportCode": "TLV",
       "icaoCode": "LLBG",
@@ -22206,9 +21621,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "City: Jerusalem → Tel-aviv"
-    ],
+    "corrections": ["City: Jerusalem → Tel-aviv"],
     "originalData": {
       "airportCode": "TLV",
       "icaoCode": "LLBG",
@@ -22257,9 +21670,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "City: Netanya → Tel-aviv"
-    ],
+    "corrections": ["City: Netanya → Tel-aviv"],
     "originalData": {
       "airportCode": "TLV",
       "icaoCode": "LLBG",
@@ -22308,9 +21719,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "City: Tel Aviv → Tel-aviv"
-    ],
+    "corrections": ["City: Tel Aviv → Tel-aviv"],
     "originalData": {
       "airportCode": "TLV",
       "icaoCode": "LLBG",
@@ -22376,9 +21785,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: FYNM → FYKT"
-    ],
+    "corrections": ["ICAO: FYNM → FYKT"],
     "originalData": {
       "airportCode": "KMP",
       "icaoCode": "FYNM",
@@ -22444,9 +21851,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: FYOT → FYOW"
-    ],
+    "corrections": ["ICAO: FYOT → FYOW"],
     "originalData": {
       "airportCode": "OTJ",
       "icaoCode": "FYOT",
@@ -22477,9 +21882,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: RDU → NDU"
-    ],
+    "corrections": ["IATA: RDU → NDU"],
     "originalData": {
       "airportCode": "RDU",
       "icaoCode": "FYRU",
@@ -22510,10 +21913,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: WDM → SWP",
-      "ICAO: FYSD → FYSM"
-    ],
+    "corrections": ["IATA: WDM → SWP", "ICAO: FYSD → FYSM"],
     "originalData": {
       "airportCode": "WDM",
       "icaoCode": "FYSD",
@@ -22544,10 +21944,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: TUB → TSB",
-      "ICAO: FYTE → FYTM"
-    ],
+    "corrections": ["IATA: TUB → TSB", "ICAO: FYTE → FYTM"],
     "originalData": {
       "airportCode": "TUB",
       "icaoCode": "FYTE",
@@ -22578,9 +21975,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: FYWD → FYWB"
-    ],
+    "corrections": ["ICAO: FYWD → FYWB"],
     "originalData": {
       "airportCode": "WVB",
       "icaoCode": "FYWD",
@@ -22611,9 +22006,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: FYND → FYWH"
-    ],
+    "corrections": ["ICAO: FYND → FYWH"],
     "originalData": {
       "airportCode": "WDH",
       "icaoCode": "FYND",
@@ -22644,9 +22037,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: PTTT → PTKK"
-    ],
+    "corrections": ["ICAO: PTTT → PTKK"],
     "originalData": {
       "airportCode": "TKK",
       "icaoCode": "PTTT",
@@ -22764,9 +22155,7 @@
     "icaoSource": "not_found",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: null → PTPN"
-    ],
+    "corrections": ["ICAO: null → PTPN"],
     "originalData": {
       "airportCode": "PNI",
       "icaoCode": null,
@@ -22797,9 +22186,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: PTYY → PTYA"
-    ],
+    "corrections": ["ICAO: PTYY → PTYA"],
     "originalData": {
       "airportCode": "YAP",
       "icaoCode": "PTYY",
@@ -22865,10 +22252,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "IATA: CKIA → MAK",
-      "ICAO: HSSS → HSSM"
-    ],
+    "corrections": ["IATA: CKIA → MAK", "ICAO: HSSS → HSSM"],
     "originalData": {
       "airportCode": "CKIA",
       "icaoCode": "HSSS",
@@ -22899,10 +22283,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "IATA: RBK → RBX",
-      "ICAO: HSSR → HSMK"
-    ],
+    "corrections": ["IATA: RBK → RBX", "ICAO: HSSR → HSMK"],
     "originalData": {
       "airportCode": "RBK",
       "icaoCode": "HSSR",
@@ -22933,10 +22314,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "IATA: WAU → WUU",
-      "ICAO: HSWA → HSWW"
-    ],
+    "corrections": ["IATA: WAU → WUU", "ICAO: HSWA → HSWW"],
     "originalData": {
       "airportCode": "WAU",
       "icaoCode": "HSWA",
@@ -23091,9 +22469,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: HUAB → HUEN"
-    ],
+    "corrections": ["ICAO: HUAB → HUEN"],
     "originalData": {
       "airportCode": "EBB",
       "icaoCode": "HUAB",
@@ -23124,10 +22500,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: GUL → ULU",
-      "ICAO: HUOK → HUGU"
-    ],
+    "corrections": ["IATA: GUL → ULU", "ICAO: HUOK → HUGU"],
     "originalData": {
       "airportCode": "GUL",
       "icaoCode": "HUOK",
@@ -23228,10 +22601,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: HUAK → HUEN",
-      "City: Kampala → Entebbe"
-    ],
+    "corrections": ["ICAO: HUAK → HUEN", "City: Kampala → Entebbe"],
     "originalData": {
       "airportCode": "EBB",
       "icaoCode": "HUAK",
@@ -23736,9 +23106,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: SLZR → SLET"
-    ],
+    "corrections": ["ICAO: SLZR → SLET"],
     "originalData": {
       "airportCode": "SRZ",
       "icaoCode": "SLZR",
@@ -23873,10 +23241,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: TAD → AEH",
-      "ICAO: FTTJ → FTTC"
-    ],
+    "corrections": ["IATA: TAD → AEH", "ICAO: FTTJ → FTTC"],
     "originalData": {
       "airportCode": "TAD",
       "icaoCode": "FTTJ",
@@ -23943,10 +23308,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: FZO → MQQ",
-      "ICAO: FTTT → FTTD"
-    ],
+    "corrections": ["IATA: FZO → MQQ", "ICAO: FTTT → FTTD"],
     "originalData": {
       "airportCode": "FZO",
       "icaoCode": "FTTT",
@@ -23977,10 +23339,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: FTTT → FTTJ",
-      "City: N'Djamena → N'djamena"
-    ],
+    "corrections": ["ICAO: FTTT → FTTJ", "City: N'Djamena → N'djamena"],
     "originalData": {
       "airportCode": "NDJ",
       "icaoCode": "FTTT",
@@ -24011,10 +23370,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: FTTT → SRH",
-      "ICAO: FTTT → FTTA"
-    ],
+    "corrections": ["IATA: FTTT → SRH", "ICAO: FTTT → FTTA"],
     "originalData": {
       "airportCode": "FTTT",
       "icaoCode": "FTTT",
@@ -24255,9 +23611,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: EYKN → EYKA"
-    ],
+    "corrections": ["ICAO: EYKN → EYKA"],
     "originalData": {
       "airportCode": "KUN",
       "icaoCode": "EYKN",
@@ -24288,10 +23642,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: KLP → PLQ",
-      "City: Klaipėda → Palanga"
-    ],
+    "corrections": ["IATA: KLP → PLQ", "City: Klaipėda → Palanga"],
     "originalData": {
       "airportCode": "KLP",
       "icaoCode": "EYPA",
@@ -24479,9 +23830,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: LDWK → LDDU"
-    ],
+    "corrections": ["ICAO: LDWK → LDDU"],
     "originalData": {
       "airportCode": "DBV",
       "icaoCode": "LDWK",
@@ -24566,9 +23915,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "iata",
-    "corrections": [
-      "Name: Golubovci Airport → Podgorica Airport"
-    ],
+    "corrections": ["Name: Golubovci Airport → Podgorica Airport"],
     "originalData": {
       "airportCode": "TGD",
       "icaoCode": "LYPG",
@@ -24670,10 +24017,7 @@
     "icaoSource": "known_mapping",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "IATA: OSL → KHS",
-      "ICAO: ENGM → OOKB"
-    ],
+    "corrections": ["IATA: OSL → KHS", "ICAO: ENGM → OOKB"],
     "originalData": {
       "airportCode": "OSL",
       "icaoCode": "ENGM",
@@ -24704,9 +24048,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: OMAM → OOMS"
-    ],
+    "corrections": ["ICAO: OMAM → OOMS"],
     "originalData": {
       "airportCode": "MCT",
       "icaoCode": "OMAM",
@@ -24841,10 +24183,7 @@
     "icaoSource": "known_mapping",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "IATA: OSL → SLL",
-      "ICAO: ENGM → OOSA"
-    ],
+    "corrections": ["IATA: OSL → SLL", "ICAO: ENGM → OOSA"],
     "originalData": {
       "airportCode": "OSL",
       "icaoCode": "ENGM",
@@ -24875,9 +24214,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: OOMQ → OOSH"
-    ],
+    "corrections": ["ICAO: OOMQ → OOSH"],
     "originalData": {
       "airportCode": "OHS",
       "icaoCode": "OOMQ",
@@ -24974,10 +24311,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "IATA: DOH → DOG",
-      "ICAO: HSDO → HSDN"
-    ],
+    "corrections": ["IATA: DOH → DOG", "ICAO: HSDO → HSDN"],
     "originalData": {
       "airportCode": "DOH",
       "icaoCode": "HSDO",
@@ -25008,10 +24342,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "IATA: GEE → EGN",
-      "ICAO: HSGE → HSGN"
-    ],
+    "corrections": ["IATA: GEE → EGN", "ICAO: HSGE → HSGN"],
     "originalData": {
       "airportCode": "GEE",
       "icaoCode": "HSGE",
@@ -25059,10 +24390,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "IATA: KSA → KSL",
-      "ICAO: HSAR → HSKA"
-    ],
+    "corrections": ["IATA: KSA → KSL", "ICAO: HSAR → HSKA"],
     "originalData": {
       "airportCode": "KSA",
       "icaoCode": "HSAR",
@@ -25093,9 +24421,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: HSRT → HSSS"
-    ],
+    "corrections": ["ICAO: HSRT → HSSS"],
     "originalData": {
       "airportCode": "KRT",
       "icaoCode": "HSRT",
@@ -25214,9 +24540,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: WBGG → WBSB"
-    ],
+    "corrections": ["ICAO: WBGG → WBSB"],
     "originalData": {
       "airportCode": "BWN",
       "icaoCode": "WBGG",
@@ -25247,10 +24571,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: WBGG → WBSB",
-      "City: Bangar → Bandar Seri Begawan"
-    ],
+    "corrections": ["ICAO: WBGG → WBSB", "City: Bangar → Bandar Seri Begawan"],
     "originalData": {
       "airportCode": "BWN",
       "icaoCode": "WBGG",
@@ -25281,10 +24602,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: WBGG → WBSB",
-      "City: Belait → Bandar Seri Begawan"
-    ],
+    "corrections": ["ICAO: WBGG → WBSB", "City: Belait → Bandar Seri Begawan"],
     "originalData": {
       "airportCode": "BWN",
       "icaoCode": "WBGG",
@@ -25349,10 +24667,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "IATA: BWN → LBU",
-      "ICAO: WBGG → WBKL"
-    ],
+    "corrections": ["IATA: BWN → LBU", "ICAO: WBGG → WBKL"],
     "originalData": {
       "airportCode": "BWN",
       "icaoCode": "WBGG",
@@ -25383,10 +24698,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: WBGG → WBSB",
-      "City: Muara → Bandar Seri Begawan"
-    ],
+    "corrections": ["ICAO: WBGG → WBSB", "City: Muara → Bandar Seri Begawan"],
     "originalData": {
       "airportCode": "BWN",
       "icaoCode": "WBGG",
@@ -25417,10 +24729,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: WBGG → WBSB",
-      "City: Seria → Bandar Seri Begawan"
-    ],
+    "corrections": ["ICAO: WBGG → WBSB", "City: Seria → Bandar Seri Begawan"],
     "originalData": {
       "airportCode": "BWN",
       "icaoCode": "WBGG",
@@ -25451,10 +24760,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: WBTT → WBSB",
-      "City: Tutong → Bandar Seri Begawan"
-    ],
+    "corrections": ["ICAO: WBTT → WBSB", "City: Tutong → Bandar Seri Begawan"],
     "originalData": {
       "airportCode": "BWN",
       "icaoCode": "WBTT",
@@ -25503,9 +24809,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: FZNJ → FZNA"
-    ],
+    "corrections": ["ICAO: FZNJ → FZNA"],
     "originalData": {
       "airportCode": "GOM",
       "icaoCode": "FZNJ",
@@ -25571,10 +24875,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "IATA: FKD → KND",
-      "ICAO: FKDK → FZOA"
-    ],
+    "corrections": ["IATA: FKD → KND", "ICAO: FKDK → FZOA"],
     "originalData": {
       "airportCode": "FKD",
       "icaoCode": "FKDK",
@@ -25640,10 +24941,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: FBMK → FZQA",
-      "City: Lubumbashi → Lubumashi"
-    ],
+    "corrections": ["ICAO: FBMK → FZQA", "City: Lubumbashi → Lubumashi"],
     "originalData": {
       "airportCode": "FBM",
       "icaoCode": "FBMK",
@@ -25709,9 +25007,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "City: Corfu → Kerkyra/corfu"
-    ],
+    "corrections": ["City: Corfu → Kerkyra/corfu"],
     "originalData": {
       "airportCode": "CFU",
       "icaoCode": "LGKR",
@@ -25742,9 +25038,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "City: Crete → Heraklion"
-    ],
+    "corrections": ["City: Crete → Heraklion"],
     "originalData": {
       "airportCode": "HER",
       "icaoCode": "LGIR",
@@ -25775,9 +25069,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "iata",
-    "corrections": [
-      "Name: Kos Island International Airport → Kos Airport"
-    ],
+    "corrections": ["Name: Kos Island International Airport → Kos Airport"],
     "originalData": {
       "airportCode": "KGS",
       "icaoCode": "LGKO",
@@ -25808,9 +25100,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "iata",
-    "corrections": [
-      "Name: Mykonos International Airport → Mikonos Airport"
-    ],
+    "corrections": ["Name: Mykonos International Airport → Mikonos Airport"],
     "originalData": {
       "airportCode": "JMK",
       "icaoCode": "LGMK",
@@ -25876,9 +25166,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "City: Rhodes → Rhodos"
-    ],
+    "corrections": ["City: Rhodes → Rhodos"],
     "originalData": {
       "airportCode": "RHO",
       "icaoCode": "LGRP",
@@ -26242,9 +25530,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "City: Dar es Salaam → Dar Es Salaam"
-    ],
+    "corrections": ["City: Dar es Salaam → Dar Es Salaam"],
     "originalData": {
       "airportCode": "DAR",
       "icaoCode": "HTDA",
@@ -26309,9 +25595,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: HTJK → HTKJ"
-    ],
+    "corrections": ["ICAO: HTJK → HTKJ"],
     "originalData": {
       "airportCode": "JRO",
       "icaoCode": "HTJK",
@@ -26342,10 +25626,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "IATA: KIA → JRO",
-      "City: Moshi → Kilimanjaro"
-    ],
+    "corrections": ["IATA: KIA → JRO", "City: Moshi → Kilimanjaro"],
     "originalData": {
       "airportCode": "KIA",
       "icaoCode": "HTKJ",
@@ -26376,10 +25657,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "IATA: MRK → MWZ",
-      "ICAO: HTMZ → HTMW"
-    ],
+    "corrections": ["IATA: MRK → MWZ", "ICAO: HTMZ → HTMW"],
     "originalData": {
       "airportCode": "MRK",
       "icaoCode": "HTMZ",
@@ -26427,10 +25705,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: HTZN → HTZA",
-      "City: Stone Town → Zanzibar"
-    ],
+    "corrections": ["ICAO: HTZN → HTZA", "City: Stone Town → Zanzibar"],
     "originalData": {
       "airportCode": "ZNZ",
       "icaoCode": "HTZN",
@@ -26496,9 +25771,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "City: Zanzibar City → Zanzibar"
-    ],
+    "corrections": ["City: Zanzibar City → Zanzibar"],
     "originalData": {
       "airportCode": "ZNZ",
       "icaoCode": "HTZA",
@@ -26529,9 +25802,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: UGTB → UGSB"
-    ],
+    "corrections": ["ICAO: UGTB → UGSB"],
     "originalData": {
       "airportCode": "BUS",
       "icaoCode": "UGTB",
@@ -26786,10 +26057,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: HIRO → HIJ",
-      "ICAO: ROAG → RJOA"
-    ],
+    "corrections": ["IATA: HIRO → HIJ", "ICAO: ROAG → RJOA"],
     "originalData": {
       "airportCode": "HIRO",
       "icaoCode": "ROAG",
@@ -26820,9 +26088,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "City: Kyoto → Osaka"
-    ],
+    "corrections": ["City: Kyoto → Osaka"],
     "originalData": {
       "airportCode": "KIX",
       "icaoCode": "RJBB",
@@ -26870,9 +26136,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: ITM → KIX"
-    ],
+    "corrections": ["IATA: ITM → KIX"],
     "originalData": {
       "airportCode": "ITM",
       "icaoCode": "RJBB",
@@ -26920,10 +26184,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: HANEDA → HND",
-      "City: Yokohama → Tokyo"
-    ],
+    "corrections": ["IATA: HANEDA → HND", "City: Yokohama → Tokyo"],
     "originalData": {
       "airportCode": "HANEDA",
       "icaoCode": "RJTT",
@@ -27146,10 +26407,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: OEMD → OEMA",
-      "City: Medina → Madinah"
-    ],
+    "corrections": ["ICAO: OEMD → OEMA", "City: Medina → Madinah"],
     "originalData": {
       "airportCode": "MED",
       "icaoCode": "OEMD",
@@ -27216,9 +26474,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: LDWK → LDDU"
-    ],
+    "corrections": ["ICAO: LDWK → LDDU"],
     "originalData": {
       "airportCode": "DBV",
       "icaoCode": "LDWK",
@@ -27335,9 +26591,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "partialName",
-    "corrections": [
-      "Name: Split Airport Resnik → Split Airport"
-    ],
+    "corrections": ["Name: Split Airport Resnik → Split Airport"],
     "originalData": {
       "airportCode": "SPU",
       "icaoCode": "LDSP",
@@ -27403,9 +26657,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "iata",
-    "corrections": [
-      "Name: Franjo Tuđman Airport → Zagreb Airport"
-    ],
+    "corrections": ["Name: Franjo Tuđman Airport → Zagreb Airport"],
     "originalData": {
       "airportCode": "ZAG",
       "icaoCode": "LDZA",
@@ -27472,9 +26724,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: AGHI → AGGH"
-    ],
+    "corrections": ["ICAO: AGHI → AGGH"],
     "originalData": {
       "airportCode": "HIR",
       "icaoCode": "AGHI",
@@ -27505,10 +26755,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: SLA → MUA",
-      "ICAO: AGSM → AGGM"
-    ],
+    "corrections": ["IATA: SLA → MUA", "ICAO: AGSM → AGGM"],
     "originalData": {
       "airportCode": "SLA",
       "icaoCode": "AGSM",
@@ -27604,10 +26851,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: KMA → RIY",
-      "ICAO: OYMA → OYRN"
-    ],
+    "corrections": ["IATA: KMA → RIY", "ICAO: OYMA → OYRN"],
     "originalData": {
       "airportCode": "KMA",
       "icaoCode": "OYMA",
@@ -27638,9 +26882,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "City: Sana'a → Sanaa"
-    ],
+    "corrections": ["City: Sana'a → Sanaa"],
     "originalData": {
       "airportCode": "SAH",
       "icaoCode": "OYSN",
@@ -27740,9 +26982,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "IATA: MOM → MGQ"
-    ],
+    "corrections": ["IATA: MOM → MGQ"],
     "originalData": {
       "airportCode": "MOM",
       "icaoCode": "HCMM",
@@ -27859,10 +27099,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: NTTB → NFTF",
-      "City: Ha'apai → Tongatapu"
-    ],
+    "corrections": ["ICAO: NTTB → NFTF", "City: Ha'apai → Tongatapu"],
     "originalData": {
       "airportCode": "TBU",
       "icaoCode": "NTTB",
@@ -27928,10 +27165,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: NTTU → NFTF",
-      "City: Nuku'alofa → Tongatapu"
-    ],
+    "corrections": ["ICAO: NTTU → NFTF", "City: Nuku'alofa → Tongatapu"],
     "originalData": {
       "airportCode": "TBU",
       "icaoCode": "NTTU",
@@ -27962,10 +27196,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: NTTU → NFTF",
-      "City: Vava'u → Tongatapu"
-    ],
+    "corrections": ["ICAO: NTTU → NFTF", "City: Vava'u → Tongatapu"],
     "originalData": {
       "airportCode": "TBU",
       "icaoCode": "NTTU",
@@ -28266,10 +27497,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: PIB → PUZ",
-      "ICAO: MNOC → MNPC"
-    ],
+    "corrections": ["IATA: PIB → PUZ", "ICAO: MNOC → MNPC"],
     "originalData": {
       "airportCode": "PIB",
       "icaoCode": "MNOC",
@@ -28318,10 +27546,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: CIU → AGT",
-      "ICAO: SGNE → SGES"
-    ],
+    "corrections": ["IATA: CIU → AGT", "ICAO: SGNE → SGES"],
     "originalData": {
       "airportCode": "CIU",
       "icaoCode": "SGNE",
@@ -28405,10 +27630,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: ECN → ENO",
-      "City: Encarnación → Encarnacion"
-    ],
+    "corrections": ["IATA: ECN → ENO", "City: Encarnación → Encarnacion"],
     "originalData": {
       "airportCode": "ECN",
       "icaoCode": "SGEN",
@@ -28543,9 +27765,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "City: Chennai → Madras"
-    ],
+    "corrections": ["City: Chennai → Madras"],
     "originalData": {
       "airportCode": "MAA",
       "icaoCode": "VOMM",
@@ -28576,9 +27796,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: VOMM → VOHS"
-    ],
+    "corrections": ["ICAO: VOMM → VOHS"],
     "originalData": {
       "airportCode": "HYD",
       "icaoCode": "VOMM",
@@ -28675,9 +27893,7 @@
     "icaoSource": "known_mapping",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "City: New Delhi → Delhi"
-    ],
+    "corrections": ["City: New Delhi → Delhi"],
     "originalData": {
       "airportCode": "DEL",
       "icaoCode": "VIDP",
@@ -28725,9 +27941,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: VESZ → VASU"
-    ],
+    "corrections": ["ICAO: VESZ → VASU"],
     "originalData": {
       "airportCode": "STV",
       "icaoCode": "VESZ",
@@ -28827,9 +28041,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "City: Cambridge → London"
-    ],
+    "corrections": ["City: Cambridge → London"],
     "originalData": {
       "airportCode": "STN",
       "icaoCode": "EGSS",
@@ -29029,10 +28241,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: TIVA → TNR",
-      "ICAO: FMMD → FMMI"
-    ],
+    "corrections": ["IATA: TIVA → TNR", "ICAO: FMMD → FMMI"],
     "originalData": {
       "airportCode": "TIVA",
       "icaoCode": "FMMD",
@@ -29205,10 +28414,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: MDV → MOQ",
-      "ICAO: FMMD → FMMV"
-    ],
+    "corrections": ["IATA: MDV → MOQ", "ICAO: FMMD → FMMV"],
     "originalData": {
       "airportCode": "MDV",
       "icaoCode": "FMMD",
@@ -29344,10 +28550,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: SSG → BSG",
-      "ICAO: FEBE → FGBT"
-    ],
+    "corrections": ["IATA: SSG → BSG", "ICAO: FEBE → FGBT"],
     "originalData": {
       "airportCode": "SSG",
       "icaoCode": "FEBE",
@@ -29378,9 +28581,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: SSGY → FGSL"
-    ],
+    "corrections": ["ICAO: SSGY → FGSL"],
     "originalData": {
       "airportCode": "SSG",
       "icaoCode": "SSGY",
@@ -29753,9 +28954,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: UEEB → UMBB"
-    ],
+    "corrections": ["ICAO: UEEB → UMBB"],
     "originalData": {
       "airportCode": "BQT",
       "icaoCode": "UEEB",
@@ -29804,9 +29003,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "City: Minsk → Minsk 2"
-    ],
+    "corrections": ["City: Minsk → Minsk 2"],
     "originalData": {
       "airportCode": "MSQ",
       "icaoCode": "UMMS",
@@ -29837,10 +29034,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: MRV → MVQ",
-      "ICAO: UMML → UMOO"
-    ],
+    "corrections": ["IATA: MRV → MVQ", "ICAO: UMML → UMOO"],
     "originalData": {
       "airportCode": "MRV",
       "icaoCode": "UMML",
@@ -30080,9 +29274,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "IATA: WAU → DIL"
-    ],
+    "corrections": ["IATA: WAU → DIL"],
     "originalData": {
       "airportCode": "WAU",
       "icaoCode": "WPDL",
@@ -30376,10 +29568,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: SCEC → SCIE",
-      "City: Concepción → Concepcion"
-    ],
+    "corrections": ["ICAO: SCEC → SCIE", "City: Concepción → Concepcion"],
     "originalData": {
       "airportCode": "CCP",
       "icaoCode": "SCEC",
@@ -30666,9 +29855,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: ORBD → ORBI"
-    ],
+    "corrections": ["ICAO: ORBD → ORBI"],
     "originalData": {
       "airportCode": "BGW",
       "icaoCode": "ORBD",
@@ -30769,10 +29956,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: SOJ → KIK",
-      "ICAO: ORAQ → ORKK"
-    ],
+    "corrections": ["IATA: SOJ → KIK", "ICAO: ORAQ → ORKK"],
     "originalData": {
       "airportCode": "SOJ",
       "icaoCode": "ORAQ",
@@ -30803,10 +29987,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: OSQ → OSM",
-      "ICAO: ORBD → ORBM"
-    ],
+    "corrections": ["IATA: OSQ → OSM", "ICAO: ORBD → ORBM"],
     "originalData": {
       "airportCode": "OSQ",
       "icaoCode": "ORBD",
@@ -30957,10 +30138,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "IATA: LOAO → BAG",
-      "ICAO: RPLC → RPUB"
-    ],
+    "corrections": ["IATA: LOAO → BAG", "ICAO: RPLC → RPUB"],
     "originalData": {
       "airportCode": "LOAO",
       "icaoCode": "RPLC",
@@ -31093,9 +30271,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: RPVM → RPVD"
-    ],
+    "corrections": ["ICAO: RPVM → RPVD"],
     "originalData": {
       "airportCode": "DGT",
       "icaoCode": "RPVM",
@@ -31126,9 +30302,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: RPHL → RPVI"
-    ],
+    "corrections": ["ICAO: RPHL → RPVI"],
     "originalData": {
       "airportCode": "ILO",
       "icaoCode": "RPHL",
@@ -31211,10 +30385,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "IATA: TCL → TAC",
-      "ICAO: RPVT → RPVA"
-    ],
+    "corrections": ["IATA: TCL → TAC", "ICAO: RPVT → RPVA"],
     "originalData": {
       "airportCode": "TCL",
       "icaoCode": "RPVT",
@@ -31245,9 +30416,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "partialName",
-    "corrections": [
-      "Name: Cotonou Cadjehoun Airport → Cadjehoun Airport"
-    ],
+    "corrections": ["Name: Cotonou Cadjehoun Airport → Cadjehoun Airport"],
     "originalData": {
       "airportCode": "COO",
       "icaoCode": "DBBB",
@@ -31578,9 +30747,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: LBPV → LBPD"
-    ],
+    "corrections": ["ICAO: LBPV → LBPD"],
     "originalData": {
       "airportCode": "PDV",
       "icaoCode": "LBPV",
@@ -31646,9 +30813,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: LFSB → LBSF"
-    ],
+    "corrections": ["ICAO: LFSB → LBSF"],
     "originalData": {
       "airportCode": "SOF",
       "icaoCode": "LFSB",
@@ -31679,9 +30844,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: LBOW → LBWN"
-    ],
+    "corrections": ["ICAO: LBOW → LBWN"],
     "originalData": {
       "airportCode": "VAR",
       "icaoCode": "LBOW",
@@ -31712,10 +30875,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: SOF → VAR",
-      "ICAO: LFOW → LBWN"
-    ],
+    "corrections": ["IATA: SOF → VAR", "ICAO: LFOW → LBWN"],
     "originalData": {
       "airportCode": "SOF",
       "icaoCode": "LFOW",
@@ -31781,10 +30941,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: HULL → BDO",
-      "ICAO: WIBK → WICC"
-    ],
+    "corrections": ["IATA: HULL → BDO", "ICAO: WIBK → WICC"],
     "originalData": {
       "airportCode": "HULL",
       "icaoCode": "WIBK",
@@ -31815,9 +30972,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: WIBK → WIDD"
-    ],
+    "corrections": ["ICAO: WIBK → WIDD"],
     "originalData": {
       "airportCode": "BTH",
       "icaoCode": "WIBK",
@@ -31935,9 +31090,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: WIGC → WAMM"
-    ],
+    "corrections": ["ICAO: WIGC → WAMM"],
     "originalData": {
       "airportCode": "MDC",
       "icaoCode": "WIGC",
@@ -32004,9 +31157,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: WISN → WARR"
-    ],
+    "corrections": ["ICAO: WISN → WARR"],
     "originalData": {
       "airportCode": "SUB",
       "icaoCode": "WISN",
@@ -32248,10 +31399,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: FSEZ → FSIA",
-      "City: Victoria → Mahe"
-    ],
+    "corrections": ["ICAO: FSEZ → FSIA", "City: Victoria → Mahe"],
     "originalData": {
       "airportCode": "SEZ",
       "icaoCode": "FSEZ",
@@ -32368,10 +31516,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: LRRO → LRCK",
-      "City: Constanța → Constanta"
-    ],
+    "corrections": ["ICAO: LRRO → LRCK", "City: Constanța → Constanta"],
     "originalData": {
       "airportCode": "CND",
       "icaoCode": "LRRO",
@@ -32402,9 +31547,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: LRCR → LRCV"
-    ],
+    "corrections": ["ICAO: LRCR → LRCV"],
     "originalData": {
       "airportCode": "CRA",
       "icaoCode": "LRCR",
@@ -32435,10 +31578,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: LRRS → LRIA",
-      "City: Iași → Iasi"
-    ],
+    "corrections": ["ICAO: LRRS → LRIA", "City: Iași → Iasi"],
     "originalData": {
       "airportCode": "IAS",
       "icaoCode": "LRRS",
@@ -32591,9 +31731,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: LTAI → LTAC"
-    ],
+    "corrections": ["ICAO: LTAI → LTAC"],
     "originalData": {
       "airportCode": "ESB",
       "icaoCode": "LTAI",
@@ -32675,9 +31813,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: LTBJ → LTBS"
-    ],
+    "corrections": ["ICAO: LTBJ → LTBS"],
     "originalData": {
       "airportCode": "DLM",
       "icaoCode": "LTBJ",
@@ -33006,10 +32142,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: OUAG → OUA",
-      "ICAO: DFWO → DFFD"
-    ],
+    "corrections": ["IATA: OUAG → OUA", "ICAO: DFWO → DFFD"],
     "originalData": {
       "airportCode": "OUAG",
       "icaoCode": "DFWO",
@@ -33076,10 +32209,7 @@
     "icaoSource": "not_found",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: null → TXKF",
-      "City: Hamilton → Bermuda"
-    ],
+    "corrections": ["ICAO: null → TXKF", "City: Hamilton → Bermuda"],
     "originalData": {
       "airportCode": "BDA",
       "icaoCode": null,
@@ -33110,10 +32240,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: TKPA → TXKF",
-      "City: Hamilton Parish → Bermuda"
-    ],
+    "corrections": ["ICAO: TKPA → TXKF", "City: Hamilton Parish → Bermuda"],
     "originalData": {
       "airportCode": "BDA",
       "icaoCode": "TKPA",
@@ -33179,10 +32306,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: CYBK → TXKF",
-      "City: Sandys Parish → Bermuda"
-    ],
+    "corrections": ["ICAO: CYBK → TXKF", "City: Sandys Parish → Bermuda"],
     "originalData": {
       "airportCode": "BDA",
       "icaoCode": "CYBK",
@@ -33213,10 +32337,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: TKPA → TXKF",
-      "City: Hamilton → Bermuda"
-    ],
+    "corrections": ["ICAO: TKPA → TXKF", "City: Hamilton → Bermuda"],
     "originalData": {
       "airportCode": "BDA",
       "icaoCode": "TKPA",
@@ -33282,10 +32403,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: NWPY → NWWW",
-      "City: Nouméa → Noumea"
-    ],
+    "corrections": ["ICAO: NWPY → NWWW", "City: Nouméa → Noumea"],
     "originalData": {
       "airportCode": "NOU",
       "icaoCode": "NWPY",
@@ -33316,10 +32434,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "IATA: ALY → HBE",
-      "ICAO: HEAX → HEBA"
-    ],
+    "corrections": ["IATA: ALY → HBE", "ICAO: HEAX → HEBA"],
     "originalData": {
       "airportCode": "ALY",
       "icaoCode": "HEAX",
@@ -33367,9 +32482,7 @@
     "icaoSource": "known_mapping",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "City: Giza → Cairo"
-    ],
+    "corrections": ["City: Giza → Cairo"],
     "originalData": {
       "airportCode": "CAI",
       "icaoCode": "HECA",
@@ -33400,9 +32513,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: HEDC → HEGN"
-    ],
+    "corrections": ["ICAO: HEDC → HEGN"],
     "originalData": {
       "airportCode": "HRG",
       "icaoCode": "HEDC",
@@ -33467,9 +32578,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "IATA: PSA → PSD"
-    ],
+    "corrections": ["IATA: PSA → PSD"],
     "originalData": {
       "airportCode": "PSA",
       "icaoCode": "HEPS",
@@ -33534,9 +32643,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: VCSN → VVCT"
-    ],
+    "corrections": ["ICAO: VCSN → VVCT"],
     "originalData": {
       "airportCode": "VCA",
       "icaoCode": "VCSN",
@@ -33567,9 +32674,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "City: Da Nang → Danang"
-    ],
+    "corrections": ["City: Da Nang → Danang"],
     "originalData": {
       "airportCode": "DAD",
       "icaoCode": "VVDN",
@@ -33685,9 +32790,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: VVBI → VVPB"
-    ],
+    "corrections": ["ICAO: VVBI → VVPB"],
     "originalData": {
       "airportCode": "HUI",
       "icaoCode": "VVBI",
@@ -33753,9 +32856,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: TJBP → TJBQ"
-    ],
+    "corrections": ["ICAO: TJBP → TJBQ"],
     "originalData": {
       "airportCode": "BQN",
       "icaoCode": "TJBP",
@@ -33979,9 +33080,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: TJBP → TJPS"
-    ],
+    "corrections": ["ICAO: TJBP → TJPS"],
     "originalData": {
       "airportCode": "PSE",
       "icaoCode": "TJBP",
@@ -34045,10 +33144,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: TPPO → TTPP",
-      "City: Arima → Port-of-spain"
-    ],
+    "corrections": ["ICAO: TPPO → TTPP", "City: Arima → Port-of-spain"],
     "originalData": {
       "airportCode": "POS",
       "icaoCode": "TPPO",
@@ -34079,10 +33175,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: TPPO → TTPP",
-      "City: Chaguaramas → Port-of-spain"
-    ],
+    "corrections": ["ICAO: TPPO → TTPP", "City: Chaguaramas → Port-of-spain"],
     "originalData": {
       "airportCode": "POS",
       "icaoCode": "TPPO",
@@ -34113,10 +33206,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: TPPO → TTPP",
-      "City: Penal → Port-of-spain"
-    ],
+    "corrections": ["ICAO: TPPO → TTPP", "City: Penal → Port-of-spain"],
     "originalData": {
       "airportCode": "POS",
       "icaoCode": "TPPO",
@@ -34147,10 +33237,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: TPPO → TTPP",
-      "City: Port of Spain → Port-of-spain"
-    ],
+    "corrections": ["ICAO: TPPO → TTPP", "City: Port of Spain → Port-of-spain"],
     "originalData": {
       "airportCode": "POS",
       "icaoCode": "TPPO",
@@ -34181,10 +33268,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: TPPO → TTPP",
-      "City: San Fernando → Port-of-spain"
-    ],
+    "corrections": ["ICAO: TPPO → TTPP", "City: San Fernando → Port-of-spain"],
     "originalData": {
       "airportCode": "POS",
       "icaoCode": "TPPO",
@@ -34215,10 +33299,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: TPPO → TTPP",
-      "City: Port-of-Spain → Port-of-spain"
-    ],
+    "corrections": ["ICAO: TPPO → TTPP", "City: Port-of-Spain → Port-of-spain"],
     "originalData": {
       "airportCode": "POS",
       "icaoCode": "TPPO",
@@ -34249,10 +33330,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: TPPO → TTPP",
-      "City: Tunapuna → Port-of-spain"
-    ],
+    "corrections": ["ICAO: TPPO → TTPP", "City: Tunapuna → Port-of-spain"],
     "originalData": {
       "airportCode": "POS",
       "icaoCode": "TPPO",
@@ -34283,10 +33361,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: CPV → CAB",
-      "ICAO: FACN → FNCA"
-    ],
+    "corrections": ["IATA: CPV → CAB", "ICAO: FACN → FNCA"],
     "originalData": {
       "airportCode": "CPV",
       "icaoCode": "FACN",
@@ -34631,9 +33706,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "iata",
-    "corrections": [
-      "Name: Gonggar Airport → Lhasa Gonggar Airport"
-    ],
+    "corrections": ["Name: Gonggar Airport → Lhasa Gonggar Airport"],
     "originalData": {
       "airportCode": "LXA",
       "icaoCode": "ZULS",
@@ -34767,10 +33840,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: PWD → NCA",
-      "ICAO: MBPC → MBNC"
-    ],
+    "corrections": ["IATA: PWD → NCA", "ICAO: MBPC → MBNC"],
     "originalData": {
       "airportCode": "PWD",
       "icaoCode": "MBPC",
@@ -34801,10 +33871,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: TCB → SLX",
-      "ICAO: MBSC → MBSY"
-    ],
+    "corrections": ["IATA: TCB → SLX", "ICAO: MBSC → MBSY"],
     "originalData": {
       "airportCode": "TCB",
       "icaoCode": "MBSC",
@@ -34835,9 +33902,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: SCAS → XSC"
-    ],
+    "corrections": ["IATA: SCAS → XSC"],
     "originalData": {
       "airportCode": "SCAS",
       "icaoCode": "MBSC",
@@ -34904,10 +33969,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "IATA: MFH → MHQ",
-      "ICAO: EFHA → EFMA"
-    ],
+    "corrections": ["IATA: MFH → MHQ", "ICAO: EFHA → EFMA"],
     "originalData": {
       "airportCode": "MFH",
       "icaoCode": "EFHA",
@@ -34972,9 +34034,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "City: Alajuela → San Jose"
-    ],
+    "corrections": ["City: Alajuela → San Jose"],
     "originalData": {
       "airportCode": "SJO",
       "icaoCode": "MROC",
@@ -35041,10 +34101,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: QUE → SJO",
-      "City: Alajuela → San Jose"
-    ],
+    "corrections": ["IATA: QUE → SJO", "City: Alajuela → San Jose"],
     "originalData": {
       "airportCode": "QUE",
       "icaoCode": "MROC",
@@ -35665,10 +34722,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: RAK → OZZ",
-      "ICAO: GMMP → GMMZ"
-    ],
+    "corrections": ["IATA: RAK → OZZ", "ICAO: GMMP → GMMZ"],
     "originalData": {
       "airportCode": "RAK",
       "icaoCode": "GMMP",
@@ -35699,9 +34753,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: GMRB → GMME"
-    ],
+    "corrections": ["ICAO: GMRB → GMME"],
     "originalData": {
       "airportCode": "RBA",
       "icaoCode": "GMRB",
@@ -35767,10 +34819,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: EPIU → EEPU",
-      "City: Pärnu → Parnu"
-    ],
+    "corrections": ["ICAO: EPIU → EEPU", "City: Pärnu → Parnu"],
     "originalData": {
       "airportCode": "EPU",
       "icaoCode": "EPIU",
@@ -35836,9 +34885,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "City: Tallinn → Tallinn-ulemiste International"
-    ],
+    "corrections": ["City: Tallinn → Tallinn-ulemiste International"],
     "originalData": {
       "airportCode": "TLL",
       "icaoCode": "EETN",
@@ -35869,10 +34916,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: TNR → TAY",
-      "ICAO: EETN → EETU"
-    ],
+    "corrections": ["IATA: TNR → TAY", "ICAO: EETN → EETU"],
     "originalData": {
       "airportCode": "TNR",
       "icaoCode": "EETN",
@@ -35903,9 +34947,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: TPSL → TLPC"
-    ],
+    "corrections": ["ICAO: TPSL → TLPC"],
     "originalData": {
       "airportCode": "SLU",
       "icaoCode": "TPSL",
@@ -35936,10 +34978,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: TFFD → TLPC",
-      "City: Gros Islet → Castries"
-    ],
+    "corrections": ["ICAO: TFFD → TLPC", "City: Gros Islet → Castries"],
     "originalData": {
       "airportCode": "SLU",
       "icaoCode": "TFFD",
@@ -36005,10 +35044,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: TPSL → TLPL",
-      "City: Vieux Fort → Hewandorra"
-    ],
+    "corrections": ["ICAO: TPSL → TLPL", "City: Vieux Fort → Hewandorra"],
     "originalData": {
       "airportCode": "UVF",
       "icaoCode": "TPSL",
@@ -36039,10 +35075,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "IATA: RMQ → CYI",
-      "ICAO: RCYI → RCKU"
-    ],
+    "corrections": ["IATA: RMQ → CYI", "ICAO: RCYI → RCKU"],
     "originalData": {
       "airportCode": "RMQ",
       "icaoCode": "RCYI",
@@ -36073,10 +35106,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "IATA: HUL → HUN",
-      "ICAO: RCHI → RCYU"
-    ],
+    "corrections": ["IATA: HUL → HUN", "ICAO: RCHI → RCYU"],
     "originalData": {
       "airportCode": "HUL",
       "icaoCode": "RCHI",
@@ -36107,9 +35137,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: RTTA → RCKH"
-    ],
+    "corrections": ["ICAO: RTTA → RCKH"],
     "originalData": {
       "airportCode": "KHH",
       "icaoCode": "RTTA",
@@ -36278,10 +35306,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: RTTA → RCFN",
-      "City: Taitung → Fengnin"
-    ],
+    "corrections": ["ICAO: RTTA → RCFN", "City: Taitung → Fengnin"],
     "originalData": {
       "airportCode": "TTT",
       "icaoCode": "RTTA",
@@ -36524,10 +35549,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: TMMH → MTCA",
-      "City: Les Cayes → Cayes"
-    ],
+    "corrections": ["ICAO: TMMH → MTCA", "City: Les Cayes → Cayes"],
     "originalData": {
       "airportCode": "CYA",
       "icaoCode": "TMMH",
@@ -36610,9 +35632,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: OOST → UTDD"
-    ],
+    "corrections": ["ICAO: OOST → UTDD"],
     "originalData": {
       "airportCode": "DYU",
       "icaoCode": "OOST",
@@ -36696,10 +35716,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: OOBN → UTDK",
-      "City: Kulob → Kulyab"
-    ],
+    "corrections": ["ICAO: OOBN → UTDK", "City: Kulob → Kulyab"],
     "originalData": {
       "airportCode": "TJU",
       "icaoCode": "OOBN",
@@ -36922,10 +35939,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "IATA: TBL → TIP",
-      "ICAO: OLBA → HLLT"
-    ],
+    "corrections": ["IATA: TBL → TIP", "ICAO: OLBA → HLLT"],
     "originalData": {
       "airportCode": "TBL",
       "icaoCode": "OLBA",
@@ -37008,9 +36022,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: YBCN → YBCS"
-    ],
+    "corrections": ["ICAO: YBCN → YBCS"],
     "originalData": {
       "airportCode": "CNS",
       "icaoCode": "YBCN",
@@ -37041,9 +36053,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: YSCC → YSCB"
-    ],
+    "corrections": ["ICAO: YSCC → YSCB"],
     "originalData": {
       "airportCode": "CBR",
       "icaoCode": "YSCC",
@@ -37091,10 +36101,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: YBBN → YBCG",
-      "City: Gold Coast → Coolangatta"
-    ],
+    "corrections": ["ICAO: YBBN → YBCG", "City: Gold Coast → Coolangatta"],
     "originalData": {
       "airportCode": "OOL",
       "icaoCode": "YBBN",
@@ -37293,10 +36300,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: RLB → ROB",
-      "ICAO: GLRL → GLRB"
-    ],
+    "corrections": ["IATA: RLB → ROB", "ICAO: GLRL → GLRB"],
     "originalData": {
       "airportCode": "RLB",
       "icaoCode": "GLRL",
@@ -37413,9 +36417,7 @@
     "icaoSource": "known_mapping",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "City: Milan → Milano"
-    ],
+    "corrections": ["City: Milan → Milano"],
     "originalData": {
       "airportCode": "MXP",
       "icaoCode": "LIMC",
@@ -37446,9 +36448,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: LICJ → LIRN"
-    ],
+    "corrections": ["ICAO: LICJ → LIRN"],
     "originalData": {
       "airportCode": "NAP",
       "icaoCode": "LICJ",
@@ -37548,9 +36548,7 @@
     "icaoSource": "known_mapping",
     "correctionStatus": "corrected",
     "matchType": "iata",
-    "corrections": [
-      "Name: Marco Polo Airport → Venice Marco Polo Airport"
-    ],
+    "corrections": ["Name: Marco Polo Airport → Venice Marco Polo Airport"],
     "originalData": {
       "airportCode": "VCE",
       "icaoCode": "LIPZ",
@@ -37615,9 +36613,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: PGFT → PTKK"
-    ],
+    "corrections": ["ICAO: PGFT → PTKK"],
     "originalData": {
       "airportCode": "TKK",
       "icaoCode": "PGFT",
@@ -37719,9 +36715,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: PGPI → PTPN"
-    ],
+    "corrections": ["ICAO: PGPI → PTPN"],
     "originalData": {
       "airportCode": "PNI",
       "icaoCode": "PGPI",
@@ -37770,10 +36764,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "IATA: SFG → SXM",
-      "City: Anse du Port → Philipsburg"
-    ],
+    "corrections": ["IATA: SFG → SXM", "City: Anse du Port → Philipsburg"],
     "originalData": {
       "airportCode": "SFG",
       "icaoCode": "TNCM",
@@ -37804,10 +36795,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "IATA: SFG → SXM",
-      "City: Grand Case → Philipsburg"
-    ],
+    "corrections": ["IATA: SFG → SXM", "City: Grand Case → Philipsburg"],
     "originalData": {
       "airportCode": "SFG",
       "icaoCode": "TNCM",
@@ -37838,9 +36826,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "City: L'Estate → Philipsburg"
-    ],
+    "corrections": ["City: L'Estate → Philipsburg"],
     "originalData": {
       "airportCode": "SXM",
       "icaoCode": "TNCM",
@@ -37888,9 +36874,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "City: L'Esperance → Philipsburg"
-    ],
+    "corrections": ["City: L'Esperance → Philipsburg"],
     "originalData": {
       "airportCode": "SXM",
       "icaoCode": "TNCM",
@@ -37921,10 +36905,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "IATA: SFG → SXM",
-      "City: Marigot → Philipsburg"
-    ],
+    "corrections": ["IATA: SFG → SXM", "City: Marigot → Philipsburg"],
     "originalData": {
       "airportCode": "SFG",
       "icaoCode": "TNCM",
@@ -37955,9 +36936,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "City: Mullet Bay → Philipsburg"
-    ],
+    "corrections": ["City: Mullet Bay → Philipsburg"],
     "originalData": {
       "airportCode": "SXM",
       "icaoCode": "TNCM",
@@ -38058,9 +37037,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "iata",
-    "corrections": [
-      "Name: Bern-Belp Airport → Bern Belp Airport"
-    ],
+    "corrections": ["Name: Bern-Belp Airport → Bern Belp Airport"],
     "originalData": {
       "airportCode": "BRN",
       "icaoCode": "LSZB",
@@ -38297,9 +37274,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "iata",
-    "corrections": [
-      "Name: Zurich Airport → Zürich Airport"
-    ],
+    "corrections": ["Name: Zurich Airport → Zürich Airport"],
     "originalData": {
       "airportCode": "ZRH",
       "icaoCode": "LSZH",
@@ -38435,10 +37410,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: SPZC → SPZO",
-      "City: Cusco → Cuzco"
-    ],
+    "corrections": ["ICAO: SPZC → SPZO", "City: Cusco → Cuzco"],
     "originalData": {
       "airportCode": "CUZ",
       "icaoCode": "SPZC",
@@ -38504,9 +37476,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: SPIQ → SPQT"
-    ],
+    "corrections": ["ICAO: SPIQ → SPQT"],
     "originalData": {
       "airportCode": "IQT",
       "icaoCode": "SPIQ",
@@ -38537,9 +37507,7 @@
     "icaoSource": "known_mapping",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: SPJC → SPIM"
-    ],
+    "corrections": ["ICAO: SPJC → SPIM"],
     "originalData": {
       "airportCode": "LIM",
       "icaoCode": "SPJC",
@@ -38676,10 +37644,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "IATA: BGA → BEN",
-      "ICAO: HLLY → HLLB"
-    ],
+    "corrections": ["IATA: BGA → BEN", "ICAO: HLLY → HLLB"],
     "originalData": {
       "airportCode": "BGA",
       "icaoCode": "HLLY",
@@ -38815,10 +37780,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "IATA: TRIP → TIP",
-      "ICAO: HLLY → HLLT"
-    ],
+    "corrections": ["IATA: TRIP → TIP", "ICAO: HLLY → HLLT"],
     "originalData": {
       "airportCode": "TRIP",
       "icaoCode": "HLLY",
@@ -38919,9 +37881,7 @@
     "icaoSource": "known_mapping",
     "correctionStatus": "corrected",
     "matchType": "iata",
-    "corrections": [
-      "Name: Frankfurt Airport → Frankfurt am Main Airport"
-    ],
+    "corrections": ["Name: Frankfurt Airport → Frankfurt am Main Airport"],
     "originalData": {
       "airportCode": "FRA",
       "icaoCode": "EDDF",
@@ -39072,10 +38032,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: EDFN → EDDN",
-      "City: Nuremberg → Nuernberg"
-    ],
+    "corrections": ["ICAO: EDFN → EDDN", "City: Nuremberg → Nuernberg"],
     "originalData": {
       "airportCode": "NUE",
       "icaoCode": "EDFN",
@@ -39106,9 +38063,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: EDSF → EDDS"
-    ],
+    "corrections": ["ICAO: EDSF → EDDS"],
     "originalData": {
       "airportCode": "STR",
       "icaoCode": "EDSF",
@@ -39553,10 +38508,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: OMAK → OBBI",
-      "City: A'ali → Bahrain"
-    ],
+    "corrections": ["ICAO: OMAK → OBBI", "City: A'ali → Bahrain"],
     "originalData": {
       "airportCode": "BAH",
       "icaoCode": "OMAK",
@@ -39587,10 +38539,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: OMAK → OBBI",
-      "City: Muharraq → Bahrain"
-    ],
+    "corrections": ["ICAO: OMAK → OBBI", "City: Muharraq → Bahrain"],
     "originalData": {
       "airportCode": "BAH",
       "icaoCode": "OMAK",
@@ -39621,10 +38570,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: OMAK → OBBI",
-      "City: Juffair → Bahrain"
-    ],
+    "corrections": ["ICAO: OMAK → OBBI", "City: Juffair → Bahrain"],
     "originalData": {
       "airportCode": "BAH",
       "icaoCode": "OMAK",
@@ -39655,10 +38601,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: OMAK → OBBI",
-      "City: Manama → Bahrain"
-    ],
+    "corrections": ["ICAO: OMAK → OBBI", "City: Manama → Bahrain"],
     "originalData": {
       "airportCode": "BAH",
       "icaoCode": "OMAK",
@@ -39689,10 +38632,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: OMAK → OBBI",
-      "City: Muharraq → Bahrain"
-    ],
+    "corrections": ["ICAO: OMAK → OBBI", "City: Muharraq → Bahrain"],
     "originalData": {
       "airportCode": "BAH",
       "icaoCode": "OMAK",
@@ -39723,10 +38663,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: OMAK → OBBI",
-      "City: Riffa → Bahrain"
-    ],
+    "corrections": ["ICAO: OMAK → OBBI", "City: Riffa → Bahrain"],
     "originalData": {
       "airportCode": "BAH",
       "icaoCode": "OMAK",
@@ -39757,10 +38694,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: OMAK → OBBI",
-      "City: Sitrah → Bahrain"
-    ],
+    "corrections": ["ICAO: OMAK → OBBI", "City: Sitrah → Bahrain"],
     "originalData": {
       "airportCode": "BAH",
       "icaoCode": "OMAK",
@@ -39948,10 +38882,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "IATA: TBZ → MHD",
-      "ICAO: OIIM → OIMM"
-    ],
+    "corrections": ["IATA: TBZ → MHD", "ICAO: OIIM → OIMM"],
     "originalData": {
       "airportCode": "TBZ",
       "icaoCode": "OIIM",
@@ -40034,9 +38965,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: OITB → OITT"
-    ],
+    "corrections": ["ICAO: OITB → OITT"],
     "originalData": {
       "airportCode": "TBZ",
       "icaoCode": "OITB",
@@ -40067,9 +38996,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: OIIA → OIIE"
-    ],
+    "corrections": ["ICAO: OIIA → OIIE"],
     "originalData": {
       "airportCode": "IKA",
       "icaoCode": "OIIA",
@@ -40240,9 +39167,7 @@
     "icaoSource": "known_mapping",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "City: Coronado → Panama City"
-    ],
+    "corrections": ["City: Coronado → Panama City"],
     "originalData": {
       "airportCode": "PTY",
       "icaoCode": "MPTO",
@@ -40360,9 +39285,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: OSDA → OSDI"
-    ],
+    "corrections": ["ICAO: OSDA → OSDI"],
     "originalData": {
       "airportCode": "DAM",
       "icaoCode": "OSDA",
@@ -40586,9 +39509,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "IATA: SKB → NEV"
-    ],
+    "corrections": ["IATA: SKB → NEV"],
     "originalData": {
       "airportCode": "SKB",
       "icaoCode": "TKPN",
@@ -40689,9 +39610,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: GMBJ → GBYD"
-    ],
+    "corrections": ["ICAO: GMBJ → GBYD"],
     "originalData": {
       "airportCode": "BJL",
       "icaoCode": "GMBJ",
@@ -40860,9 +39779,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: TNCI → TNCB"
-    ],
+    "corrections": ["ICAO: TNCI → TNCB"],
     "originalData": {
       "airportCode": "BON",
       "icaoCode": "TNCI",
@@ -40911,9 +39828,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: TNCI → TNCB"
-    ],
+    "corrections": ["ICAO: TNCI → TNCB"],
     "originalData": {
       "airportCode": "BON",
       "icaoCode": "TNCI",
@@ -40944,10 +39859,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: TNCM → TNCC",
-      "City: Curaçao → Willemstad"
-    ],
+    "corrections": ["ICAO: TNCM → TNCC", "City: Curaçao → Willemstad"],
     "originalData": {
       "airportCode": "CUR",
       "icaoCode": "TNCM",
@@ -40978,9 +39890,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: TNCI → TNCB"
-    ],
+    "corrections": ["ICAO: TNCI → TNCB"],
     "originalData": {
       "airportCode": "BON",
       "icaoCode": "TNCI",
@@ -41011,9 +39921,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: TNCI → TNCB"
-    ],
+    "corrections": ["ICAO: TNCI → TNCB"],
     "originalData": {
       "airportCode": "BON",
       "icaoCode": "TNCI",
@@ -41044,9 +39952,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "IATA: SBX → SAB"
-    ],
+    "corrections": ["IATA: SBX → SAB"],
     "originalData": {
       "airportCode": "SBX",
       "icaoCode": "TNCS",
@@ -41077,10 +39983,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "IATA: SBX → SAB",
-      "City: Saba: → Saba"
-    ],
+    "corrections": ["IATA: SBX → SAB", "City: Saba: → Saba"],
     "originalData": {
       "airportCode": "SBX",
       "icaoCode": "TNCS",
@@ -41146,9 +40049,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: TNCI → TNCB"
-    ],
+    "corrections": ["ICAO: TNCI → TNCB"],
     "originalData": {
       "airportCode": "BON",
       "icaoCode": "TNCI",
@@ -41179,9 +40080,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: TNCI → TNCB"
-    ],
+    "corrections": ["ICAO: TNCI → TNCB"],
     "originalData": {
       "airportCode": "BON",
       "icaoCode": "TNCI",
@@ -41263,9 +40162,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "City: Delft → Rotterdam"
-    ],
+    "corrections": ["City: Delft → Rotterdam"],
     "originalData": {
       "airportCode": "RTM",
       "icaoCode": "EHRD",
@@ -41296,9 +40193,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "ICAO: EHRD → EHEH"
-    ],
+    "corrections": ["ICAO: EHRD → EHEH"],
     "originalData": {
       "airportCode": "EIN",
       "icaoCode": "EHRD",
@@ -41363,9 +40258,7 @@
     "icaoSource": "known_mapping",
     "correctionStatus": "corrected",
     "matchType": "iata",
-    "corrections": [
-      "Name: Schiphol Airport → Amsterdam Airport Schiphol"
-    ],
+    "corrections": ["Name: Schiphol Airport → Amsterdam Airport Schiphol"],
     "originalData": {
       "airportCode": "AMS",
       "icaoCode": "EHAM",
@@ -41719,10 +40612,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "IATA: GBKO → HGO",
-      "ICAO: DIAP → DIKO"
-    ],
+    "corrections": ["IATA: GBKO → HGO", "ICAO: DIAP → DIKO"],
     "originalData": {
       "airportCode": "GBKO",
       "icaoCode": "DIAP",
@@ -41957,10 +40847,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "IATA: TAR → TRW",
-      "ICAO: PTNR → NGTA"
-    ],
+    "corrections": ["IATA: TAR → TRW", "ICAO: PTNR → NGTA"],
     "originalData": {
       "airportCode": "TAR",
       "icaoCode": "PTNR",
@@ -42008,9 +40895,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "City: Colombier → Gustavia"
-    ],
+    "corrections": ["City: Colombier → Gustavia"],
     "originalData": {
       "airportCode": "SBH",
       "icaoCode": "TFFJ",
@@ -42058,9 +40943,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "City: L'Escale → Gustavia"
-    ],
+    "corrections": ["City: L'Escale → Gustavia"],
     "originalData": {
       "airportCode": "SBH",
       "icaoCode": "TFFJ",
@@ -42212,9 +41095,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: NIWA → NSTU"
-    ],
+    "corrections": ["ICAO: NIWA → NSTU"],
     "originalData": {
       "airportCode": "PPG",
       "icaoCode": "NIWA",
@@ -42280,10 +41161,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "IATA: PWQ → APW",
-      "City: Utulei → Faleolo"
-    ],
+    "corrections": ["IATA: PWQ → APW", "City: Utulei → Faleolo"],
     "originalData": {
       "airportCode": "PWQ",
       "icaoCode": "NSFA",
@@ -42365,9 +41243,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "City: Palm Beach → Oranjestad"
-    ],
+    "corrections": ["City: Palm Beach → Oranjestad"],
     "originalData": {
       "airportCode": "AUA",
       "icaoCode": "TNCA",
@@ -42433,10 +41309,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactName",
-    "corrections": [
-      "IATA: OGG → GEO",
-      "ICAO: SGPG → SYCJ"
-    ],
+    "corrections": ["IATA: OGG → GEO", "ICAO: SGPG → SYCJ"],
     "originalData": {
       "airportCode": "OGG",
       "icaoCode": "SGPG",
@@ -42643,10 +41516,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: TUTV → TVSC",
-      "City: Canouan → Canouan Island"
-    ],
+    "corrections": ["ICAO: TUTV → TVSC", "City: Canouan → Canouan Island"],
     "originalData": {
       "airportCode": "CIW",
       "icaoCode": "TUTV",
@@ -42677,10 +41547,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: SVG → SVD",
-      "ICAO: TUTV → TVSA"
-    ],
+    "corrections": ["IATA: SVG → SVD", "ICAO: TUTV → TVSA"],
     "originalData": {
       "airportCode": "SVG",
       "icaoCode": "TUTV",
@@ -42711,10 +41578,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: MSQ → MQS",
-      "ICAO: TPMP → TVSM"
-    ],
+    "corrections": ["IATA: MSQ → MQS", "ICAO: TPMP → TVSM"],
     "originalData": {
       "airportCode": "MSQ",
       "icaoCode": "TPMP",
@@ -42814,9 +41678,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: KAT → KTW"
-    ],
+    "corrections": ["IATA: KAT → KTW"],
     "originalData": {
       "airportCode": "KAT",
       "icaoCode": "EPKT",
@@ -42914,9 +41776,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "partialName",
-    "corrections": [
-      "Name: Lublin-Swidnik Airport → Lublin Airport"
-    ],
+    "corrections": ["Name: Lublin-Swidnik Airport → Lublin Airport"],
     "originalData": {
       "airportCode": "LUZ",
       "icaoCode": "EPLB",
@@ -42981,9 +41841,7 @@
     "icaoSource": "known_mapping",
     "correctionStatus": "corrected",
     "matchType": "partialName",
-    "corrections": [
-      "Name: Frederic Chopin Airport → Warsaw Chopin Airport"
-    ],
+    "corrections": ["Name: Frederic Chopin Airport → Warsaw Chopin Airport"],
     "originalData": {
       "airportCode": "WAW",
       "icaoCode": "EPWA",
@@ -43247,10 +42105,7 @@
     "icaoSource": "not_found",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: null → EGNS",
-      "City: Douglas → Isle Of Man"
-    ],
+    "corrections": ["ICAO: null → EGNS", "City: Douglas → Isle Of Man"],
     "originalData": {
       "airportCode": "IOM",
       "icaoCode": null,
@@ -43281,10 +42136,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: GFJ → JAV",
-      "ICAO: BGFF → BGJN"
-    ],
+    "corrections": ["IATA: GFJ → JAV", "ICAO: BGFF → BGJN"],
     "originalData": {
       "airportCode": "GFJ",
       "icaoCode": "BGFF",
@@ -43315,10 +42167,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: BGWE → BGSF",
-      "City: Kangerlussuaq → Sondrestrom"
-    ],
+    "corrections": ["ICAO: BGWE → BGSF", "City: Kangerlussuaq → Sondrestrom"],
     "originalData": {
       "airportCode": "SFJ",
       "icaoCode": "BGWE",
@@ -43492,10 +42341,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: JSI → JHS",
-      "ICAO: BGST → BGSS"
-    ],
+    "corrections": ["IATA: JSI → JHS", "ICAO: BGST → BGSS"],
     "originalData": {
       "airportCode": "JSI",
       "icaoCode": "BGST",
@@ -43562,10 +42408,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: BGO → JUV",
-      "ICAO: BGUY → BGUK"
-    ],
+    "corrections": ["IATA: BGO → JUV", "ICAO: BGUY → BGUK"],
     "originalData": {
       "airportCode": "BGO",
       "icaoCode": "BGUY",
@@ -43596,10 +42439,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: FBV → BUQ",
-      "ICAO: FVBW → FVBU"
-    ],
+    "corrections": ["IATA: FBV → BUQ", "ICAO: FVBW → FVBU"],
     "originalData": {
       "airportCode": "FBV",
       "icaoCode": "FVBW",
@@ -43683,9 +42523,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: VHHH → FVHA"
-    ],
+    "corrections": ["ICAO: VHHH → FVHA"],
     "originalData": {
       "airportCode": "HRE",
       "icaoCode": "VHHH",
@@ -43734,10 +42572,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: VNY → MVZ",
-      "ICAO: VFVN → FVMV"
-    ],
+    "corrections": ["IATA: VNY → MVZ", "ICAO: VFVN → FVMV"],
     "originalData": {
       "airportCode": "VNY",
       "icaoCode": "VFVN",
@@ -43768,10 +42603,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: VUM → UTA",
-      "ICAO: VFAV → FVMU"
-    ],
+    "corrections": ["IATA: VUM → UTA", "ICAO: VFAV → FVMU"],
     "originalData": {
       "airportCode": "VUM",
       "icaoCode": "VFAV",
@@ -43837,9 +42669,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: VFVZ → FVFA"
-    ],
+    "corrections": ["ICAO: VFVZ → FVFA"],
     "originalData": {
       "airportCode": "VFA",
       "icaoCode": "VFVZ",
@@ -43958,10 +42788,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: ESNJ → ESGJ",
-      "City: Jönköping → Joenkoeping"
-    ],
+    "corrections": ["ICAO: ESNJ → ESGJ", "City: Jönköping → Joenkoeping"],
     "originalData": {
       "airportCode": "JKG",
       "icaoCode": "ESNJ",
@@ -44080,9 +42907,7 @@
     "icaoSource": "known_mapping",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "City: Uppsala → Stockholm"
-    ],
+    "corrections": ["City: Uppsala → Stockholm"],
     "originalData": {
       "airportCode": "ARN",
       "icaoCode": "ESSA",
@@ -44148,10 +42973,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: ESNB → ESOE",
-      "City: Örebro → Orebro"
-    ],
+    "corrections": ["ICAO: ESNB → ESOE", "City: Örebro → Orebro"],
     "originalData": {
       "airportCode": "ORB",
       "icaoCode": "ESNB",
@@ -44577,9 +43399,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: EBBR → EBCI"
-    ],
+    "corrections": ["ICAO: EBBR → EBCI"],
     "originalData": {
       "airportCode": "CRL",
       "icaoCode": "EBBR",
@@ -44679,10 +43499,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: CRL → LGG",
-      "City: Liège → Liege"
-    ],
+    "corrections": ["IATA: CRL → LGG", "City: Liège → Liege"],
     "originalData": {
       "airportCode": "CRL",
       "icaoCode": "EBLG",
@@ -44767,9 +43584,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: EGBB → EBOS"
-    ],
+    "corrections": ["ICAO: EGBB → EBOS"],
     "originalData": {
       "airportCode": "OST",
       "icaoCode": "EGBB",
@@ -44800,9 +43615,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: VFBM → FQBR"
-    ],
+    "corrections": ["ICAO: VFBM → FQBR"],
     "originalData": {
       "airportCode": "BEW",
       "icaoCode": "VFBM",
@@ -44932,10 +43745,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: NPA → APL",
-      "ICAO: FNLP → FQNP"
-    ],
+    "corrections": ["IATA: NPA → APL", "ICAO: FNLP → FQNP"],
     "originalData": {
       "airportCode": "NPA",
       "icaoCode": "FNLP",
@@ -44984,10 +43794,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: QPM → UEL",
-      "ICAO: FQNL → FQQL"
-    ],
+    "corrections": ["IATA: QPM → UEL", "ICAO: FQNL → FQQL"],
     "originalData": {
       "airportCode": "QPM",
       "icaoCode": "FQNL",
@@ -45087,10 +43894,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: FMMR → FIMP",
-      "City: Mahébourg → Plaisance"
-    ],
+    "corrections": ["ICAO: FMMR → FIMP", "City: Mahébourg → Plaisance"],
     "originalData": {
       "airportCode": "MRU",
       "icaoCode": "FMMR",
@@ -45121,10 +43925,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: FMMR → FIMP",
-      "City: Majestic → Plaisance"
-    ],
+    "corrections": ["ICAO: FMMR → FIMP", "City: Majestic → Plaisance"],
     "originalData": {
       "airportCode": "MRU",
       "icaoCode": "FMMR",
@@ -45155,10 +43956,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: FMMH → FIMP",
-      "City: Mahé → Plaisance"
-    ],
+    "corrections": ["ICAO: FMMH → FIMP", "City: Mahé → Plaisance"],
     "originalData": {
       "airportCode": "MRU",
       "icaoCode": "FMMH",
@@ -45189,10 +43987,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: FMMR → FIMP",
-      "City: Moka → Plaisance"
-    ],
+    "corrections": ["ICAO: FMMR → FIMP", "City: Moka → Plaisance"],
     "originalData": {
       "airportCode": "MRU",
       "icaoCode": "FMMR",
@@ -45223,10 +44018,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: FMPR → FIMP",
-      "City: Plaines Wilhems → Plaisance"
-    ],
+    "corrections": ["ICAO: FMPR → FIMP", "City: Plaines Wilhems → Plaisance"],
     "originalData": {
       "airportCode": "MRU",
       "icaoCode": "FMPR",
@@ -45257,10 +44049,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: FMPR → FIMP",
-      "City: Port Louis → Plaisance"
-    ],
+    "corrections": ["ICAO: FMPR → FIMP", "City: Port Louis → Plaisance"],
     "originalData": {
       "airportCode": "MRU",
       "icaoCode": "FMPR",
@@ -45291,10 +44080,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: FBMR → FIMP",
-      "City: Majuro → Plaisance"
-    ],
+    "corrections": ["ICAO: FBMR → FIMP", "City: Majuro → Plaisance"],
     "originalData": {
       "airportCode": "MRU",
       "icaoCode": "FBMR",
@@ -45325,9 +44111,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: HEY → GYD"
-    ],
+    "corrections": ["IATA: HEY → GYD"],
     "originalData": {
       "airportCode": "HEY",
       "icaoCode": "UBBB",
@@ -45358,10 +44142,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: GNJ → KVD",
-      "City: Gandja → Ganja"
-    ],
+    "corrections": ["IATA: GNJ → KVD", "City: Gandja → Ganja"],
     "originalData": {
       "airportCode": "GNJ",
       "icaoCode": "UBBG",
@@ -45392,10 +44173,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "IATA: LDW → LLK",
-      "ICAO: UBLL → UBBL"
-    ],
+    "corrections": ["IATA: LDW → LLK", "ICAO: UBLL → UBBL"],
     "originalData": {
       "airportCode": "LDW",
       "icaoCode": "UBLL",
@@ -45551,10 +44329,7 @@
     "icaoSource": "llm",
     "correctionStatus": "corrected",
     "matchType": "exactNameCountry",
-    "corrections": [
-      "ICAO: UMNN → UDYZ",
-      "City: Yerevan (Armenia) → Yerevan"
-    ],
+    "corrections": ["ICAO: UMNN → UDYZ", "City: Yerevan (Armenia) → Yerevan"],
     "originalData": {
       "airportCode": "EVN",
       "icaoCode": "UMNN",

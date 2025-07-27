@@ -1,17 +1,18 @@
-'use client';
+"use client";
 
-import { useState, useEffect } from 'react';
-import useSWR from 'swr';
-import { useSession } from 'next-auth/react';
-import { useRouter } from 'next/navigation';
-import Link from 'next/link';
+import { useState, useEffect } from "react";
+import useSWR from "swr";
+import { useSession } from "next-auth/react";
+import { useRouter } from "next/navigation";
+import Link from "next/link";
+import Spinner from "@/components/Spinner";
 
-const fetcher = (url: string) => fetch(url).then(r => r.json());
+const fetcher = (url: string) => fetch(url).then((r) => r.json());
 
 export default function HomePage() {
   const router = useRouter();
   const { data: session, status } = useSession();
-  const [size, setSize] = useState<'Small' | 'Medium' | 'Large'>('Small');
+  const [size, setSize] = useState<"Small" | "Medium" | "Large">("Small");
 
   const userId = (session?.user as any)?.id;
 
@@ -22,16 +23,16 @@ export default function HomePage() {
 
   // redirect if not signed in
   useEffect(() => {
-    if (status === 'unauthenticated') {
-      router.replace('/auth/signin');
+    if (status === "unauthenticated") {
+      router.replace("/auth/signin");
     }
   }, [status, router]);
 
   // show a spinner or nothing while NextAuth is checking
-  if (status === 'loading' || status === 'unauthenticated') {
+  if (status === "loading" || status === "unauthenticated") {
     return (
       <div className="min-h-screen flex items-center justify-center">
-        <p>Checking your session…</p>
+        <Spinner />
       </div>
     );
   }
@@ -39,18 +40,18 @@ export default function HomePage() {
   // at this point status === 'authenticated' and session is non-null
 
   const markVisited = async () => {
-    await fetch('/api/airport/visit', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+    await fetch("/api/airport/visit", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ userId, airportId: airport.id }),
     });
     mutate();
   };
 
   const clearVisits = async () => {
-    await fetch('/api/airport/clear', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+    await fetch("/api/airport/clear", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ userId }),
     });
     mutate();
@@ -69,7 +70,7 @@ export default function HomePage() {
                 <span className="font-medium">Size:</span>
                 <select
                   value={size}
-                  onChange={e => setSize(e.target.value as any)}
+                  onChange={(e) => setSize(e.target.value as any)}
                   className="ml-2 p-1 border rounded"
                 >
                   <option>Small</option>
@@ -104,7 +105,7 @@ export default function HomePage() {
                   {airport.airportName} ({airport.airportCode})
                 </h2>
                 <p>
-                  <strong>ICAO:</strong> {airport.icaoCode ?? 'N/A'}
+                  <strong>ICAO:</strong> {airport.icaoCode ?? "N/A"}
                 </p>
                 <p>
                   {airport.city}, {airport.country}

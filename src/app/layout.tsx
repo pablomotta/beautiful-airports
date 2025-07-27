@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { Providers } from "./providers";
+import Providers from "./Providers";
 import Header from "@/components/Header";
 import Link from "next/link";
 
@@ -20,7 +20,11 @@ export const metadata: Metadata = {
   description: "Discover stunning approaches in MSFS 2024",
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en">
       <body className="antialiased bg-gradient-to-br from-blue-600 via-blue-200 to-blue-500 min-h-screen">

@@ -6,31 +6,31 @@ import { getSession } from "@/lib/auth";
 const prisma = new PrismaClient();
 
 export async function GET(req: Request) {
-    const session = await getSession();
-    if (!session?.user?.id) {
-        return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
-    }
-    const userId = Number(session.user.id);
+  const session = await getSession();
+  if (!session?.user?.id) {
+    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+  }
+  const userId = Number(session.user.id);
 
-    // load the user’s visitedAirports
-    const user = await prisma.user.findUnique({
-        where: { id: userId },
+  // load the user’s visitedAirports
+  const user = await prisma.user.findUnique({
+    where: { id: userId },
+    select: {
+      visitedAirports: {
         select: {
-            visitedAirports: {
-                select: {
-                    id: true,
-                    airportCode: true,
-                    icaoCode: true,
-                    airportName: true,
-                    city: true,
-                    country: true,
-                    size: true,
-                    description: true,
-                },
-                orderBy: { airportName: "asc" },
-            },
+          id: true,
+          airportCode: true,
+          icaoCode: true,
+          airportName: true,
+          city: true,
+          country: true,
+          size: true,
+          description: true,
         },
-    });
+        orderBy: { airportName: "asc" },
+      },
+    },
+  });
 
-    return NextResponse.json(user?.visitedAirports ?? []);
+  return NextResponse.json(user?.visitedAirports ?? []);
 }
