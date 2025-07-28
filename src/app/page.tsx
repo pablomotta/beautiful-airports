@@ -113,7 +113,6 @@ export default function HomePage() {
       <div className="flex min-h-screen items-center justify-center">
         <div className="text-center">
           <Spinner />
-          <p className="mt-4 text-gray-600">Loading session...</p>
         </div>
       </div>
     );
