@@ -17,43 +17,69 @@ export default function HomePage() {
   const [hasLoadedInitial, setHasLoadedInitial] = useState(false);
   const [showClearConfirm, setShowClearConfirm] = useState(false);
   const [sizeMessage, setSizeMessage] = useState<string | null>(null);
+  const [stats, setStats] = useState<Array<{
+    size: string;
+    total: number;
+    visited: number;
+    unvisited: number;
+  }> | null>(null);
 
   const userId = session?.user.id;
 
-  // Define the getRandomAirport function early so it can be used in useEffect
-  const getRandomAirport = useCallback(async () => {
+  // Fetch stats about airports
+  const fetchStats = useCallback(async () => {
     if (!userId) return;
-    setLoading(true);
-    setSizeMessage(null);
     try {
-      const response = await fetch(
-        `/api/airport/random?size=${size}&userId=${userId}`,
-      );
-      const data = await response.json();
-
+      const response = await fetch("/api/airport/stats");
       if (response.ok) {
-        setAirport(data);
-        // Check if we got a different size than requested
-        if (data.size && data.size !== size) {
-          setSizeMessage(
-            `No unvisited ${size.toLowerCase()} airports available. Showing ${data.size.toLowerCase()} airport instead.`,
-          );
-        }
-      } else {
-        console.error("Failed to fetch random airport:", data.error);
-        setAirport(null);
-        if (data.error.includes("No unvisited airports")) {
-          setSizeMessage(
-            "You've visited all airports! Consider clearing your visited list to start over.",
-          );
-        }
+        const data = await response.json();
+        setStats(data);
       }
     } catch (error) {
-      console.error("Failed to fetch random airport:", error);
-    } finally {
-      setLoading(false);
+      console.error("Failed to fetch stats:", error);
     }
-  }, [userId, size]);
+  }, [userId]);
+
+  // Define the getRandomAirport function early so it can be used in useEffect
+  const getRandomAirport = useCallback(
+    async (requestedSize?: "Small" | "Medium" | "Large") => {
+      if (!userId) return;
+      const sizeToUse = requestedSize || size;
+      setLoading(true);
+      setSizeMessage(null);
+      try {
+        const response = await fetch(
+          `/api/airport/random?size=${sizeToUse}&userId=${userId}`,
+        );
+        const data = await response.json();
+
+        if (response.ok) {
+          setAirport(data);
+          // Check if we got a different size than requested using the API metadata
+          if (data.wasFallback) {
+            setSizeMessage(
+              `No unvisited ${data.requestedSize.toLowerCase()} airports available. Showing ${data.actualSize.toLowerCase()} airport instead.`,
+            );
+          } else {
+            setSizeMessage(null); // Clear message if we got the requested size
+          }
+        } else {
+          console.error("Failed to fetch random airport:", data.error);
+          setAirport(null);
+          if (data.error.includes("No unvisited airports")) {
+            setSizeMessage(
+              "You've visited all airports! Consider clearing your visited list to start over.",
+            );
+          }
+        }
+      } catch (error) {
+        console.error("Failed to fetch random airport:", error);
+      } finally {
+        setLoading(false);
+      }
+    },
+    [userId, size],
+  );
 
   // Load airport from localStorage on mount
   useEffect(() => {
@@ -86,6 +112,13 @@ export default function HomePage() {
       getRandomAirport();
     }
   }, [status, userId, airport, hasLoadedInitial, loading, getRandomAirport]);
+
+  // Fetch stats when user is authenticated
+  useEffect(() => {
+    if (status === "authenticated" && userId) {
+      fetchStats();
+    }
+  }, [status, userId, fetchStats]);
 
   // Save airport to localStorage when it changes
   useEffect(() => {
@@ -144,6 +177,8 @@ export default function HomePage() {
     });
     // Get a new random airport after marking one as visited
     getRandomAirport();
+    // Update stats
+    fetchStats();
   };
 
   const clearVisits = async () => {
@@ -154,6 +189,8 @@ export default function HomePage() {
     });
     // Get a new random airport after clearing visits
     getRandomAirport();
+    // Update stats
+    fetchStats();
     setShowClearConfirm(false);
   };
 
@@ -175,9 +212,13 @@ export default function HomePage() {
                 <select
                   value={size}
                   onChange={(e) => {
-                    setSize(e.target.value as "Small" | "Medium" | "Large");
+                    const newSize = e.target.value as
+                      | "Small"
+                      | "Medium"
+                      | "Large";
+                    setSize(newSize);
                     setSizeMessage(null); // Clear message when size changes
-                    getRandomAirport(); // Fetch new airport for the selected size
+                    getRandomAirport(newSize); // Fetch new airport for the selected size
                   }}
                   className="ml-2 rounded border p-1"
                 >
@@ -187,7 +228,7 @@ export default function HomePage() {
                 </select>
               </label>
               <button
-                onClick={getRandomAirport}
+                onClick={() => getRandomAirport()}
                 disabled={loading}
                 className="w-full rounded bg-blue-500 px-6 py-2 text-white disabled:opacity-50"
               >
@@ -197,6 +238,20 @@ export default function HomePage() {
               {sizeMessage && (
                 <div className="rounded border border-yellow-400 bg-yellow-100 p-3 text-sm text-yellow-800">
                   {sizeMessage}
+                </div>
+              )}
+
+              {stats && (
+                <div className="rounded border border-blue-200 bg-blue-50 p-3 text-sm">
+                  <div className="mb-2 font-medium">Airport Stats:</div>
+                  {stats.map((stat) => (
+                    <div key={stat.size} className="flex justify-between">
+                      <span>{stat.size}:&nbsp;</span>
+                      <span>
+                        {stat.unvisited}/{stat.total} available
+                      </span>
+                    </div>
+                  ))}
                 </div>
               )}
 

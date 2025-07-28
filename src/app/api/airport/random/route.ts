@@ -54,5 +54,11 @@ export async function GET(req: Request) {
     skip,
   });
 
-  return NextResponse.json(airport);
+  // Return airport with additional metadata
+  return NextResponse.json({
+    ...airport,
+    requestedSize,
+    actualSize: size,
+    wasFallback: size !== requestedSize,
+  });
 }
