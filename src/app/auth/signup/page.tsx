@@ -1,9 +1,9 @@
 // src/app/auth/signup/page.tsx
 "use client";
 
-import { useState } from "react";
-import { useRouter } from "next/navigation";
 import { signIn } from "next-auth/react";
+import { useRouter } from "next/navigation";
+import { useState } from "react";
 
 export default function SignUpPage() {
   const router = useRouter();
@@ -56,8 +56,8 @@ export default function SignUpPage() {
   };
 
   return (
-    <main className="max-w-7xl mx-auto">
-      <div className="grid grid-cols-12 py-10 px-4 h-full">
+    <div className="max-w-7xl mx-auto">
+      <div className="grid grid-cols-12 px-4 h-full">
         <div
           className="bg-white col-span-12 md:col-start-5 md:col-span-4
                         px-4 md:p-8 py-8 space-y-6 border-2 border-gray-200
@@ -144,6 +144,6 @@ export default function SignUpPage() {
           </p>
         </div>
       </div>
-    </main>
+    </div>
   );
 }
