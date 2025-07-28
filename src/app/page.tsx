@@ -177,6 +177,7 @@ export default function HomePage() {
                   onChange={(e) => {
                     setSize(e.target.value as "Small" | "Medium" | "Large");
                     setSizeMessage(null); // Clear message when size changes
+                    getRandomAirport(); // Fetch new airport for the selected size
                   }}
                   className="ml-2 rounded border p-1"
                 >
