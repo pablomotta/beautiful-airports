@@ -1,0 +1,67 @@
+---
+description: Instruct Cursor on the Beautiful-Airports Next.js + Prisma app
+globs:
+  - "**/*"
+alwaysApply: true
+---
+
+# Project Overview
+- **Stack:** Next.js App Router (v15), React 19, TypeScript, Tailwind CSS, SWR, Prisma (PostgreSQL/Neon), NextAuth.js.
+- **Purpose:** Suggest random “beautiful” airports (Small/Medium/Large) from a seeded list, let users mark them visited, and view/clear their history.
+
+# Key Files & Folders
+- `prisma/schema.prisma` & `prisma/seed.js` – Data model & seeding from `prisma/airports.json`.
+- `src/app/api/airport/` – CRUD endpoints:  
+  – `random/route.ts`  
+  – `visit/route.ts`  
+  – `clear/route.ts`  
+  – `visited/route.ts`
+- `src/app/auth/` –  
+  – `signin/page.tsx`  
+  – `signup/page.tsx`
+- `src/app/page.tsx` – Home page component.
+- `src/app/visited/page.tsx` – Visited airports list.
+- `src/app/layout.tsx` – Global layout & header (Home / Visited / Logout).
+
+# Coding Guidelines
+- **Components:** Functional React + hooks only; client components (`'use client'`) for SWR.
+- **Data Fetching:** Use `useSWR` pointed at `/api/...` endpoints.
+- **Styling:** Tailwind utility-first. Use the existing container/grid pattern from Home and Visited pages.
+- **API Routes:**  
+  – Always export `GET`, `POST` (or other verbs) from `route.ts` files.  
+  – Use `NextResponse.json()` with proper HTTP status.  
+  – Protect with NextAuth’s `getSession()` or `getServerSession()`.
+  
+  # Agent Behavior
+- Never attempt to run shell/CLI commands on my behalf.
+- Always output the exact commands I should run, and plain‑language instructions.
+- Keep explanations succinct and to the point.
+
+
+# Database & Auth
+- **Prisma Models:**  
+  – `User` with `visitedAirports` relation.  
+  – `Airport` with `airportCode`, `icaoCode`, etc.  
+- **Auth:** Credentials provider via NextAuth.js.  
+  – Sign-in with email/username + password.  
+  – Sign-up creates & auto-signs in new users.
+
+# Naming & Structure
+- Pages in `src/app/{path}`:  
+  – `layout.tsx`, `page.tsx`, and nested `/api/.../route.ts`.
+- Keep filenames lowercase with dashes.
+- Always handle missing or unauthorized cases gracefully.
+
+# UX Patterns
+- “Get Random” / “Mark as Visited” / “Clear Visited” buttons.
+- Responsive center-column card layout.
+- Redirect unauthenticated users to `/auth/signin`.
+
+# Workflows
+- **Seeding:** `npx prisma migrate dev && npm run prisma:seed`
+- **Local Dev:** `npm run dev`
+- **Build:** `npm run build`
+- **Deploy:** Vercel or any Next.js-compatible host.
+
+> Whenever Cursor performs edits or answers, use these rules to keep suggestions aligned with our existing code style, architecture, and project conventions.
+::contentReference[oaicite:0]{index=0}
