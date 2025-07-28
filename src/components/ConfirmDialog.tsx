@@ -65,7 +65,7 @@ export default function ConfirmDialog({
       onClick={onCancel}
     >
       <div
-        className="bg-white rounded-lg shadow-xl w-full max-w-md mx-auto transform transition-all"
+        className="mx-auto w-full max-w-md transform rounded-lg bg-white shadow-xl transition-all"
         style={{
           maxHeight: "90vh",
           animation: isOpen ? "fadeInScale 0.2s ease-out" : undefined,
@@ -73,18 +73,18 @@ export default function ConfirmDialog({
         onClick={(e) => e.stopPropagation()}
       >
         <div className="p-6">
-          <h2 className="text-xl font-semibold text-gray-900 mb-3">{title}</h2>
-          <p className="text-gray-600 mb-6 leading-relaxed">{message}</p>
-          <div className="flex flex-col-reverse sm:flex-row sm:justify-end gap-3">
+          <h2 className="mb-3 text-xl font-semibold text-gray-900">{title}</h2>
+          <p className="mb-6 leading-relaxed text-gray-600">{message}</p>
+          <div className="flex flex-col-reverse gap-3 sm:flex-row sm:justify-end">
             <button
               onClick={onCancel}
-              className="w-full sm:w-auto px-4 py-2 text-gray-700 bg-gray-100 border border-gray-300 rounded-md hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 transition-colors"
+              className="w-full rounded-md border border-gray-300 bg-gray-100 px-4 py-2 text-gray-700 transition-colors hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 sm:w-auto"
             >
               {cancelText}
             </button>
             <button
               onClick={onConfirm}
-              className={`w-full sm:w-auto px-4 py-2 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 transition-colors ${
+              className={`w-full rounded-md px-4 py-2 text-white transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 sm:w-auto ${
                 isDangerous
                   ? "bg-red-600 hover:bg-red-700 focus:ring-red-500"
                   : "bg-blue-600 hover:bg-blue-700 focus:ring-blue-500"

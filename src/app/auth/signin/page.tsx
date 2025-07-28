@@ -32,17 +32,13 @@ export default function SignInPage() {
   };
 
   return (
-    <div className="max-w-7xl mx-auto">
-      <div className="grid grid-cols-12 px-4 h-full">
-        <div
-          className="bg-white col-span-12 md:col-start-5 md:col-span-4 
-                        px-4 md:p-8 py-8 space-y-6 border-2 border-gray-200 
-                        rounded-lg h-full shadow-sm"
-        >
-          <h1 className="text-3xl font-bold text-center mb-6">
+    <div className="mx-auto max-w-7xl">
+      <div className="grid h-full grid-cols-12 px-4">
+        <div className="col-span-12 h-full space-y-6 rounded-lg border-2 border-gray-200 bg-white px-4 py-8 shadow-sm md:col-span-4 md:col-start-5 md:p-8">
+          <h1 className="mb-6 text-center text-3xl font-bold">
             Beautiful Airports
           </h1>
-          <div className="text-center text-gray-600 mb-6 space-y-2">
+          <div className="mb-6 space-y-2 text-center text-gray-600">
             <p className="text-lg">
               Discover stunning airports in beautiful cities around the world
               for your next flight simulation adventure.
@@ -53,10 +49,10 @@ export default function SignInPage() {
               simulator.
             </p>
           </div>
-          {error && <div className="text-red-600 text-center">{error}</div>}
+          {error && <div className="text-center text-red-600">{error}</div>}
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
-              <label className="block mb-1 font-medium">
+              <label className="mb-1 block font-medium">
                 Email or Username
               </label>
               <input
@@ -64,28 +60,28 @@ export default function SignInPage() {
                 value={identifier}
                 onChange={(e) => setIdentifier(e.target.value)}
                 required
-                className="w-full p-2 border rounded"
+                className="w-full rounded border p-2"
               />
             </div>
             <div>
-              <label className="block mb-1 font-medium">Password</label>
+              <label className="mb-1 block font-medium">Password</label>
               <input
                 type="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 required
-                className="w-full p-2 border rounded"
+                className="w-full rounded border p-2"
               />
             </div>
             <button
               type="submit"
               disabled={loading}
-              className="w-full py-2 bg-blue-600 text-white rounded disabled:opacity-50"
+              className="w-full rounded bg-blue-600 py-2 text-white disabled:opacity-50"
             >
               {loading ? "Signing In…" : "Sign In"}
             </button>
           </form>
-          <p className="text-center mt-4">
+          <p className="mt-4 text-center">
             Don’t have an account?{" "}
             <a href="/auth/signup" className="text-blue-600 hover:underline">
               Sign up!

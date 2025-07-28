@@ -13,7 +13,7 @@ export async function POST(req: Request) {
     if (!email || !username || !password) {
       return NextResponse.json(
         { error: "email, username and password are all required" },
-        { status: 400 }
+        { status: 400 },
       );
     }
 
@@ -26,7 +26,7 @@ export async function POST(req: Request) {
     if (conflict) {
       return NextResponse.json(
         { error: "Email or username already in use" },
-        { status: 409 }
+        { status: 409 },
       );
     }
 
@@ -46,13 +46,13 @@ export async function POST(req: Request) {
     // 5. Return created user ID
     return NextResponse.json(
       { success: true, userId: user.id },
-      { status: 201 }
+      { status: 201 },
     );
   } catch (err: any) {
     console.error("Signup error:", err);
     return NextResponse.json(
       { error: "Internal server error" },
-      { status: 500 }
+      { status: 500 },
     );
   }
 }

@@ -18,7 +18,7 @@ export default function VisitedPage() {
     mutate,
   } = useSWR<Airport[]>(
     () => (session ? "/api/airport/visited" : null),
-    fetcher
+    fetcher,
   );
 
   const clearVisited = async () => {
@@ -40,13 +40,13 @@ export default function VisitedPage() {
   if (!session) {
     return (
       <div className="min-h-screen">
-        <main className="max-w-7xl mx-auto h-screen">
-          <div className="grid grid-cols-12 py-10 px-4 h-full">
-            <div className="bg-white col-span-12 md:col-start-5 md:col-span-4 px-4 md:p-8 py-8 space-y-6 border-2 border-gray-200 rounded-lg h-full shadow-sm text-center">
+        <main className="mx-auto h-screen max-w-7xl">
+          <div className="grid h-full grid-cols-12 px-4 py-10">
+            <div className="col-span-12 h-full space-y-6 rounded-lg border-2 border-gray-200 bg-white px-4 py-8 text-center shadow-sm md:col-span-4 md:col-start-5 md:p-8">
               <p>Please sign in to view your visited airports.</p>
               <button
                 onClick={() => signIn()}
-                className="mt-4 px-4 py-2 bg-blue-600 text-white rounded"
+                className="mt-4 rounded bg-blue-600 px-4 py-2 text-white"
               >
                 Sign In
               </button>
@@ -59,23 +59,23 @@ export default function VisitedPage() {
 
   return (
     <>
-      <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-12 px-4 h-full">
-          <div className="bg-white col-span-12 md:col-start-5 md:col-span-4 px-4 md:p-8 py-8 space-y-6 border-2 border-gray-200 rounded-lg h-full shadow-sm">
-            <div className="w-full flex justify-center items-center mb-10">
+      <div className="mx-auto max-w-7xl">
+        <div className="grid h-full grid-cols-12 px-4">
+          <div className="col-span-12 h-full space-y-6 rounded-lg border-2 border-gray-200 bg-white px-4 py-8 shadow-sm md:col-span-4 md:col-start-5 md:p-8">
+            <div className="mb-10 flex w-full items-center justify-center">
               <h1 className="text-3xl font-bold">Visited Airports</h1>
             </div>
 
-            <div className="flex items-start flex-col gap-4">
-              <div className="flex gap-2 w-full">
+            <div className="flex flex-col items-start gap-4">
+              <div className="flex w-full gap-2">
                 <button
                   onClick={handleClearVisitedClick}
-                  className="w-1/2 px-6 py-2 bg-red-500 text-white rounded hover:bg-red-600"
+                  className="w-1/2 rounded bg-red-500 px-6 py-2 text-white hover:bg-red-600"
                 >
                   Clear Visited
                 </button>
                 <Link href="/" className="w-1/2">
-                  <button className="w-full px-6 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
+                  <button className="w-full rounded bg-blue-500 px-6 py-2 text-white hover:bg-blue-600">
                     Get Random
                   </button>
                 </Link>
@@ -84,13 +84,13 @@ export default function VisitedPage() {
               {isLoading ? (
                 <p>Loading…</p>
               ) : visited.length > 0 ? (
-                <ul className="space-y-4 w-full">
+                <ul className="w-full space-y-4">
                   {visited.map((a: Airport) => (
                     <li
                       key={a.id}
-                      className="border p-4 rounded flex flex-col space-y-1 bg-gray-100 shadow-lg"
+                      className="flex flex-col space-y-1 rounded border bg-gray-100 p-4 shadow-lg"
                     >
-                      <div className="flex justify-between items-center">
+                      <div className="flex items-center justify-between">
                         <h2 className="font-semibold">
                           {a.airportName} ({a.airportCode})
                         </h2>

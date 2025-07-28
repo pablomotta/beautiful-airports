@@ -27,7 +27,7 @@ export default function HomePage() {
     setSizeMessage(null);
     try {
       const response = await fetch(
-        `/api/airport/random?size=${size}&userId=${userId}`
+        `/api/airport/random?size=${size}&userId=${userId}`,
       );
       const data = await response.json();
 
@@ -36,7 +36,7 @@ export default function HomePage() {
         // Check if we got a different size than requested
         if (data.size && data.size !== size) {
           setSizeMessage(
-            `No unvisited ${size.toLowerCase()} airports available. Showing ${data.size.toLowerCase()} airport instead.`
+            `No unvisited ${size.toLowerCase()} airports available. Showing ${data.size.toLowerCase()} airport instead.`,
           );
         }
       } else {
@@ -44,7 +44,7 @@ export default function HomePage() {
         setAirport(null);
         if (data.error.includes("No unvisited airports")) {
           setSizeMessage(
-            "You've visited all airports! Consider clearing your visited list to start over."
+            "You've visited all airports! Consider clearing your visited list to start over.",
           );
         }
       }
@@ -110,7 +110,7 @@ export default function HomePage() {
   // show a spinner or nothing while NextAuth is checking
   if (status === "loading") {
     return (
-      <div className="min-h-screen flex items-center justify-center">
+      <div className="flex min-h-screen items-center justify-center">
         <div className="text-center">
           <Spinner />
           <p className="mt-4 text-gray-600">Loading session...</p>
@@ -121,9 +121,9 @@ export default function HomePage() {
 
   if (status === "unauthenticated") {
     return (
-      <div className="flex items-center justify-center bg-white max-w-sm mx-auto border-2 border-gray-200 rounded-lg shadow-sm  py-10">
+      <div className="mx-auto flex max-w-sm items-center justify-center rounded-lg border-2 border-gray-200 bg-white py-10 shadow-sm">
         <div className="text-center">
-          <p className="text-gray-600 mb-4">
+          <p className="mb-4 text-gray-600">
             You need to sign in to access this page.
           </p>
           <p className="text-sm text-gray-500">
@@ -164,13 +164,13 @@ export default function HomePage() {
 
   return (
     <>
-      <main className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-12 px-4 h-full">
-          <div className="bg-white col-span-12 md:col-start-5 md:col-span-4 px-4 md:p-8 py-8 space-y-6 border-2 border-gray-200 rounded-lg h-full shadow-sm">
-            <div className="w-full flex justify-center items-center mb-10">
+      <main className="mx-auto max-w-7xl">
+        <div className="grid h-full grid-cols-12 px-4">
+          <div className="col-span-12 h-full space-y-6 rounded-lg border-2 border-gray-200 bg-white px-4 py-8 shadow-sm md:col-span-4 md:col-start-5 md:p-8">
+            <div className="mb-10 flex w-full items-center justify-center">
               <h1 className="text-3xl font-bold">Beautiful Airports</h1>
             </div>
-            <div className="flex items-start flex-col gap-4">
+            <div className="flex flex-col items-start gap-4">
               <label>
                 <span className="font-medium">Size:</span>
                 <select
@@ -179,7 +179,7 @@ export default function HomePage() {
                     setSize(e.target.value as "Small" | "Medium" | "Large");
                     setSizeMessage(null); // Clear message when size changes
                   }}
-                  className="ml-2 p-1 border rounded"
+                  className="ml-2 rounded border p-1"
                 >
                   <option>Small</option>
                   <option>Medium</option>
@@ -189,26 +189,26 @@ export default function HomePage() {
               <button
                 onClick={getRandomAirport}
                 disabled={loading}
-                className="w-full px-6 py-2 bg-blue-500 text-white rounded disabled:opacity-50"
+                className="w-full rounded bg-blue-500 px-6 py-2 text-white disabled:opacity-50"
               >
                 {loading ? "Loading..." : "Get Random"}
               </button>
 
               {sizeMessage && (
-                <div className="p-3 bg-yellow-100 border border-yellow-400 rounded text-sm text-yellow-800">
+                <div className="rounded border border-yellow-400 bg-yellow-100 p-3 text-sm text-yellow-800">
                   {sizeMessage}
                 </div>
               )}
 
-              <div className="flex gap-2 w-full">
+              <div className="flex w-full gap-2">
                 <Link href="/visited" className="w-1/2">
-                  <button className="w-full px-6 py-2 bg-purple-500 text-white rounded">
+                  <button className="w-full rounded bg-purple-500 px-6 py-2 text-white">
                     See visited
                   </button>
                 </Link>
                 <button
                   onClick={handleClearVisitsClick}
-                  className="w-1/2 px-6 py-2 bg-red-500 text-white rounded"
+                  className="w-1/2 rounded bg-red-500 px-6 py-2 text-white"
                 >
                   Clear Visited
                 </button>
@@ -216,7 +216,7 @@ export default function HomePage() {
             </div>
 
             {airport ? (
-              <div className="border p-4 rounded space-y-2 shadow-lg bg-gray-100">
+              <div className="space-y-2 rounded border bg-gray-100 p-4 shadow-lg">
                 <h2 className="text-xl">
                   {airport.airportName} ({airport.airportCode})
                 </h2>
@@ -230,7 +230,7 @@ export default function HomePage() {
                 {airport.description && <p>{airport.description}</p>}
                 <button
                   onClick={markVisited}
-                  className="mt-2 px-6 py-2 bg-green-500 text-white rounded"
+                  className="mt-2 rounded bg-green-500 px-6 py-2 text-white"
                 >
                   Mark as Visited
                 </button>

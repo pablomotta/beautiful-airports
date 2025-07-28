@@ -56,73 +56,69 @@ export default function SignUpPage() {
   };
 
   return (
-    <div className="max-w-7xl mx-auto">
-      <div className="grid grid-cols-12 px-4 h-full">
-        <div
-          className="bg-white col-span-12 md:col-start-5 md:col-span-4
-                        px-4 md:p-8 py-8 space-y-6 border-2 border-gray-200
-                        rounded-lg h-full shadow-sm"
-        >
-          <h1 className="text-3xl font-bold text-center mb-6">
+    <div className="mx-auto max-w-7xl">
+      <div className="grid h-full grid-cols-12 px-4">
+        <div className="col-span-12 h-full space-y-6 rounded-lg border-2 border-gray-200 bg-white px-4 py-8 shadow-sm md:col-span-4 md:col-start-5 md:p-8">
+          <h1 className="mb-6 text-center text-3xl font-bold">
             Create your account
           </h1>
 
-          {error && <div className="text-red-600 text-center">{error}</div>}
+          {error && <div className="text-center text-red-600">{error}</div>}
 
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
-              <label className="block mb-1 font-medium">Name (optional)</label>
+              <label className="mb-1 block font-medium">Name (optional)</label>
               <input
                 type="text"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                className="w-full p-2 border rounded"
+                className="w-full rounded border p-2"
               />
             </div>
 
             <div>
-              <label className="block mb-1 font-medium">Email</label>
+              <label className="mb-1 block font-medium">Email</label>
               <input
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
-                className="w-full p-2 border rounded"
+                className="w-full rounded border p-2"
               />
             </div>
 
             <div>
-              <label className="block mb-1 font-medium">Username</label>
+              <label className="mb-1 block font-medium">Username</label>
               <input
                 type="text"
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
                 required
-                className="w-full p-2 border rounded"
+                className="w-full rounded border p-2"
               />
             </div>
 
             <div>
-              <label className="block mb-1 font-medium">Password</label>
+              <label className="mb-1 block font-medium">Password</label>
               <input
                 type="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 required
-                className="w-full p-2 border rounded"
+                className="w-full rounded border p-2"
                 minLength={10}
                 placeholder="Min 10 chars, mixed case, symbol & number"
               />
             </div>
 
             <div>
-              <label className="block mb-1 font-medium">Confirm Password</label>
+              <label className="mb-1 block font-medium">Confirm Password</label>
               <input
                 type="password"
                 value={confirmPassword}
                 onChange={(e) => setConfirmPassword(e.target.value)}
                 required
-                className="w-full p-2 border rounded"
+                className="w-full rounded border p-2"
                 minLength={10}
               />
             </div>
@@ -130,13 +126,13 @@ export default function SignUpPage() {
             <button
               type="submit"
               disabled={loading}
-              className="w-full py-2 bg-green-600 text-white rounded disabled:opacity-50"
+              className="w-full rounded bg-green-600 py-2 text-white disabled:opacity-50"
             >
               {loading ? "Creating Account…" : "Sign Up"}
             </button>
           </form>
 
-          <p className="text-center mt-4">
+          <p className="mt-4 text-center">
             Already have an account?{" "}
             <a href="/auth/signin" className="text-blue-600 hover:underline">
               Sign in!

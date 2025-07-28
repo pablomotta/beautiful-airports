@@ -26,7 +26,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="antialiased bg-gradient-to-br from-blue-600 via-blue-200 to-blue-500 min-h-screen">
+      <body className="min-h-screen bg-gradient-to-br from-blue-600 via-blue-200 to-blue-500 antialiased">
         <Providers>
           <Header />
           <main className="py-8">{children}</main>

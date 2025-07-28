@@ -44,7 +44,7 @@ export async function GET(req: Request) {
   if (!count) {
     return NextResponse.json(
       { error: "No unvisited airports available in any size" },
-      { status: 404 }
+      { status: 404 },
     );
   }
 
