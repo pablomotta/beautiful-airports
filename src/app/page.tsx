@@ -16,6 +16,7 @@ export default function HomePage() {
   const [loading, setLoading] = useState(false);
   const [hasLoadedInitial, setHasLoadedInitial] = useState(false);
   const [showClearConfirm, setShowClearConfirm] = useState(false);
+  const [sizeMessage, setSizeMessage] = useState<string | null>(null);
 
   const userId = session?.user.id;
 
@@ -23,12 +24,30 @@ export default function HomePage() {
   const getRandomAirport = useCallback(async () => {
     if (!userId) return;
     setLoading(true);
+    setSizeMessage(null);
     try {
       const response = await fetch(
         `/api/airport/random?size=${size}&userId=${userId}`
       );
       const data = await response.json();
-      setAirport(data);
+
+      if (response.ok) {
+        setAirport(data);
+        // Check if we got a different size than requested
+        if (data.size && data.size !== size) {
+          setSizeMessage(
+            `No unvisited ${size.toLowerCase()} airports available. Showing ${data.size.toLowerCase()} airport instead.`
+          );
+        }
+      } else {
+        console.error("Failed to fetch random airport:", data.error);
+        setAirport(null);
+        if (data.error.includes("No unvisited airports")) {
+          setSizeMessage(
+            "You've visited all airports! Consider clearing your visited list to start over."
+          );
+        }
+      }
     } catch (error) {
       console.error("Failed to fetch random airport:", error);
     } finally {
@@ -156,9 +175,10 @@ export default function HomePage() {
                 <span className="font-medium">Size:</span>
                 <select
                   value={size}
-                  onChange={(e) =>
-                    setSize(e.target.value as "Small" | "Medium" | "Large")
-                  }
+                  onChange={(e) => {
+                    setSize(e.target.value as "Small" | "Medium" | "Large");
+                    setSizeMessage(null); // Clear message when size changes
+                  }}
                   className="ml-2 p-1 border rounded"
                 >
                   <option>Small</option>
@@ -173,6 +193,13 @@ export default function HomePage() {
               >
                 {loading ? "Loading..." : "Get Random"}
               </button>
+
+              {sizeMessage && (
+                <div className="p-3 bg-yellow-100 border border-yellow-400 rounded text-sm text-yellow-800">
+                  {sizeMessage}
+                </div>
+              )}
+
               <div className="flex gap-2 w-full">
                 <Link href="/visited" className="w-1/2">
                   <button className="w-full px-6 py-2 bg-purple-500 text-white rounded">
