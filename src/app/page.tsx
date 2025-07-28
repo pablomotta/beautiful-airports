@@ -5,22 +5,79 @@ import { Airport } from "@/generated/prisma";
 import { useSession } from "next-auth/react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useEffect, useState } from "react";
-import useSWR from "swr";
-
-const fetcher = (url: string) => fetch(url).then((r) => r.json());
+import { useCallback, useEffect, useState } from "react";
 
 export default function HomePage() {
   const router = useRouter();
   const { data: session, status } = useSession();
   const [size, setSize] = useState<"Small" | "Medium" | "Large">("Small");
+  const [airport, setAirport] = useState<Airport | null>(null);
+  const [loading, setLoading] = useState(false);
+  const [hasLoadedInitial, setHasLoadedInitial] = useState(false);
 
   const userId = session?.user.id;
 
-  const { data: airport, mutate } = useSWR<Airport>(
-    userId ? `/api/airport/random?size=${size}&userId=${userId}` : null,
-    fetcher
-  );
+  // Define the getRandomAirport function early so it can be used in useEffect
+  const getRandomAirport = useCallback(async () => {
+    if (!userId) return;
+    setLoading(true);
+    try {
+      const response = await fetch(
+        `/api/airport/random?size=${size}&userId=${userId}`
+      );
+      const data = await response.json();
+      setAirport(data);
+    } catch (error) {
+      console.error("Failed to fetch random airport:", error);
+    } finally {
+      setLoading(false);
+    }
+  }, [userId, size]);
+
+  // Load airport from localStorage on mount
+  useEffect(() => {
+    const savedAirport = localStorage.getItem("currentAirport");
+    const savedSize = localStorage.getItem("selectedSize");
+
+    if (savedAirport) {
+      try {
+        setAirport(JSON.parse(savedAirport));
+        setHasLoadedInitial(true);
+      } catch (error) {
+        console.error("Failed to parse saved airport:", error);
+      }
+    }
+
+    if (savedSize && ["Small", "Medium", "Large"].includes(savedSize)) {
+      setSize(savedSize as "Small" | "Medium" | "Large");
+    }
+  }, []);
+
+  // Auto-load airport on first authenticated session (if none exists)
+  useEffect(() => {
+    if (
+      status === "authenticated" &&
+      userId &&
+      !airport &&
+      !hasLoadedInitial &&
+      !loading
+    ) {
+      getRandomAirport();
+    }
+  }, [status, userId, airport, hasLoadedInitial, loading, getRandomAirport]);
+
+  // Save airport to localStorage when it changes
+  useEffect(() => {
+    if (airport) {
+      localStorage.setItem("currentAirport", JSON.stringify(airport));
+      setHasLoadedInitial(true);
+    }
+  }, [airport]);
+
+  // Save size preference to localStorage when it changes
+  useEffect(() => {
+    localStorage.setItem("selectedSize", size);
+  }, [size]);
 
   // redirect if not signed in
   useEffect(() => {
@@ -30,10 +87,28 @@ export default function HomePage() {
   }, [status, router]);
 
   // show a spinner or nothing while NextAuth is checking
-  if (status !== "authenticated") {
+  if (status === "loading") {
     return (
       <div className="min-h-screen flex items-center justify-center">
-        <Spinner />
+        <div className="text-center">
+          <Spinner />
+          <p className="mt-4 text-gray-600">Loading session...</p>
+        </div>
+      </div>
+    );
+  }
+
+  if (status === "unauthenticated") {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <div className="text-center">
+          <p className="text-gray-600 mb-4">
+            You need to sign in to access this page.
+          </p>
+          <p className="text-sm text-gray-500">
+            Redirecting to sign-in page...
+          </p>
+        </div>
       </div>
     );
   }
@@ -47,7 +122,8 @@ export default function HomePage() {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ userId, airportId: airport.id }),
     });
-    mutate();
+    // Get a new random airport after marking one as visited
+    getRandomAirport();
   };
 
   const clearVisits = async () => {
@@ -56,7 +132,8 @@ export default function HomePage() {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ userId }),
     });
-    mutate();
+    // Get a new random airport after clearing visits
+    getRandomAirport();
   };
 
   return (
@@ -83,10 +160,11 @@ export default function HomePage() {
                 </select>
               </label>
               <button
-                onClick={() => mutate()}
-                className="w-full px-6 py-2 bg-blue-500 text-white rounded"
+                onClick={getRandomAirport}
+                disabled={loading}
+                className="w-full px-6 py-2 bg-blue-500 text-white rounded disabled:opacity-50"
               >
-                Get Random
+                {loading ? "Loading..." : "Get Random"}
               </button>
               <div className="flex gap-2 w-full">
                 <Link href="/visited" className="w-1/2">
@@ -124,7 +202,11 @@ export default function HomePage() {
                 </button>
               </div>
             ) : (
-              <p>Loading or no airports available...</p>
+              <p>
+                {loading
+                  ? "Loading..."
+                  : "Click 'Get Random' to discover a beautiful airport!"}
+              </p>
             )}
           </div>
         </div>
