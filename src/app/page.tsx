@@ -241,6 +241,18 @@ export default function HomePage() {
                 </div>
               )}
 
+              {/* Runway Size Information */}
+              <div className="rounded border border-blue-200 bg-blue-50 p-3 text-sm">
+                <div className="text-blue-700">
+                  {size === "Small" &&
+                    "Light aircraft & regional planes • Runways under 800m (2625ft)"}
+                  {size === "Medium" &&
+                    "Regional jets & turboprops • Runways 800-1800m (2625-5906ft)"}
+                  {size === "Large" &&
+                    "Commercial jets & wide-body aircraft • Runways 1800m+ (5906ft+)"}
+                </div>
+              </div>
+
               {stats && (
                 <div className="rounded border border-blue-200 bg-blue-50 p-3 text-sm">
                   <div className="mb-2 font-medium">Airport Stats:</div>
