@@ -14,7 +14,7 @@ model User {
   email           String    @unique
   username        String    @unique
   password        String
-  visitedAirports Airport[] @relation("VisitedAirports")
+  visits          Visit[]
 }
 
 model Airport {
@@ -27,5 +27,16 @@ model Airport {
   runwayLengthMeters Int?
   size               String
   description        String?
-  visitedByUsers     User[]  @relation("VisitedAirports")
+  visits             Visit[]
+}
+
+model Visit {
+  id        Int      @id @default(autoincrement())
+  userId    Int
+  airportId Int
+  visitedAt DateTime @default(now())
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  airport   Airport  @relation(fields: [airportId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, airportId])
 }

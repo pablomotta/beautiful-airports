@@ -1,7 +1,10 @@
 // prisma/seed.js
-const { PrismaClient } = require("../src/generated/prisma");
-const bcrypt = require("bcrypt");
-const airports = require("./airports.json");
+
+import bcrypt from "bcrypt";
+import { readFileSync } from "fs";
+import { PrismaClient } from "../src/generated/prisma/index.js";
+
+const airports = JSON.parse(readFileSync("./prisma/airports.json", "utf-8"));
 
 const prisma = new PrismaClient();
 
