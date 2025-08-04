@@ -11,6 +11,13 @@ export async function GET(req: Request) {
   }
   const userId = Number(session.user.id);
 
+  // Get visited airport IDs for this user
+  const visitedAirportIds = await prisma.visit.findMany({
+    where: { userId: userId },
+    select: { airportId: true },
+  });
+  const visitedIds = visitedAirportIds.map((v) => v.airportId);
+
   // Get counts for each size
   const sizes = ["Small", "Medium", "Large"];
   const stats = await Promise.all(
@@ -21,7 +28,7 @@ export async function GET(req: Request) {
       const visited = await prisma.airport.count({
         where: {
           size,
-          visitedByUsers: { some: { id: userId } },
+          id: { in: visitedIds },
         },
       });
       const unvisited = total - visited;

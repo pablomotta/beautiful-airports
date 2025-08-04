@@ -1,7 +1,7 @@
 // src/app/api/airport/visited/route.ts
-import { NextResponse } from "next/server";
 import { PrismaClient } from "@/generated/prisma";
 import { getSession } from "@/lib/auth";
+import { NextResponse } from "next/server";
 
 const prisma = new PrismaClient();
 
@@ -12,11 +12,11 @@ export async function GET(req: Request) {
   }
   const userId = Number(session.user.id);
 
-  // load the user’s visitedAirports
-  const user = await prisma.user.findUnique({
-    where: { id: userId },
-    select: {
-      visitedAirports: {
+  // Get visited airports ordered by most recent visit first
+  const visits = await prisma.visit.findMany({
+    where: { userId: userId },
+    include: {
+      airport: {
         select: {
           id: true,
           airportCode: true,
@@ -27,10 +27,13 @@ export async function GET(req: Request) {
           size: true,
           description: true,
         },
-        orderBy: { airportName: "asc" },
       },
     },
+    orderBy: { visitedAt: "desc" },
   });
 
-  return NextResponse.json(user?.visitedAirports ?? []);
+  // Extract just the airport data
+  const visitedAirports = visits.map((visit) => visit.airport);
+
+  return NextResponse.json(visitedAirports);
 }

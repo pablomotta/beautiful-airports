@@ -14,9 +14,19 @@ export async function GET(req: Request) {
   const { searchParams } = new URL(req.url);
   const requestedSize = searchParams.get("size") || "Small";
 
+  // Get visited airport IDs for this user
+  const visitedAirportIds = await prisma.visit.findMany({
+    where: { userId: userId },
+    select: { airportId: true },
+  });
+  const visitedIds = visitedAirportIds.map((v) => v.airportId);
+
   // Try the requested size first
   let count = await prisma.airport.count({
-    where: { size: requestedSize, visitedByUsers: { none: { id: userId } } },
+    where: {
+      size: requestedSize,
+      id: { notIn: visitedIds },
+    },
   });
 
   let size = requestedSize;
@@ -29,7 +39,7 @@ export async function GET(req: Request) {
         count = await prisma.airport.count({
           where: {
             size: fallbackSize,
-            visitedByUsers: { none: { id: userId } },
+            id: { notIn: visitedIds },
           },
         });
         if (count > 0) {
@@ -50,7 +60,10 @@ export async function GET(req: Request) {
 
   const skip = Math.floor(Math.random() * count);
   const airport = await prisma.airport.findFirst({
-    where: { size, visitedByUsers: { none: { id: userId } } },
+    where: {
+      size,
+      id: { notIn: visitedIds },
+    },
     skip,
   });
 
