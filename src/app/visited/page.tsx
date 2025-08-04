@@ -39,20 +39,19 @@ export default function VisitedPage() {
 
   if (!session) {
     return (
-      <div className="min-h-screen">
-        <main className="mx-auto h-screen max-w-7xl">
-          <div className="grid h-full grid-cols-12 px-4 py-10">
-            <div className="col-span-12 h-full space-y-6 rounded-lg border-2 border-gray-200 bg-white px-4 py-8 text-center shadow-sm md:col-span-4 md:col-start-5 md:p-8">
-              <p>Please sign in to view your visited airports.</p>
-              <button
-                onClick={() => signIn()}
-                className="mt-4 rounded bg-blue-600 px-4 py-2 text-white"
-              >
-                Sign In
-              </button>
-            </div>
+      // visited logged out page
+      <div className="mx-auto max-w-7xl">
+        <div className="grid h-full grid-cols-12 px-4">
+          <div className="col-span-12 h-full space-y-6 rounded-lg border-2 border-gray-200 bg-white px-4 py-8 text-center shadow-sm md:col-span-4 md:col-start-5 md:p-8">
+            <p>Please sign in to view your visited airports.</p>
+            <button
+              onClick={() => signIn()}
+              className="mt-4 rounded bg-blue-600 px-4 py-2 text-white"
+            >
+              Sign In
+            </button>
           </div>
-        </main>
+        </div>
       </div>
     );
   }
