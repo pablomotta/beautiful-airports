@@ -2,7 +2,7 @@
 
 import ConfirmDialog from "@/components/ConfirmDialog";
 import Spinner from "@/components/Spinner";
-import { Airport } from "@/generated/prisma";
+import { useAirportStore } from "@/store/airport-store";
 import { useSession } from "next-auth/react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
@@ -11,18 +11,25 @@ import { useCallback, useEffect, useState } from "react";
 export default function HomePage() {
   const router = useRouter();
   const { data: session, status } = useSession();
-  const [size, setSize] = useState<"Small" | "Medium" | "Large">("Small");
-  const [airport, setAirport] = useState<Airport | null>(null);
-  const [loading, setLoading] = useState(false);
-  const [hasLoadedInitial, setHasLoadedInitial] = useState(false);
   const [showClearConfirm, setShowClearConfirm] = useState(false);
-  const [sizeMessage, setSizeMessage] = useState<string | null>(null);
   const [stats, setStats] = useState<Array<{
     size: string;
     total: number;
     visited: number;
     unvisited: number;
   }> | null>(null);
+
+  // Zustand store
+  const {
+    airportSize,
+    currentAirport,
+    loading,
+    sizeMessage,
+    setAirportSizeAndFetch,
+    fetchRandomAirport,
+    markAirportAsVisited,
+    clearVisitedAirports,
+  } = useAirportStore();
 
   const userId = session?.user.id;
 
@@ -40,78 +47,23 @@ export default function HomePage() {
     }
   }, [userId]);
 
-  // Define the getRandomAirport function early so it can be used in useEffect
-  const getRandomAirport = useCallback(
-    async (requestedSize?: "Small" | "Medium" | "Large") => {
-      if (!userId) return;
-      const sizeToUse = requestedSize || size;
-      setLoading(true);
-      setSizeMessage(null);
-      try {
-        const response = await fetch(
-          `/api/airport/random?size=${sizeToUse}&userId=${userId}`,
-        );
-        const data = await response.json();
-
-        if (response.ok) {
-          setAirport(data);
-          // Check if we got a different size than requested using the API metadata
-          if (data.wasFallback) {
-            setSizeMessage(
-              `No unvisited ${data.requestedSize.toLowerCase()} airports available. Showing ${data.actualSize.toLowerCase()} airport instead.`,
-            );
-          } else {
-            setSizeMessage(null); // Clear message if we got the requested size
-          }
-        } else {
-          console.error("Failed to fetch random airport:", data.error);
-          setAirport(null);
-          if (data.error.includes("No unvisited airports")) {
-            setSizeMessage(
-              "You've visited all airports! Consider clearing your visited list to start over.",
-            );
-          }
-        }
-      } catch (error) {
-        console.error("Failed to fetch random airport:", error);
-      } finally {
-        setLoading(false);
-      }
-    },
-    [userId, size],
-  );
-
-  // Load airport from localStorage on mount
-  useEffect(() => {
-    const savedAirport = localStorage.getItem("currentAirport");
-    const savedSize = localStorage.getItem("selectedSize");
-
-    if (savedAirport) {
-      try {
-        setAirport(JSON.parse(savedAirport));
-        setHasLoadedInitial(true);
-      } catch (error) {
-        console.error("Failed to parse saved airport:", error);
-      }
-    }
-
-    if (savedSize && ["Small", "Medium", "Large"].includes(savedSize)) {
-      setSize(savedSize as "Small" | "Medium" | "Large");
-    }
-  }, []);
-
-  // Auto-load airport on first authenticated session (if none exists)
+  // Auto-fetch airport on first load if none exists
   useEffect(() => {
     if (
       status === "authenticated" &&
       userId &&
-      !airport &&
-      !hasLoadedInitial &&
-      !loading
+      !currentAirport &&
+      !loading.fetchingRandom
     ) {
-      getRandomAirport();
+      fetchRandomAirport(userId);
     }
-  }, [status, userId, airport, hasLoadedInitial, loading, getRandomAirport]);
+  }, [
+    status,
+    userId,
+    currentAirport,
+    loading.fetchingRandom,
+    fetchRandomAirport,
+  ]);
 
   // Fetch stats when user is authenticated
   useEffect(() => {
@@ -119,19 +71,6 @@ export default function HomePage() {
       fetchStats();
     }
   }, [status, userId, fetchStats]);
-
-  // Save airport to localStorage when it changes
-  useEffect(() => {
-    if (airport) {
-      localStorage.setItem("currentAirport", JSON.stringify(airport));
-      setHasLoadedInitial(true);
-    }
-  }, [airport]);
-
-  // Save size preference to localStorage when it changes
-  useEffect(() => {
-    localStorage.setItem("selectedSize", size);
-  }, [size]);
 
   // redirect if not signed in
   useEffect(() => {
@@ -169,26 +108,15 @@ export default function HomePage() {
   // at this point status === 'authenticated' and session is non-null
 
   const markVisited = async () => {
-    if (!airport) return;
-    await fetch("/api/airport/visit", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ userId, airportId: airport.id }),
-    });
-    // Get a new random airport after marking one as visited
-    getRandomAirport();
+    if (!currentAirport || !userId) return;
+    await markAirportAsVisited(userId, currentAirport.id.toString());
     // Update stats
     fetchStats();
   };
 
   const clearVisits = async () => {
-    await fetch("/api/airport/clear", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ userId }),
-    });
-    // Get a new random airport after clearing visits
-    getRandomAirport();
+    if (!userId) return;
+    await clearVisitedAirports(userId);
     // Update stats
     fetchStats();
     setShowClearConfirm(false);
@@ -210,17 +138,18 @@ export default function HomePage() {
               <label>
                 <span className="font-medium">Size:</span>
                 <select
-                  value={size}
+                  value={airportSize}
                   onChange={(e) => {
                     const newSize = e.target.value as
                       | "Small"
                       | "Medium"
                       | "Large";
-                    setSize(newSize);
-                    setSizeMessage(null); // Clear message when size changes
-                    getRandomAirport(newSize); // Fetch new airport for the selected size
+                    if (userId) {
+                      setAirportSizeAndFetch(userId, newSize);
+                    }
                   }}
-                  className="ml-2 rounded border p-1"
+                  disabled={loading.fetchingRandom || !userId}
+                  className="ml-2 rounded border p-1 disabled:opacity-50"
                 >
                   <option>Small</option>
                   <option>Medium</option>
@@ -228,11 +157,11 @@ export default function HomePage() {
                 </select>
               </label>
               <button
-                onClick={() => getRandomAirport()}
-                disabled={loading}
+                onClick={() => userId && fetchRandomAirport(userId)}
+                disabled={loading.fetchingRandom || !userId}
                 className="w-full rounded bg-blue-500 px-6 py-2 text-white disabled:opacity-50"
               >
-                {loading ? "Loading..." : "Get Random"}
+                {loading.fetchingRandom ? "Loading..." : "Get Random"}
               </button>
 
               {sizeMessage && (
@@ -244,11 +173,11 @@ export default function HomePage() {
               {/* Runway Size Information */}
               <div className="rounded border border-blue-200 bg-blue-50 p-3 text-sm">
                 <div className="text-blue-700">
-                  {size === "Small" &&
+                  {airportSize === "Small" &&
                     "Light aircraft & regional planes • Runways under 800m (2625ft)"}
-                  {size === "Medium" &&
+                  {airportSize === "Medium" &&
                     "Regional jets & turboprops • Runways 800-1800m (2625-5906ft)"}
-                  {size === "Large" &&
+                  {airportSize === "Large" &&
                     "Commercial jets & wide-body aircraft • Runways 1800m+ (5906ft+)"}
                 </div>
               </div>
@@ -275,36 +204,40 @@ export default function HomePage() {
                 </Link>
                 <button
                   onClick={handleClearVisitsClick}
-                  className="w-1/2 rounded bg-red-500 px-6 py-2 text-white"
+                  disabled={loading.clearingVisited}
+                  className="w-1/2 rounded bg-red-500 px-6 py-2 text-white disabled:opacity-50"
                 >
-                  Clear Visited
+                  {loading.clearingVisited ? "Clearing..." : "Clear Visited"}
                 </button>
               </div>
             </div>
 
-            {airport ? (
+            {currentAirport ? (
               <div className="space-y-2 rounded border bg-gray-100 p-4 shadow-lg">
                 <h2 className="text-xl">
-                  {airport.airportName} ({airport.airportCode})
+                  {currentAirport.airportName} ({currentAirport.airportCode})
                 </h2>
                 <p>
-                  <strong>ICAO:</strong> {airport.icaoCode ?? "N/A"}
+                  <strong>ICAO:</strong> {currentAirport.icaoCode ?? "N/A"}
                 </p>
                 <p>
-                  {airport.city}, {airport.country}
+                  {currentAirport.city}, {currentAirport.country}
                 </p>
-                <p>Size: {airport.size}</p>
-                {airport.description && <p>{airport.description}</p>}
+                <p>Size: {currentAirport.size}</p>
+                {currentAirport.description && (
+                  <p>{currentAirport.description}</p>
+                )}
                 <button
                   onClick={markVisited}
-                  className="mt-2 rounded bg-green-500 px-6 py-2 text-white"
+                  disabled={loading.markingVisited}
+                  className="mt-2 rounded bg-green-500 px-6 py-2 text-white disabled:opacity-50"
                 >
-                  Mark as Visited
+                  {loading.markingVisited ? "Marking..." : "Mark as Visited"}
                 </button>
               </div>
             ) : (
               <p>
-                {loading
+                {loading.fetchingRandom
                   ? "Loading..."
                   : "Click 'Get Random' to discover a beautiful airport!"}
               </p>

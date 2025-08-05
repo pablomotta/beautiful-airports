@@ -1,6 +1,7 @@
 "use client";
 
 import ConfirmDialog from "@/components/ConfirmDialog";
+import { useAirportStore } from "@/store/airport-store";
 import { signIn, useSession } from "next-auth/react";
 import Link from "next/link";
 import { useState } from "react";
@@ -21,13 +22,13 @@ export default function VisitedPage() {
     fetcher,
   );
 
+  // Get loading state from store
+  const { loading, clearVisitedAirports } = useAirportStore();
+
   const clearVisited = async () => {
-    await fetch("/api/airport/clear", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ userId: session?.user.id }),
-    });
-    mutate();
+    if (!session?.user.id) return;
+    await clearVisitedAirports(session.user.id);
+    mutate(); // Refresh the visited list
     setShowClearConfirm(false);
   };
 
@@ -69,9 +70,10 @@ export default function VisitedPage() {
               <div className="flex w-full gap-2">
                 <button
                   onClick={handleClearVisitedClick}
-                  className="w-1/2 rounded bg-red-500 px-6 py-2 text-white hover:bg-red-600"
+                  disabled={loading.clearingVisited}
+                  className="w-1/2 rounded bg-red-500 px-6 py-2 text-white hover:bg-red-600 disabled:opacity-50"
                 >
-                  Clear Visited
+                  {loading.clearingVisited ? "Clearing..." : "Clear Visited"}
                 </button>
                 <Link href="/" className="w-1/2">
                   <button className="w-full rounded bg-blue-500 px-6 py-2 text-white hover:bg-blue-600">
