@@ -132,7 +132,7 @@ export default function HomePage() {
             </div>
             <div className="flex flex-col items-start gap-4">
               <label>
-                <span className="font-medium">Size:</span>
+                <span className="font-medium">Runway Size:</span>
                 <select
                   value={airportSize}
                   onChange={(e) => {
