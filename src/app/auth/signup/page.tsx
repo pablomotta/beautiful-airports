@@ -1,6 +1,7 @@
 // src/app/auth/signup/page.tsx
 "use client";
 
+import AuthFormSkeleton from "@/components/skeletons/AuthFormSkeleton";
 import { signIn } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
@@ -54,6 +55,10 @@ export default function SignUpPage() {
       router.replace("/");
     }
   };
+
+  if (loading) {
+    return <AuthFormSkeleton isSignUp={true} />;
+  }
 
   return (
     <div className="mx-auto max-w-7xl">

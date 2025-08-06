@@ -1,7 +1,9 @@
 "use client";
 
 import ConfirmDialog from "@/components/ConfirmDialog";
-import Spinner from "@/components/Spinner";
+import AirportCardSkeleton from "@/components/skeletons/AirportCardSkeleton";
+import PageSkeleton from "@/components/skeletons/PageSkeleton";
+import StatsSkeleton from "@/components/skeletons/StatsSkeleton";
 import { useAirportStore } from "@/store/airport-store";
 import { useSession } from "next-auth/react";
 import Link from "next/link";
@@ -79,15 +81,9 @@ export default function HomePage() {
     }
   }, [status, router]);
 
-  // show a spinner or nothing while NextAuth is checking
+  // show a skeleton while NextAuth is checking
   if (status === "loading") {
-    return (
-      <div className="flex min-h-screen items-center justify-center">
-        <div className="text-center">
-          <Spinner />
-        </div>
-      </div>
-    );
+    return <PageSkeleton />;
   }
 
   if (status === "unauthenticated") {
@@ -182,7 +178,7 @@ export default function HomePage() {
                 </div>
               </div>
 
-              {stats && (
+              {stats ? (
                 <div className="rounded border border-blue-200 bg-blue-50 p-3 text-sm">
                   <div className="mb-2 font-medium">Airport Stats:</div>
                   {stats.map((stat) => (
@@ -194,6 +190,8 @@ export default function HomePage() {
                     </div>
                   ))}
                 </div>
+              ) : (
+                <StatsSkeleton />
               )}
 
               <div className="flex w-full gap-2">
@@ -235,11 +233,11 @@ export default function HomePage() {
                   {loading.markingVisited ? "Marking..." : "Mark as Visited"}
                 </button>
               </div>
+            ) : loading.fetchingRandom ? (
+              <AirportCardSkeleton />
             ) : (
               <p>
-                {loading.fetchingRandom
-                  ? "Loading..."
-                  : "Click 'Get Random' to discover a beautiful airport!"}
+                Click &apos;Get Random&apos; to discover a beautiful airport!
               </p>
             )}
           </div>

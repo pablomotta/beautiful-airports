@@ -1,6 +1,7 @@
 // src/app/auth/signin/page.tsx
 "use client";
 
+import AuthFormSkeleton from "@/components/skeletons/AuthFormSkeleton";
 import { signIn } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
@@ -30,6 +31,10 @@ export default function SignInPage() {
       router.replace("/");
     }
   };
+
+  if (loading) {
+    return <AuthFormSkeleton />;
+  }
 
   return (
     <div className="mx-auto max-w-7xl">
@@ -82,7 +87,7 @@ export default function SignInPage() {
             </button>
           </form>
           <p className="mt-4 text-center">
-            Don’t have an account?{" "}
+            Don&apos;t have an account?{" "}
             <a href="/auth/signup" className="text-blue-600 hover:underline">
               Sign up!
             </a>

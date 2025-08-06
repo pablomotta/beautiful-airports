@@ -1,6 +1,7 @@
 "use client";
 
 import ConfirmDialog from "@/components/ConfirmDialog";
+import VisitedListSkeleton from "@/components/skeletons/VisitedListSkeleton";
 import { useAirportStore } from "@/store/airport-store";
 import { signIn, useSession } from "next-auth/react";
 import Link from "next/link";
@@ -36,7 +37,26 @@ export default function VisitedPage() {
     setShowClearConfirm(true);
   };
 
-  if (status === "loading") return <p className="p-8 text-center">Loading…</p>;
+  if (status === "loading") {
+    return (
+      <div className="mx-auto max-w-7xl">
+        <div className="grid h-full grid-cols-12 px-4">
+          <div className="col-span-12 h-full space-y-6 rounded-lg border-2 border-gray-200 bg-white px-4 py-8 shadow-sm md:col-span-4 md:col-start-5 md:p-8">
+            <div className="mb-10 flex w-full items-center justify-center">
+              <div className="h-9 w-48 animate-pulse rounded bg-gray-200"></div>
+            </div>
+            <div className="flex flex-col items-start gap-4">
+              <div className="flex w-full gap-2">
+                <div className="h-10 w-1/2 animate-pulse rounded bg-gray-200"></div>
+                <div className="h-10 w-1/2 animate-pulse rounded bg-gray-200"></div>
+              </div>
+              <VisitedListSkeleton />
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   if (!session) {
     return (
@@ -83,7 +103,7 @@ export default function VisitedPage() {
               </div>
 
               {isLoading ? (
-                <p>Loading…</p>
+                <VisitedListSkeleton />
               ) : visited.length > 0 ? (
                 <ul className="w-full space-y-4">
                   {visited.map((a: Airport) => (
