@@ -31,12 +31,6 @@ alwaysApply: true
   – Always export `GET`, `POST` (or other verbs) from `route.ts` files.  
   – Use `NextResponse.json()` with proper HTTP status.  
   – Protect with NextAuth’s `getSession()` or `getServerSession()`.
-  
-  # Agent Behavior
-- Never attempt to run shell/CLI commands on my behalf.
-- Always output the exact commands I should run, and plain‑language instructions.
-- Keep explanations succinct and to the point.
-
 
 # Database & Auth
 - **Prisma Models:**  
@@ -64,4 +58,3 @@ alwaysApply: true
 - **Deploy:** Vercel or any Next.js-compatible host.
 
 > Whenever Cursor performs edits or answers, use these rules to keep suggestions aligned with our existing code style, architecture, and project conventions.
-::contentReference[oaicite:0]{index=0}
